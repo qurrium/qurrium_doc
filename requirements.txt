@@ -1,3 +1,7 @@
+# basic requirements
 jupyter-book
 matplotlib
 numpy
+# qurrum requirements
+qiskit
+qurrium
