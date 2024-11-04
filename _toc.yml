@@ -2,8 +2,31 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+root: docs/intro
+
+parts:
+  - caption: main
+    chapters:
+      - file: docs/main/01_Basic_Usage
+      - file: docs/main/02_The_True_Power_of_Qurry
+      - file: docs/main/03_Just_Post_Processing
+      - file: docs/main/0311a_EntropyRandomizedMeasure
+      - file: docs/main/0311b_EntropyRandomizedMeasure
+      - file: docs/main/0312_EntropyHadamardTest
+      - file: docs/main/0313a_EntropyRandomizedMeasureV1
+      - file: docs/main/0313b_EntropyRandomizedMeasureV1
+
+      # 01_Basic_Usage.ipynb
+      # 02_The_True_Power_of_Qurry.ipynb
+      # 03_Just_Post_Processing.ipynb
+      # 0311a_EntropyRandomizedMeasure.ipynb
+      # 0311b_EntropyRandomizedMeasure.ipynb
+      # 0312_EntropyHadamardTest.ipynb
+      # 0313a_EntropyRandomizedMeasureV1.ipynb
+      # 0313b_EntropyRandomizedMeasureV1.ipynb
+
+  - caption: appendix
+    chapters:
+      - file: docs/appendix/A01_BackendManager
+
+      # A01_BackendManager.ipynb
