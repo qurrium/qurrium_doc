@@ -14,7 +14,7 @@ print(f"| Deploying documentation to GitHub Pages at {CURRENT_DATE}...")
 print(f"| Custom domain: {CNAME}")
 
 ghp_import(
-    "_build/html",
+    "./docs/_build/html",
     nojekyll=True,
     force=True,
     push=True,
@@ -22,3 +22,5 @@ ghp_import(
     mesg=f"ci: deploy to GitHub Pages - {CURRENT_DATE}",
     branch="gh-pages",
 )
+
+print("| Deployment complete.")
