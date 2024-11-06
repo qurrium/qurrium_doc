@@ -1,56 +1,32 @@
----
----
-
-@inproceedings{holdgraf_evidence_2014,
-	address = {Brisbane, Australia, Australia},
-	title = {Evidence for {Predictive} {Coding} in {Human} {Auditory} {Cortex}},
-	booktitle = {International {Conference} on {Cognitive} {Neuroscience}},
-	publisher = {Frontiers in Neuroscience},
-	author = {Holdgraf, Christopher Ramsay and de Heer, Wendy and Pasley, Brian N. and Knight, Robert T.},
-	year = {2014}
+@misc{chang2024probing,
+  title         = {Probing entanglement dynamics and topological transitions on noisy intermediate-scale quantum computers},
+  author        = {Huai-Chun Chang and Hsiu-Chuan Hsu and Yu-Cheng Lin},
+  year          = {2024},
+  eprint        = {2406.10159},
+  archiveprefix = {arXiv},
+  primaryclass  = {quant-ph},
+  url           = {https://arxiv.org/abs/2406.10159}
 }
 
-@article{holdgraf_rapid_2016,
-	title = {Rapid tuning shifts in human auditory cortex enhance speech intelligibility},
-	volume = {7},
-	issn = {2041-1723},
-	url = {http://www.nature.com/doifinder/10.1038/ncomms13654},
-	doi = {10.1038/ncomms13654},
-	number = {May},
-	journal = {Nature Communications},
-	author = {Holdgraf, Christopher Ramsay and de Heer, Wendy and Pasley, Brian N. and Rieger, Jochem W. and Crone, Nathan and Lin, Jack J. and Knight, Robert T. and Theunissen, Frédéric E.},
-	year = {2016},
-	pages = {13654},
-	file = {Holdgraf et al. - 2016 - Rapid tuning shifts in human auditory cortex enhance speech intelligibility.pdf:C\:\\Users\\chold\\Zotero\\storage\\MDQP3JWE\\Holdgraf et al. - 2016 - Rapid tuning shifts in human auditory cortex enhance speech intelligibility.pdf:application/pdf}
-}
 
-@inproceedings{holdgraf_portable_2017,
-	title = {Portable learning environments for hands-on computational instruction using container-and cloud-based technology to teach data science},
-	volume = {Part F1287},
-	isbn = {978-1-4503-5272-7},
-	doi = {10.1145/3093338.3093370},
-	abstract = {© 2017 ACM. There is an increasing interest in learning outside of the traditional classroom setting. This is especially true for topics covering computational tools and data science, as both are challenging to incorporate in the standard curriculum. These atypical learning environments offer new opportunities for teaching, particularly when it comes to combining conceptual knowledge with hands-on experience/expertise with methods and skills. Advances in cloud computing and containerized environments provide an attractive opportunity to improve the effciency and ease with which students can learn. This manuscript details recent advances towards using commonly-Available cloud computing services and advanced cyberinfrastructure support for improving the learning experience in bootcamp-style events. We cover the benets (and challenges) of using a server hosted remotely instead of relying on student laptops, discuss the technology that was used in order to make this possible, and give suggestions for how others could implement and improve upon this model for pedagogy and reproducibility.},
-	booktitle = {{ACM} {International} {Conference} {Proceeding} {Series}},
-	author = {Holdgraf, Christopher Ramsay and Culich, A. and Rokem, A. and Deniz, F. and Alegro, M. and Ushizima, D.},
-	year = {2017},
-	keywords = {Teaching, Bootcamps, Cloud computing, Data science, Docker, Pedagogy}
-}
-
-@article{holdgraf_encoding_2017,
-	title = {Encoding and decoding models in cognitive electrophysiology},
-	volume = {11},
-	issn = {16625137},
-	doi = {10.3389/fnsys.2017.00061},
-	abstract = {© 2017 Holdgraf, Rieger, Micheli, Martin, Knight and Theunissen. Cognitive neuroscience has seen rapid growth in the size and complexity of data recorded from the human brain as well as in the computational tools available to analyze this data. This data explosion has resulted in an increased use of multivariate, model-based methods for asking neuroscience questions, allowing scientists to investigate multiple hypotheses with a single dataset, to use complex, time-varying stimuli, and to study the human brain under more naturalistic conditions. These tools come in the form of “Encoding” models, in which stimulus features are used to model brain activity, and “Decoding” models, in which neural features are used to generated a stimulus output. Here we review the current state of encoding and decoding models in cognitive electrophysiology and provide a practical guide toward conducting experiments and analyses in this emerging field. Our examples focus on using linear models in the study of human language and audition. We show how to calculate auditory receptive fields from natural sounds as well as how to decode neural recordings to predict speech. The paper aims to be a useful tutorial to these approaches, and a practical introduction to using machine learning and applied statistics to build models of neural activity. The data analytic approaches we discuss may also be applied to other sensory modalities, motor systems, and cognitive systems, and we cover some examples in these areas. In addition, a collection of Jupyter notebooks is publicly available as a complement to the material covered in this paper, providing code examples and tutorials for predictive modeling in python. The aimis to provide a practical understanding of predictivemodeling of human brain data and to propose best-practices in conducting these analyses.},
-	journal = {Frontiers in Systems Neuroscience},
-	author = {Holdgraf, Christopher Ramsay and Rieger, J.W. and Micheli, C. and Martin, S. and Knight, R.T. and Theunissen, F.E.},
-	year = {2017},
-	keywords = {Decoding models, Encoding models, Electrocorticography (ECoG), Electrophysiology/evoked potentials, Machine learning applied to neuroscience, Natural stimuli, Predictive modeling, Tutorials}
-}
-
-@book{ruby,
-  title     = {The Ruby Programming Language},
-  author    = {Flanagan, David and Matsumoto, Yukihiro},
-  year      = {2008},
-  publisher = {O'Reilly Media}
+@thesis{cite-key,
+  abstract      = {在本篇論文中，我們在嘈雜中等規模量子機器（Noisy Intermediate-Scale Quantum Device，簡稱NISQ 機器）上模擬了Su--Schrieffer--Heeger 模型。主要運用了IBM Quantum 上所提供的量子電腦，透過隨機測量進行第二任尼熵（second-order Renyi entropy）的量測。為了在NISQ 機器上處理部分二聚化淬火哈密頓量，我們應用了適應性時間步長的Trotter decomposition 以減少電路深度。同時我們也考慮了完全二聚化極限淬火哈密頓量，其中時間演化算子可以精確地映射到量子閘，因此降低了嘈雜的影響。在錯誤緩解之後，糾纏熵的振盪模式與理論很好地吻合。為了有效地處理隨機測量所需的大量量子電路板和數據，我們開發了一個名為Qurry 的Python 套件工具，用於處理前述實驗的工作流程的管理、自動化、以及運用平行化計算進行後處理。最後我們還研究了隨機量測任尼熵的誤差標度分析，及其在模擬更大系統時會面臨的挑戰。; In this thesis, we explore the quench dynamics of the Su--Schrieffer--Heeger (SSH) model and quantum entanglement using Noisy Intermediate-Scale Quantum (NISQ) computers, specifically on the IBM Quantum platform. We investigate the second-order Renyi entropy through randomized measurements to characterize the entanglement of quantum states. To simulate partial-dimerized quench Hamiltonians, we employ Trotter decomposition with an adaptive step size to reduce circuit depth. In the fully dimerized limit, the time evolution operator is exactly mapped to quantum gates, which minimizes noise. After applying error mitigation techniques, we find that the entanglement entropy oscillations align with theoretical predictions. Additionally, we developed a Python package called Qurry to manage workflows and facilitate parallel post-processing. Finally, we analyze the error scaling of Renyi entropy measurements and discuss the challenges encountered when simulating larger systems.},
+  address       = {台北市},
+  author        = {張淮竣 and 許琇娟 and Hsu, Hsiu-Chuan},
+  date-added    = {2024-11-06 18:03:53 +0800},
+  date-modified = {2024-11-06 18:03:53 +0800},
+  db            = {臺灣博碩士論文知識加值系統},
+  department    = {應用物理研究所},
+  id            = {112NCCU5504003},
+  keywords      = {嘈雜中等規模量子機器; IBM Quantum; 淬火動力學; Su--Schrieffer--Heeger 模型; 任尼熵; 隨機測量; 錯誤緩解; Noisy Intermediate-Scale Quantum Device; IBM Quantum; Quench dynamics; Su--Schrieffer--Heeger model; Renyi entropy; Randomized measurement; Error mitigation},
+  lg            = {中文},
+  pages         = {134},
+  school        = {國立政治大學},
+  ta            = {Chang, Huai-Chun},
+  title         = {於近期量子計算機量測糾結熵},
+  tt            = {Probing Entanglement Entropy on Near-term Quantum Computers},
+  url           = {https://hdl.handle.net/11296/828e7d},
+  volume        = {碩士},
+  year          = {2024},
+  bdsk-url-1    = {https://hdl.handle.net/11296/828e7d}
 }
