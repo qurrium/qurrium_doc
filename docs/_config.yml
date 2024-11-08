@@ -31,18 +31,50 @@ repository:
 #######################################################################################
 # HTML-specific settings
 html:
-  favicon                   : ""  # A path to a favicon image
-  use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
-  use_repository_button     : false  # Whether to add a link to your repository button
-  use_issues_button         : false  # Whether to add an "open an issue" button
-  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
-  extra_footer              : ""  # Will be displayed underneath the footer.
-  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
-  baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  favicon: "" # A path to a favicon image
+  use_edit_page_button: false # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+  use_repository_button: false # Whether to add a link to your repository button
+  use_issues_button: false # Whether to add an "open an issue" button
+  use_multitoc_numbering: true # Continuous numbering across parts/chapters
+  extra_footer: "" # Will be displayed underneath the footer.
+  home_page_in_navbar: true # Whether to include your home page in the left Navigation Bar
+  baseurl: "" # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   analytics:
-    google_analytics_id       : "G-NH0TTCC2VZ"  # A GA id that can be used to track book views.
+    google_analytics_id: "G-NH0TTCC2VZ" # A GA id that can be used to track book views.
 
   comments:
-    hypothesis              : false
-    utterances              : false
-  announcement              : "" # A banner announcement at the top of the site.
+    hypothesis: false
+    utterances: false
+  announcement: "" # A banner announcement at the top of the site.
+
+sphinx:
+  extra_extensions:
+    - sphinxext.opengraph
+  config:
+    ogp_site_url: "https://docs.qurrium.org"
+
+    ogp_custom_meta_tags:
+      [
+        "<!-- HTML Meta Tags -->",
+        "<title>Qurry 🍛 Documentation</title>",
+        "<meta name='description' content='The python package that makes the randomized measurement easy.'>",
+        "",
+        "<!-- Facebook Meta Tags -->",
+        "<meta property='og:url' content='https://docs.qurrium.org'>",
+        "<meta property='og:type' content='website'>",
+        "<meta property='og:title' content='Qurry 🍛 Documentation'>",
+        "<meta property='og:description' content='The python package that makes the randomized measurement easy.'>",
+        "<meta property='og:image' content=''>",
+        "",
+        "<!-- Twitter Meta Tags -->",
+        "<meta name='twitter:card' content='summary_large_image'>",
+        "<meta property='twitter:domain' content='docs.qurrium.org'>",
+        "<meta property='twitter:url' content='https://docs.qurrium.org'>",
+
+        "<meta name='twitter:title' content='Qurry 🍛 Documentation'>",
+        "<meta name='twitter:description' content='The python package that makes the randomized measurement easy.'>",
+        "<meta name='twitter:image' content=''>",
+        "",
+        "<!-- Meta Tags Generated via https://www.opengraph.xyz -->",
+      ]
+    ogp_enable_meta_description: True
