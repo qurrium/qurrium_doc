@@ -1,5 +1,7 @@
-# basic requirements
 jupyter-book
+# extensions
+sphinxext-opengraph
+# basic requirements
 matplotlib
 numpy
 # qurrum requirements
