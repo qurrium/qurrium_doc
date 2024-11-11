@@ -9,7 +9,8 @@
 
 2. The initial proposed name for the package was **xproc**, short for **experimental process**.
 
-3. Another module, **qurrech,** combines **qurr** with **ech,** where **ech** is short for **echo**.
+3. Another module, **qurrech,** combines **qurr** with **ech**,
+   where **ech** is short for **echo**, the Loschmidt Echo,
    This inspired us to adopt **qurry**, derived from **qurr** and the suffix **ry**,
    to resemble words like **query** or **curry**.
 
