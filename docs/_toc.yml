@@ -25,3 +25,7 @@ parts:
     chapters:
       - file: installation/01_Installation
       - file: installation/02_Platform_Support
+
+  - caption: About
+    chapters:
+    - file: about/01_About_Qurry
