@@ -32,7 +32,7 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install --upgrade pip
-          pip install --upgrade qurrium
+          pip install -r requirements.txt
 
       - name: Create Tag
         run: |
