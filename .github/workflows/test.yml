@@ -22,7 +22,7 @@ jobs:
 
   test_py_oldest:
     if: ${{ !startsWith(github.event.pull_request.title, 'skip-test:') }}
-    name: Test on Python Latest
+    name: Test on Python Oldest
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
