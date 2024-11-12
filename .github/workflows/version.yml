@@ -5,6 +5,12 @@ on:
       - main
     types:
       - closed
+  push:
+    branches:
+      - main
+    paths:
+      - 'versioning.py'
+      - '.github/workflows/version.yml'
 env:
   CARGO_TERM_COLOR: always
 
