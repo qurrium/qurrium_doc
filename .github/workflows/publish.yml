@@ -26,6 +26,11 @@ jobs:
         with:
           python-version: 3.12
 
+      - name: Set up Git user
+        run: |
+          git config --global user.name ${{ github.repository_owner }}_action_bot
+          git config --global user.email ${{ github.repository_owner }}@users.noreply.github.com
+
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
@@ -36,17 +41,6 @@ jobs:
       - name: Build the book
         run: |
           jupyter-book build --all docs
-
-      - name: Upload jupyter book artifact to deploy workflow
-        uses: actions/upload-artifact@v3
-        with:
-          name: jupyterbook
-          path: "docs/_build/html/"
-
-      - name: Set up Git user
-        run: |
-          git config --global user.name ${{ github.repository_owner }}_action_bot
-          git config --global user.email ${{ github.repository_owner }}@users.noreply.github.com
 
       - name: Create Tag
         run: |
