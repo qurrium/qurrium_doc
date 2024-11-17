@@ -35,7 +35,7 @@ jobs:
         run: |
           jupyter-book build --all docs
 
-      - name: Upload jupyter book
+      - name: Upload jupyter book artifact to deploy workflow
         uses: actions/upload-artifact@v3
         with:
           name: jupyterbook
@@ -57,6 +57,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: 3.12
+
+      - name: Download all the
+        uses: actions/download-artifact@v3
+        with:
+          name: jupyterbook
+          path: "docs/_build/html/"
 
       - name: Install Dependencies
         run: |
