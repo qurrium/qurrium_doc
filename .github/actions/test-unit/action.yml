@@ -35,6 +35,7 @@ runs:
         python -m flake8 . --count --exit-zero --statistics
 
     - name: List Pip
+      shell: bash
       run: |
         python -c "import qurry; print(qurry.__version__)"
         python -m pip list
