@@ -5,6 +5,12 @@ on:
       - main
     types:
       - closed
+  push:
+    branches:
+      - main
+    paths:
+      - 'versioning.py'
+      - '.github/workflows/version.yml'
 env:
   CARGO_TERM_COLOR: always
 
@@ -26,7 +32,7 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install --upgrade pip
-          pip install --upgrade qurrium
+          pip install -r requirements.txt
 
       - name: Create Tag
         run: |

@@ -20,14 +20,11 @@ runs:
     - name: Install dependencies
       shell: bash
       run: |
-        python -m pip install --upgrade pipenv wheel pip
-        python -m pip install flake8 pytest matplotlib pep440
-        python -m pip install --upgrade urllib3
-        python -m pip install --upgrade --user setuptools setuptools_rust
-        python -c "print('### Preparing setup.py '.ljust(70, '.'))"
-        python -m pip install -e .
-        # python -c "print('### Preparing requirements.txt '.ljust(70, '.'))
-        # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        python -m pip install --upgrade pipe pip
+        python -c "print('### Dependencies are ready to go '.ljust(70, '.'))"
+        python -m pip install -r requirements.txt --upgrade
+        python -m pip install -r requirements-test.txt --upgrade
+        python -m pip install qurrium --upgrade
         python -c "print('### Dependencies are ready to go '.ljust(70, '.'))"
 
     - name: Lint with flake8
@@ -37,6 +34,12 @@ runs:
         python -m flake8 . --count --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         python -m flake8 . --count --exit-zero --statistics
+
+    - name: List Pip
+      shell: bash
+      run: |
+        python -c "import qurry; print(qurry.__version__)"
+        python -m pip list
 
     - name: Test with pytest
       shell: bash
