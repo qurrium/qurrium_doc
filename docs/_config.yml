@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Qurrium Documentation
+title: Qurry🍛/Qurrium Documentation
 author: Huai-Chung Chang (harui2019)
 logo: ""
 
@@ -59,13 +59,13 @@ sphinx:
     ogp_custom_meta_tags:
       [
         "<!-- HTML Meta Tags -->",
-        "<title>Qurry 🍛 Documentation</title>",
+        "<title>Qurrium-Qurry🍛 Documentation</title>",
         "<meta name='description' content='The python package that makes the randomized measurement easy.'>",
         "",
         "<!-- Facebook Meta Tags -->",
         "<meta property='og:url' content='https://docs.qurrium.org'>",
         "<meta property='og:type' content='website'>",
-        "<meta property='og:title' content='Qurry 🍛 Documentation'>",
+        "<meta property='og:title' content='Qurrium-Qurry🍛 Documentation'>",
         "<meta property='og:description' content='The python package that makes the randomized measurement easy.'>",
         "<meta property='og:image' content=''>",
         "",
@@ -74,7 +74,7 @@ sphinx:
         "<meta property='twitter:domain' content='docs.qurrium.org'>",
         "<meta property='twitter:url' content='https://docs.qurrium.org'>",
 
-        "<meta name='twitter:title' content='Qurry 🍛 Documentation'>",
+        "<meta name='twitter:title' content='Qurrium-Qurry🍛 Documentation'>",
         "<meta name='twitter:description' content='The python package that makes the randomized measurement easy.'>",
         "<meta name='twitter:image' content=''>",
         "",
