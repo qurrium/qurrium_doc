@@ -10,12 +10,21 @@ parts:
       - file: main/01_Basic_Usage
       - file: main/02_The_True_Power_of_Qurry
       - file: main/03_Just_Post_Processing
+
+  - caption: Post Processing
+    chapters:
+      - caption: Entropy Measure
         sections:
-          - file: main/031_EntropyMeasure/1a_EntropyRandomizedMeasure
-          - file: main/031_EntropyMeasure/1b_EntropyRandomizedMeasure
-          - file: main/031_EntropyMeasure/2_EntropyHadamardTest
-          - file: main/031_EntropyMeasure/3a_EntropyRandomizedMeasureV1
-          - file: main/031_EntropyMeasure/3b_EntropyRandomizedMeasureV1
+          - file: postprocessing/01_EntropyMeasure/1a_EntropyRandomizedMeasure
+          - file: postprocessing/01_EntropyMeasure/1b_EntropyRandomizedMeasure
+          - file: postprocessing/01_EntropyMeasure/2_EntropyHadamardTest
+          - file: postprocessing/01_EntropyMeasure/3a_EntropyRandomizedMeasureV1
+          - file: postprocessing/01_EntropyMeasure/3b_EntropyRandomizedMeasureV1
+      - caption: Wave Function Overlap
+        sections:
+          - file: postprocessing/02_WaveFunctionOverlap/1_EchoListenRandomized
+          - file: postprocessing/02_WaveFunctionOverlap/2_EchoListenHadamard
+          - file: postprocessing/02_WaveFunctionOverlap/3_EchoListenRandomizedV1
 
   - caption: Other Features
     chapters:
@@ -28,4 +37,4 @@ parts:
 
   - caption: About
     chapters:
-    - file: about/01_About_Qurry
+      - file: about/01_About_Qurry
