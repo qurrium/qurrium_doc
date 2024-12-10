@@ -26,6 +26,7 @@ We strongly recommend to use Linux based system, due to Python multiprocessing m
 | CPython 3.10 <sup>1</sup> | ✅               | ✅                   | ✅              | ✅                | ✅                | ✅ <sup>2</sup>   | ✅ <sup>3</sup>  | ✅ <sup>3</sup> | ✅ <sup>3</sup>   |
 | CPython 3.11 <sup>1</sup> | ✅               | ✅                   | ✅              | ✅                | ✅                | ✅ <sup>2</sup>   | ✅ <sup>3</sup>  | ✅ <sup>3</sup> | ✅ <sup>3</sup>   |
 | CPython 3.12 <sup>1</sup> | ✅               | ✅                   | ✅              | ✅                | ✅                | ✅ <sup>2</sup>   | ✅ <sup>3</sup>  | ✅ <sup>3</sup> | ✅ <sup>3</sup>   |
+| CPython 3.13 <sup>1</sup> | ✅               | ✅                   | ✅              | ✅                | ✅                | ✅ <sup>2</sup>   | ✅ <sup>3</sup>  | ✅ <sup>3</sup> | ✅ <sup>3</sup>   |
 
 1. All CPython builds are based on the 3.9+ CPython ABI.
 2. Although `windows_arm64` builds are provided, they have not been properly tested, as we do not have access to such a machine for testing.
