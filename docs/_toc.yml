@@ -1,40 +1,32 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 
-format: jb-book
 root: intro
-
+format: jb-book
 parts:
   - caption: Introduction
     chapters:
-      - file: main/01_Basic_Usage
-      - file: main/02_The_True_Power_of_Qurry
-      - file: main/03_Just_Post_Processing
-
+    - file: main/01_Basic_Usage
+    - file: main/02_The_True_Power_of_Qurry
   - caption: Post Processing
     chapters:
-      - caption: Entropy Measure
-        sections:
-          - file: postprocessing/01_EntropyMeasure/1a_EntropyRandomizedMeasure
-          - file: postprocessing/01_EntropyMeasure/1b_EntropyRandomizedMeasure
-          - file: postprocessing/01_EntropyMeasure/2_EntropyHadamardTest
-          - file: postprocessing/01_EntropyMeasure/3a_EntropyRandomizedMeasureV1
-          - file: postprocessing/01_EntropyMeasure/3b_EntropyRandomizedMeasureV1
-      - caption: Wave Function Overlap
-        sections:
-          - file: postprocessing/02_WaveFunctionOverlap/1_EchoListenRandomized
-          - file: postprocessing/02_WaveFunctionOverlap/2_EchoListenHadamard
-          - file: postprocessing/02_WaveFunctionOverlap/3_EchoListenRandomizedV1
-
+    - file: postprocessing/00_Just_Post_Processing
+      sections: 
+        - file: postprocessing/01_EntropyMeasure/1a_EntropyRandomizedMeasure
+        - file: postprocessing/01_EntropyMeasure/1b_EntropyRandomizedMeasure
+        - file: postprocessing/01_EntropyMeasure/2_EntropyHadamardTest
+        - file: postprocessing/01_EntropyMeasure/3a_EntropyRandomizedMeasureV1
+        - file: postprocessing/01_EntropyMeasure/3b_EntropyRandomizedMeasureV1
+        - file: postprocessing/02_WaveFunctionOverlap/1_EchoListenRandomized
+        - file: postprocessing/02_WaveFunctionOverlap/2_EchoListenHadamard
+        - file: postprocessing/02_WaveFunctionOverlap/3_EchoListenRandomizedV1
   - caption: Other Features
     chapters:
-      - file: appendix/A01_BackendManager
-
+    - file: appendix/A01_BackendManager
   - caption: Installation and Support
     chapters:
-      - file: installation/01_Installation
-      - file: installation/02_Platform_Support
-
+    - file: installation/01_Installation
+    - file: installation/02_Platform_Support
   - caption: About
     chapters:
-      - file: about/01_About_Qurry
+    - file: about/01_About_Qurry

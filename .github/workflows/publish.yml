@@ -46,6 +46,10 @@ jobs:
         run: |
           python versioning.py
 
+      - name: Commit Tag
+        run: |
+          git push origin --tags
+
       - name: Deploy
         run: |
           python ghp_setup.py
