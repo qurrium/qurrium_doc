@@ -7,5 +7,5 @@ numpy
 # qurrum requirements
 qiskit
 qiskit_ibm_runtime
-qiskit_aer
+# qiskit_aer - not needed for runtime
 qurrium
