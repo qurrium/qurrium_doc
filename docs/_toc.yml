@@ -9,10 +9,10 @@ parts:
     chapters:
       - file: main/01_Basic_Usage
       - file: main/02_The_True_Power_of_Qurry
-      - file: main/03_Just_Post_Processing
 
   - caption: Post Processing
     chapters:
+      - file: main/03_Just_Post_Processing
       - caption: Entropy Measure
         sections:
           - file: postprocessing/01_EntropyMeasure/1a_EntropyRandomizedMeasure
