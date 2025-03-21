@@ -29,5 +29,6 @@ if __name__ == "__main__":
         ["git", "tag", "-a", VERSION, "-m", f"chore: Release candidate {VERSION}"],
         check=True,
     )
+    subprocess.run(["git", "push", "origin", VERSION], check=True)
 
     print("| Versioning complete.")
