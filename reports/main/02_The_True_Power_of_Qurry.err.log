@@ -1,0 +1,190 @@
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+hashID = experiment_executor_02.multiRead(
+    save_location=Path('./'),
+    summoner_name='example.multiOutput.qurry.001',
+)
+------------------
+
+----- stdout -----
+| Retrieve example.multiOutput.qurry.001...
+| at: example.multiOutput.qurry.001
+| Found the tarfile 'example.multiOutput.qurry.001.qurry.tar.xz' in '.', decompressing is available.
+| No multi.config file found, decompressing all files in the tarfile 'example.multiOutput.qurry.001.qurry.tar.xz'.
+----- stderr -----
+| 0/10   0%|          | - 10 experiments found, loading by None workers. - 00:00 < ?
+----- stderr -----
+| 0/10   0%|          | - 10 experiments found, loading by None workers. - 00:00 < ?
+----- stderr -----
+
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31m_RemoteTraceback[39m                          Traceback (most recent call last)
+[31m_RemoteTraceback[39m: 
+"""
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/concurrent/futures/process.py", line 264, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/concurrent/futures/process.py", line 213, in _process_chunk
+    return [fn(*args) for args in chunk]
+            ^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/qurry/qurrium/experiment/experiment.py", line 1287, in _read_core
+    reports_read = exp_instance.analysis_instance.read(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/qurry/qurrium/analysis/analysis.py", line 328, in read
+    analysis_dict[k] = cls.load(v, sides[k])
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/qurry/qurrium/analysis/analysis.py", line 269, in load
+    instance = cls(**main["header"], **main["input"], **content, **side)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/qurry/qurrium/analysis/analysis.py", line 116, in __init__
+    self.input, outfields = self.input_filter(**otherArgs)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/qurry/qurrium/analysis/analysis.py", line 73, in input_filter
+    return cls.AnalysisInput(**infields), outfields
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AnalysisInput.__new__() missing 1 required positional argument: 'bitstring_mapping'
+"""
+
+The above exception was the direct cause of the following exception:
+
+[31mTypeError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[14][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m hashID = [43mexperiment_executor_02[49m[43m.[49m[43mmultiRead[49m[43m([49m
+[32m      2[39m [43m    [49m[43msave_location[49m[43m=[49m[43mPath[49m[43m([49m[33;43m'[39;49m[33;43m./[39;49m[33;43m'[39;49m[43m)[49m[43m,[49m
+[32m      3[39m [43m    [49m[43msummoner_name[49m[43m=[49m[33;43m'[39;49m[33;43mexample.multiOutput.qurry.001[39;49m[33;43m'[39;49m[43m,[49m
+[32m      4[39m [43m)[49m
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/qurry/qurrium/qurrium.py:806[39m, in [36mQurriumPrototype.multiRead[39m[34m(self, summoner_name, save_location, reload, read_from_tarfile)[39m
+[32m    801[39m [38;5;28;01melif[39;00m [38;5;28mlen[39m(filtered_summoner_id_names) > [32m1[39m:
+[32m    802[39m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
+[32m    803[39m         [33mf[39m[33m"[39m[33mMultiple multimanager found for [39m[33m'[39m[38;5;132;01m{[39;00msummoner_name[38;5;132;01m}[39;00m[33m'[39m[33m: [39m[38;5;132;01m{[39;00mfiltered_summoner_id_names[38;5;132;01m}[39;00m[33m.[39m[33m"[39m
+[32m    804[39m     )
+[32m--> [39m[32m806[39m tmp_exps_container, current_multimanager = [43mMultiManager[49m[43m.[49m[43mread[49m[43m([49m
+[32m    807[39m [43m    [49m[43msummoner_name[49m[43m=[49m[43msummoner_name[49m[43m,[49m
+[32m    808[39m [43m    [49m[43mexperiment_instance[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43mexperiment_instance[49m[43m,[49m
+[32m    809[39m [43m    [49m[43msave_location[49m[43m=[49m[43msave_location[49m[43m,[49m
+[32m    810[39m [43m    [49m[43mis_read_or_retrieve[49m[43m=[49m[38;5;28;43;01mTrue[39;49;00m[43m,[49m
+[32m    811[39m [43m    [49m[43mread_from_tarfile[49m[43m=[49m[43mread_from_tarfile[49m[43m,[49m
+[32m    812[39m [43m[49m[43m)[49m
+[32m    813[39m [38;5;28mself[39m.multimanagers[current_multimanager.summoner_id] = current_multimanager
+[32m    814[39m [38;5;28mself[39m.exps.update(tmp_exps_container)
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/qurry/qurrium/multimanager/multimanager.py:578[39m, in [36mMultiManager.read[39m[34m(cls, summoner_name, experiment_instance, save_location, is_read_or_retrieve, read_from_tarfile, encoding)[39m
+[32m    575[39m                 [38;5;28;01mif[39;00m path.exists():
+[32m    576[39m                     path.unlink()
+[32m--> [39m[32m578[39m reading_results: [38;5;28mlist[39m[_ExpInst] = [43mexperiment_instance[49m[43m.[49m[43mread[49m[43m([49m
+[32m    579[39m [43m    [49m[43msave_location[49m[43m=[49m[43mcurrent_multimanager[49m[43m.[49m[43mmulticommons[49m[43m.[49m[43msave_location[49m[43m,[49m
+[32m    580[39m [43m    [49m[43mname_or_id[49m[43m=[49m[43mcurrent_multimanager[49m[43m.[49m[43mmulticommons[49m[43m.[49m[43msummoner_name[49m[43m,[49m
+[32m    581[39m [43m[49m[43m)[49m
+[32m    582[39m tmp_exps_container: ExperimentContainer[_ExpInst] = ExperimentContainer()
+[32m    583[39m [38;5;28;01mfor[39;00m read_exps [38;5;129;01min[39;00m reading_results:
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/qurry/qurrium/experiment/experiment.py:1371[39m, in [36mExperimentPrototype.read[39m[34m(cls, name_or_id, save_location, encoding, workers_num)[39m
+[32m   1367[39m     qurryinfo = {**qurryinfo_found, **qurryinfo}
+[32m   1369[39m pool = ParallelManager(workers_num)
+[32m-> [39m[32m1371[39m quene = [43mpool[49m[43m.[49m[43mprocess_map[49m[43m([49m
+[32m   1372[39m [43m    [49m[38;5;28;43mcls[39;49m[43m.[49m[43m_read_core[49m[43m,[49m
+[32m   1373[39m [43m    [49m[43m[[49m
+[32m   1374[39m [43m        [49m[43m([49m[43mexp_id[49m[43m,[49m[43m [49m[43mfile_index[49m[43m,[49m[43m [49m[43msave_location[49m[43m,[49m[43m [49m[43mencoding[49m[43m)[49m
+[32m   1375[39m [43m        [49m[38;5;28;43;01mfor[39;49;00m[43m [49m[43mexp_id[49m[43m,[49m[43m [49m[43mfile_index[49m[43m [49m[38;5;129;43;01min[39;49;00m[43m [49m[43mqurryinfo[49m[43m.[49m[43mitems[49m[43m([49m[43m)[49m
+[32m   1376[39m [43m    [49m[43m][49m[43m,[49m
+[32m   1377[39m [43m    [49m[43mdesc[49m[43m=[49m[33;43mf[39;49m[33;43m"[39;49m[38;5;132;43;01m{[39;49;00m[38;5;28;43mlen[39;49m[43m([49m[43mqurryinfo[49m[43m)[49m[38;5;132;43;01m}[39;49;00m[33;43m experiments found, loading by [39;49m[38;5;132;43;01m{[39;49;00m[43mworkers_num[49m[38;5;132;43;01m}[39;49;00m[33;43m workers.[39;49m[33;43m"[39;49m[43m,[49m
+[32m   1378[39m [43m[49m[43m)[49m
+[32m   1380[39m [38;5;28;01mreturn[39;00m quene
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/qurry/tools/parallelmanager.py:164[39m, in [36mParallelManager.process_map[39m[34m(self, func, args_list, bar_format, bar_ascii, **kwargs)[39m
+[32m    161[39m actual_bar_format = result_setup[[33m"[39m[33mbar_format[39m[33m"[39m]
+[32m    162[39m actual_ascii = result_setup[[33m"[39m[33mascii[39m[33m"[39m]
+[32m--> [39m[32m164[39m [38;5;28;01mreturn[39;00m [43mprocess_map[49m[43m([49m
+[32m    165[39m [43m    [49m[43mfunc[49m[43m,[49m
+[32m    166[39m [43m    [49m[43m*[49m[38;5;28;43mzip[39;49m[43m([49m[43m*[49m[43margs_list[49m[43m)[49m[43m,[49m
+[32m    167[39m [43m    [49m[43m*[49m[43m*[49m[43mkwargs[49m[43m,[49m
+[32m    168[39m [43m    [49m[43mascii[49m[43m=[49m[43mactual_ascii[49m[43m,[49m
+[32m    169[39m [43m    [49m[43mbar_format[49m[43m=[49m[43mactual_bar_format[49m[43m,[49m
+[32m    170[39m [43m    [49m[43mmax_workers[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43mworkers_num[49m[43m,[49m
+[32m    171[39m [43m[49m[43m)[49m
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/tqdm/contrib/concurrent.py:105[39m, in [36mprocess_map[39m[34m(fn, *iterables, **tqdm_kwargs)[39m
+[32m    103[39m     tqdm_kwargs = tqdm_kwargs.copy()
+[32m    104[39m     tqdm_kwargs[[33m"[39m[33mlock_name[39m[33m"[39m] = [33m"[39m[33mmp_lock[39m[33m"[39m
+[32m--> [39m[32m105[39m [38;5;28;01mreturn[39;00m [43m_executor_map[49m[43m([49m[43mProcessPoolExecutor[49m[43m,[49m[43m [49m[43mfn[49m[43m,[49m[43m [49m[43m*[49m[43miterables[49m[43m,[49m[43m [49m[43m*[49m[43m*[49m[43mtqdm_kwargs[49m[43m)[49m
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/tqdm/contrib/concurrent.py:51[39m, in [36m_executor_map[39m[34m(PoolExecutor, fn, *iterables, **tqdm_kwargs)[39m
+[32m     47[39m [38;5;28;01mwith[39;00m ensure_lock(tqdm_class, lock_name=lock_name) [38;5;28;01mas[39;00m lk:
+[32m     48[39m     [38;5;66;03m# share lock in case workers are already using `tqdm`[39;00m
+[32m     49[39m     [38;5;28;01mwith[39;00m PoolExecutor(max_workers=max_workers, initializer=tqdm_class.set_lock,
+[32m     50[39m                       initargs=(lk,)) [38;5;28;01mas[39;00m ex:
+[32m---> [39m[32m51[39m         [38;5;28;01mreturn[39;00m [38;5;28;43mlist[39;49m[43m([49m[43mtqdm_class[49m[43m([49m[43mex[49m[43m.[49m[43mmap[49m[43m([49m[43mfn[49m[43m,[49m[43m [49m[43m*[49m[43miterables[49m[43m,[49m[43m [49m[43mchunksize[49m[43m=[49m[43mchunksize[49m[43m)[49m[43m,[49m[43m [49m[43m*[49m[43m*[49m[43mkwargs[49m[43m)[49m[43m)[49m
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/tqdm/std.py:1181[39m, in [36mtqdm.__iter__[39m[34m(self)[39m
+[32m   1178[39m time = [38;5;28mself[39m._time
+[32m   1180[39m [38;5;28;01mtry[39;00m:
+[32m-> [39m[32m1181[39m [43m    [49m[38;5;28;43;01mfor[39;49;00m[43m [49m[43mobj[49m[43m [49m[38;5;129;43;01min[39;49;00m[43m [49m[43miterable[49m[43m:[49m
+[32m   1182[39m [43m        [49m[38;5;28;43;01myield[39;49;00m[43m [49m[43mobj[49m
+[32m   1183[39m [43m        [49m[38;5;66;43;03m# Update and possibly print the progressbar.[39;49;00m
+[32m   1184[39m [43m        [49m[38;5;66;43;03m# Note: does not call self.update(1) for speed optimisation.[39;49;00m
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/concurrent/futures/process.py:636[39m, in [36m_chain_from_iterable_of_lists[39m[34m(iterable)[39m
+[32m    630[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34m_chain_from_iterable_of_lists[39m(iterable):
+[32m    631[39m [38;5;250m    [39m[33;03m"""[39;00m
+[32m    632[39m [33;03m    Specialized implementation of itertools.chain.from_iterable.[39;00m
+[32m    633[39m [33;03m    Each item in *iterable* should be a list.  This function is[39;00m
+[32m    634[39m [33;03m    careful not to keep references to yielded objects.[39;00m
+[32m    635[39m [33;03m    """[39;00m
+[32m--> [39m[32m636[39m [43m    [49m[38;5;28;43;01mfor[39;49;00m[43m [49m[43melement[49m[43m [49m[38;5;129;43;01min[39;49;00m[43m [49m[43miterable[49m[43m:[49m
+[32m    637[39m [43m        [49m[43melement[49m[43m.[49m[43mreverse[49m[43m([49m[43m)[49m
+[32m    638[39m [43m        [49m[38;5;28;43;01mwhile[39;49;00m[43m [49m[43melement[49m[43m:[49m
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/concurrent/futures/_base.py:619[39m, in [36mExecutor.map.<locals>.result_iterator[39m[34m()[39m
+[32m    616[39m [38;5;28;01mwhile[39;00m fs:
+[32m    617[39m     [38;5;66;03m# Careful not to keep a reference to the popped future[39;00m
+[32m    618[39m     [38;5;28;01mif[39;00m timeout [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m:
+[32m--> [39m[32m619[39m         [38;5;28;01myield[39;00m [43m_result_or_cancel[49m[43m([49m[43mfs[49m[43m.[49m[43mpop[49m[43m([49m[43m)[49m[43m)[49m
+[32m    620[39m     [38;5;28;01melse[39;00m:
+[32m    621[39m         [38;5;28;01myield[39;00m _result_or_cancel(fs.pop(), end_time - time.monotonic())
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/concurrent/futures/_base.py:317[39m, in [36m_result_or_cancel[39m[34m(***failed resolving arguments***)[39m
+[32m    315[39m [38;5;28;01mtry[39;00m:
+[32m    316[39m     [38;5;28;01mtry[39;00m:
+[32m--> [39m[32m317[39m         [38;5;28;01mreturn[39;00m [43mfut[49m[43m.[49m[43mresult[49m[43m([49m[43mtimeout[49m[43m)[49m
+[32m    318[39m     [38;5;28;01mfinally[39;00m:
+[32m    319[39m         fut.cancel()
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/concurrent/futures/_base.py:456[39m, in [36mFuture.result[39m[34m(self, timeout)[39m
+[32m    454[39m     [38;5;28;01mraise[39;00m CancelledError()
+[32m    455[39m [38;5;28;01melif[39;00m [38;5;28mself[39m._state == FINISHED:
+[32m--> [39m[32m456[39m     [38;5;28;01mreturn[39;00m [38;5;28;43mself[39;49m[43m.[49m[43m__get_result[49m[43m([49m[43m)[49m
+[32m    457[39m [38;5;28;01melse[39;00m:
+[32m    458[39m     [38;5;28;01mraise[39;00m [38;5;167;01mTimeoutError[39;00m()
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/concurrent/futures/_base.py:401[39m, in [36mFuture.__get_result[39m[34m(self)[39m
+[32m    399[39m [38;5;28;01mif[39;00m [38;5;28mself[39m._exception:
+[32m    400[39m     [38;5;28;01mtry[39;00m:
+[32m--> [39m[32m401[39m         [38;5;28;01mraise[39;00m [38;5;28mself[39m._exception
+[32m    402[39m     [38;5;28;01mfinally[39;00m:
+[32m    403[39m         [38;5;66;03m# Break a reference cycle with the exception in self._exception[39;00m
+[32m    404[39m         [38;5;28mself[39m = [38;5;28;01mNone[39;00m
+
+[31mTypeError[39m: AnalysisInput.__new__() missing 1 required positional argument: 'bitstring_mapping'
+
