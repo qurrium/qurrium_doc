@@ -1,2 +1,6 @@
 jupyter-book
 ghp-import
+jupyter
+# formatting
+black
+black[jupyter]

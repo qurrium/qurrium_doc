@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   build_book_and_deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v3
@@ -37,6 +37,10 @@ jobs:
           python -m pip install -r requirements.txt
           python -m pip install -r requirements-test.txt
           python -m pip install -r requirements-book.txt
+
+      - name: Format Python files
+        run: |
+          black .
 
       - name: Build the book
         run: |

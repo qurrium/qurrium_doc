@@ -22,7 +22,7 @@ pip install -i https://test.pypi.org/simple/ qurry
 
 ## Maually by Git
 
-**Qurry can be installed from source**. Since this package relies on Cython and Rust, **it requires "C complier" and "Rust complier" which you need to install first.**
+**Qurry can be installed from source**. Since this package relies on Rust, **it requires "Rust complier" which you need to install first.**
 
 To install rust, run the following command:
 
@@ -33,7 +33,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 Then install `qurry` by the following command:
 
 ```bash
-git clone https://github.com/harui2019/qurry-preview.git --recursive
+git clone https://github.com/harui2019/qurrium.git
 cd qurry
 pip install -e .
 ```

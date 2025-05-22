@@ -4,29 +4,46 @@
 root: intro
 format: jb-book
 parts:
-  - caption: Introduction
+  - caption: Basic Usage
     chapters:
-    - file: main/01_Basic_Usage
-    - file: main/02_The_True_Power_of_Qurry
+      - file: main/basic_usage
+      - file: main/qurrent_1_1_HadamardTest/basic_usage
+      - file: main/qurrent_1_2_RandomizedMeasure/basic_usage
+      - file: main/qurrent_1_4_ClassicalShadow/basic_usage
+      - file: main/qurrium_0_1_WavesExecuter/basic_usage
+  - caption: Multi-Output
+    chapters:
+      - file: main/multi_output
+      - file: main/qurrent_1_1_HadamardTest/multi_output
+      - file: main/qurrent_1_2_RandomizedMeasure/multi_output
+      - file: main/qurrent_1_4_ClassicalShadow/multi_output
+      - file: main/qurrium_0_1_WavesExecuter/multi_output
   - caption: Post Processing
     chapters:
-    - file: postprocessing/00_Just_Post_Processing
-      sections: 
-        - file: postprocessing/01_EntropyMeasure/1a_EntropyRandomizedMeasure
-        - file: postprocessing/01_EntropyMeasure/1b_EntropyRandomizedMeasure
-        - file: postprocessing/01_EntropyMeasure/2_EntropyHadamardTest
-        - file: postprocessing/01_EntropyMeasure/3a_EntropyRandomizedMeasureV1
-        - file: postprocessing/01_EntropyMeasure/3b_EntropyRandomizedMeasureV1
-        - file: postprocessing/02_WaveFunctionOverlap/1_EchoListenRandomized
-        - file: postprocessing/02_WaveFunctionOverlap/2_EchoListenHadamard
-        - file: postprocessing/02_WaveFunctionOverlap/3_EchoListenRandomizedV1
+      - file: postprocessing/00_Just_Post_Processing
+      - file: postprocessing/01_EntropyMeasure/1a_EntropyRandomizedMeasure
+      - file: postprocessing/01_EntropyMeasure/1b_EntropyRandomizedMeasure
+      - file: postprocessing/01_EntropyMeasure/2_EntropyHadamardTest
+      - file: postprocessing/01_EntropyMeasure/3a_EntropyRandomizedMeasureV1
+      - file: postprocessing/01_EntropyMeasure/3b_EntropyRandomizedMeasureV1
+      - file: postprocessing/02_WaveFunctionOverlap/1_EchoListenRandomized
+      - file: postprocessing/02_WaveFunctionOverlap/2_EchoListenHadamard
+      - file: postprocessing/02_WaveFunctionOverlap/3_EchoListenRandomizedV1
   - caption: Other Features
     chapters:
-    - file: appendix/A01_BackendManager
+      - file: appendix/A01_BackendManager
   - caption: Installation and Support
     chapters:
-    - file: installation/01_Installation
-    - file: installation/02_Platform_Support
+      - file: installation/01_Installation
+      - file: installation/02_Platform_Support
   - caption: About
     chapters:
-    - file: about/01_About_Qurry
+      - file: about/01_About_Qurry
+  - caption: Deprecated
+    chapters:
+      - file: deprecated/index
+      - file: deprecated/0.10.x/index
+        sections:
+          - file: deprecated/0.10.x/01_Basic_Usage
+          - file: deprecated/0.10.x/02_The_True_Power_of_Qurry
+          - file: deprecated/0.10.x/A01_BackendManager
