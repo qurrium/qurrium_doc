@@ -13,7 +13,7 @@ parts:
       - file: main/qurrium_0_1_WavesExecuter/basic_usage
   - caption: Multi-Output
     chapters:
-      - file: main/multi_ouput
+      - file: main/multi_output
       - file: main/qurrent_1_1_HadamardTest/multi_output
       - file: main/qurrent_1_2_RandomizedMeasure/multi_output
       - file: main/qurrent_1_4_ClassicalShadow/multi_output
