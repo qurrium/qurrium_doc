@@ -11,8 +11,10 @@ exclude_patterns:
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
+  only_build_toc_files: true
   exclude_patterns:
-    - "deprecated/**"
+    - "01_Basic_Usage.ipynb"
+    - "02_The_True_Power_of_Qurry.ipynb"
     - "**BackendManager.ipynb"
 
 # Define the name of the latex output file for PDF builds
