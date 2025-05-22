@@ -1,0 +1,129 @@
+Traceback (most recent call last):
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+exp1_id, exp1_files_info = experiment_shadow.exps[exp1].write(
+    save_location=".",  # where to save files
+)
+exp1_files_info
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mRemoteTraceback[39m                           Traceback (most recent call last)
+[31mRemoteTraceback[39m: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 51, in starmapstar
+    return list(itertools.starmap(args[0], args[1]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/capsule/quick.py", line 39, in quickJSON
+    return quickJSONExport(
+           ^^^^^^^^^^^^^^^^
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/capsule/jsonablize.py", line 132, in quickJSONExport
+    json.dump(content, file, indent=indent, ensure_ascii=False)
+  File "/usr/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable
+"""
+
+The above exception was the direct cause of the following exception:
+
+[31mTypeError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[19][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m exp1_id, exp1_files_info = [43mexperiment_shadow[49m[43m.[49m[43mexps[49m[43m[[49m[43mexp1[49m[43m][49m[43m.[49m[43mwrite[49m[43m([49m
+[32m      2[39m [43m    [49m[43msave_location[49m[43m=[49m[33;43m"[39;49m[33;43m.[39;49m[33;43m"[39;49m[43m,[49m[43m  [49m[38;5;66;43;03m# where to save files[39;49;00m
+[32m      3[39m [43m)[49m
+[32m      4[39m exp1_files_info
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/experiment/experiment.py:1229[39m, in [36mExperimentPrototype.write[39m[34m(self, save_location, mode, indent, encoding, jsonable, export_transpiled_circuit, qurryinfo_hold_access, multiprocess, pbar)[39m
+[32m   1224[39m [38;5;66;03m# experiment write[39;00m
+[32m   1225[39m export_material = [38;5;28mself[39m.export(
+[32m   1226[39m     save_location=save_location,
+[32m   1227[39m     export_transpiled_circuit=export_transpiled_circuit,
+[32m   1228[39m )
+[32m-> [39m[32m1229[39m exp_id, files = [43mexport_material[49m[43m.[49m[43mwrite[49m[43m([49m
+[32m   1230[39m [43m    [49m[43mmode[49m[43m=[49m[43mmode[49m[43m,[49m
+[32m   1231[39m [43m    [49m[43mindent[49m[43m=[49m[43mindent[49m[43m,[49m
+[32m   1232[39m [43m    [49m[43mencoding[49m[43m=[49m[43mencoding[49m[43m,[49m
+[32m   1233[39m [43m    [49m[43mjsonable[49m[43m=[49m[43mjsonable[49m[43m,[49m
+[32m   1234[39m [43m    [49m[43mmute[49m[43m=[49m[38;5;28;43;01mTrue[39;49;00m[43m,[49m
+[32m   1235[39m [43m    [49m[43mmultiprocess[49m[43m=[49m[43mmultiprocess[49m[43m,[49m
+[32m   1236[39m [43m    [49m[43mpbar[49m[43m=[49m[43mpbar[49m[43m,[49m
+[32m   1237[39m [43m[49m[43m)[49m
+[32m   1238[39m [38;5;28;01massert[39;00m [33m"[39m[33mqurryinfo[39m[33m"[39m [38;5;129;01min[39;00m files, [33m"[39m[33mqurryinfo location is not in files.[39m[33m"[39m
+[32m   1239[39m [38;5;66;03m# qurryinfo write[39;00m
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/experiment/export.py:269[39m, in [36mExport.write[39m[34m(self, mode, indent, encoding, jsonable, mute, multiprocess, pbar)[39m
+[32m    267[39m [38;5;28;01mif[39;00m multiprocess:
+[32m    268[39m     pool = ParallelManager()
+[32m--> [39m[32m269[39m     [43mpool[49m[43m.[49m[43mstarmap[49m[43m([49m
+[32m    270[39m [43m        [49m[43mquickJSON[49m[43m,[49m
+[32m    271[39m [43m        [49m[43m[[49m
+[32m    272[39m [43m            [49m[43m([49m
+[32m    273[39m [43m                [49m[43mcontent[49m[43m,[49m
+[32m    274[39m [43m                [49m[38;5;28;43mstr[39;49m[43m([49m[43mPath[49m[43m([49m[38;5;28;43mself[39;49m[43m.[49m[43mcommons[49m[43m[[49m[33;43m"[39;49m[33;43msave_location[39;49m[33;43m"[39;49m[43m][49m[43m)[49m[43m [49m[43m/[49m[43m [49m[38;5;28;43mself[39;49m[43m.[49m[43mfiles[49m[43m[[49m[43mfilekey[49m[43m][49m[43m)[49m[43m,[49m
+[32m    275[39m [43m                [49m[43mmode[49m[43m,[49m
+[32m    276[39m [43m                [49m[43mindent[49m[43m,[49m
+[32m    277[39m [43m                [49m[43mencoding[49m[43m,[49m
+[32m    278[39m [43m                [49m[43mjsonable[49m[43m,[49m
+[32m    279[39m [43m                [49m[43mPath[49m[43m([49m[33;43m"[39;49m[33;43m./[39;49m[33;43m"[39;49m[43m)[49m[43m,[49m
+[32m    280[39m [43m                [49m[43mmute[49m[43m,[49m
+[32m    281[39m [43m            [49m[43m)[49m
+[32m    282[39m [43m            [49m[38;5;28;43;01mfor[39;49;00m[43m [49m[43mfilekey[49m[43m,[49m[43m [49m[43mcontent[49m[43m [49m[38;5;129;43;01min[39;49;00m[43m [49m[43mexport_set[49m[43m.[49m[43mitems[49m[43m([49m[43m)[49m
+[32m    283[39m [43m        [49m[43m][49m[43m,[49m
+[32m    284[39m [43m    [49m[43m)[49m
+[32m    285[39m [38;5;28;01melse[39;00m:
+[32m    286[39m     [38;5;28;01mfor[39;00m filekey, content [38;5;129;01min[39;00m export_set.items():
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/parallelmanager.py:131[39m, in [36mParallelManager.starmap[39m[34m(self, func, args_list, start_method)[39m
+[32m    128[39m pool_instance = get_context(start_method).Pool [38;5;28;01mif[39;00m start_method [38;5;28;01melse[39;00m Pool
+[32m    130[39m [38;5;28;01mwith[39;00m pool_instance(processes=[38;5;28mself[39m.workers_num, **[38;5;28mself[39m.pool_kwargs) [38;5;28;01mas[39;00m pool:
+[32m--> [39m[32m131[39m     [38;5;28;01mreturn[39;00m [43mpool[49m[43m.[49m[43mstarmap[49m[43m([49m[43mfunc[49m[43m,[49m[43m [49m[43margs_list[49m[43m)[49m
+
+[36mFile [39m[32m/usr/lib/python3.12/multiprocessing/pool.py:375[39m, in [36mPool.starmap[39m[34m(self, func, iterable, chunksize)[39m
+[32m    369[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mstarmap[39m([38;5;28mself[39m, func, iterable, chunksize=[38;5;28;01mNone[39;00m):
+[32m    370[39m [38;5;250m    [39m[33;03m'''[39;00m
+[32m    371[39m [33;03m    Like `map()` method but the elements of the `iterable` are expected to[39;00m
+[32m    372[39m [33;03m    be iterables as well and will be unpacked as arguments. Hence[39;00m
+[32m    373[39m [33;03m    `func` and (a, b) becomes func(a, b).[39;00m
+[32m    374[39m [33;03m    '''[39;00m
+[32m--> [39m[32m375[39m     [38;5;28;01mreturn[39;00m [38;5;28;43mself[39;49m[43m.[49m[43m_map_async[49m[43m([49m[43mfunc[49m[43m,[49m[43m [49m[43miterable[49m[43m,[49m[43m [49m[43mstarmapstar[49m[43m,[49m[43m [49m[43mchunksize[49m[43m)[49m[43m.[49m[43mget[49m[43m([49m[43m)[49m
+
+[36mFile [39m[32m/usr/lib/python3.12/multiprocessing/pool.py:774[39m, in [36mApplyResult.get[39m[34m(self, timeout)[39m
+[32m    772[39m     [38;5;28;01mreturn[39;00m [38;5;28mself[39m._value
+[32m    773[39m [38;5;28;01melse[39;00m:
+[32m--> [39m[32m774[39m     [38;5;28;01mraise[39;00m [38;5;28mself[39m._value
+
+[31mTypeError[39m: Object of type int64 is not JSON serializable
+

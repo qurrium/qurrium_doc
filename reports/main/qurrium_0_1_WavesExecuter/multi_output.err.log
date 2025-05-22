@@ -1,0 +1,82 @@
+Traceback (most recent call last):
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+multi_exps1_reades = experiment_workflow.multiRead(
+    save_location=".",
+    summoner_name="qurrium.waves_executer.001",
+)
+------------------
+
+----- stdout -----
+| Retrieve qurrium.waves_executer.001...
+| at: qurrium.waves_executer.001
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mFileNotFoundError[39m                         Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[8][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m multi_exps1_reades = [43mexperiment_workflow[49m[43m.[49m[43mmultiRead[49m[43m([49m
+[32m      2[39m [43m    [49m[43msave_location[49m[43m=[49m[33;43m"[39;49m[33;43m.[39;49m[33;43m"[39;49m[43m,[49m
+[32m      3[39m [43m    [49m[43msummoner_name[49m[43m=[49m[33;43m"[39;49m[33;43mqurrium.waves_executer.001[39;49m[33;43m"[39;49m[43m,[49m
+[32m      4[39m [43m)[49m
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/qurrium.py:823[39m, in [36mQurriumPrototype.multiRead[39m[34m(self, summoner_name, save_location, reload, read_from_tarfile)[39m
+[32m    818[39m [38;5;28;01melif[39;00m [38;5;28mlen[39m(filtered_summoner_id_names) > [32m1[39m:
+[32m    819[39m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
+[32m    820[39m         [33mf[39m[33m"[39m[33mMultiple multimanager found for [39m[33m'[39m[38;5;132;01m{[39;00msummoner_name[38;5;132;01m}[39;00m[33m'[39m[33m: [39m[38;5;132;01m{[39;00mfiltered_summoner_id_names[38;5;132;01m}[39;00m[33m.[39m[33m"[39m
+[32m    821[39m     )
+[32m--> [39m[32m823[39m current_multimanager = [43mMultiManager[49m[43m.[49m[43mread[49m[43m([49m
+[32m    824[39m [43m    [49m[43msummoner_name[49m[43m=[49m[43msummoner_name[49m[43m,[49m
+[32m    825[39m [43m    [49m[43mexperiment_instance[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43mexperiment_instance[49m[43m,[49m
+[32m    826[39m [43m    [49m[43msave_location[49m[43m=[49m[43msave_location[49m[43m,[49m
+[32m    827[39m [43m    [49m[43mis_read_or_retrieve[49m[43m=[49m[38;5;28;43;01mTrue[39;49;00m[43m,[49m
+[32m    828[39m [43m    [49m[43mread_from_tarfile[49m[43m=[49m[43mread_from_tarfile[49m[43m,[49m
+[32m    829[39m [43m[49m[43m)[49m
+[32m    830[39m [38;5;28mself[39m.multimanagers[current_multimanager.summoner_id] = current_multimanager
+[32m    832[39m [38;5;28;01mreturn[39;00m current_multimanager.multicommons.summoner_id
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/multimanager/multimanager.py:543[39m, in [36mMultiManager.read[39m[34m(cls, summoner_name, experiment_instance, save_location, is_read_or_retrieve, read_from_tarfile, encoding)[39m
+[32m    541[39m old_files = {}
+[32m    542[39m beforewards = Before.read(export_location=naming_complex.export_location, version=[33m"[39m[33mv7[39m[33m"[39m)
+[32m--> [39m[32m543[39m afterwards = [43mAfter[49m[43m.[49m[43mread[49m[43m([49m[43mexport_location[49m[43m=[49m[43mnaming_complex[49m[43m.[49m[43mexport_location[49m[43m,[49m[43m [49m[43mversion[49m[43m=[49m[33;43m"[39;49m[33;43mv7[39;49m[33;43m"[39;49m[43m)[49m
+[32m    544[39m quantity_container = QuantityContainer()
+[32m    545[39m [38;5;28;01massert[39;00m [38;5;28misinstance[39m(files[[33m"[39m[33mquantity[39m[33m"[39m], [38;5;28mdict[39m), [33m"[39m[33mQuantity must be dict.[39m[33m"[39m
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/multimanager/afterwards.py:54[39m, in [36mAfter.read[39m[34m(cls, export_location, file_location, version)[39m
+[32m     52[39m     [38;5;28;01massert[39;00m [38;5;28misinstance[39m(file_location[[33m"[39m[33mallCounts[39m[33m"[39m], [38;5;28mstr[39m), [33m"[39m[33mallCounts must be Path[39m[33m"[39m
+[32m     53[39m     real_file_location = Path(file_location[[33m"[39m[33mallCounts[39m[33m"[39m]).name
+[32m---> [39m[32m54[39m tmp: [38;5;28mdict[39m[[38;5;28mstr[39m, [38;5;28mlist[39m[[38;5;28mdict[39m[[38;5;28mstr[39m, [38;5;28mint[39m]]] = [43mquickRead[49m[43m([49m
+[32m     55[39m [43m    [49m[43mfilename[49m[43m=[49m[43m([49m[43mreal_file_location[49m[43m)[49m[43m,[49m
+[32m     56[39m [43m    [49m[43msave_location[49m[43m=[49m[43mexport_location[49m[43m,[49m
+[32m     57[39m [43m[49m[43m)[49m
+[32m     58[39m [38;5;28;01mreturn[39;00m [38;5;28mcls[39m(
+[32m     59[39m     retrievedResult=TagList(),
+[32m     60[39m     allCounts=tmp,
+[32m     61[39m )
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/capsule/quick.py:114[39m, in [36mquickRead[39m[34m(filename, save_location, filetype, encoding)[39m
+[32m    111[39m     save_location = Path(save_location)
+[32m    113[39m [38;5;28;01mif[39;00m filetype == [33m"[39m[33mjson[39m[33m"[39m:
+[32m--> [39m[32m114[39m     [38;5;28;01mwith[39;00m [38;5;28;43mopen[39;49m[43m([49m[43msave_location[49m[43m [49m[43m/[49m[43m [49m[43mfilename[49m[43m,[49m[43m [49m[33;43m"[39;49m[33;43mr[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[43mencoding[49m[43m=[49m[43mencoding[49m[43m)[49m [38;5;28;01mas[39;00m File:
+[32m    115[39m         [38;5;28;01mreturn[39;00m json.load(File)
+[32m    117[39m [38;5;28;01melse[39;00m:
+
+[31mFileNotFoundError[39m: [Errno 2] No such file or directory: 'qurrium.waves_executer.001/allCounts.json'
+

@@ -2,20 +2,20 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta property="og:title" content="01 - Basic Usage of Qurry" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://docs.qurrium.org/main/01_Basic_Usage.html" />
+<meta property="og:url" content="https://docs.qurrium.org/deprecated/0.10.x/01_Basic_Usage.html" />
 <meta property="og:site_name" content="Project name not set" />
 <meta property="og:description" content="In Qurry, we use the instance of Qurry to store quantum circuits, experiments, build experiment, and excute them on local simulator or pending to the real quantum machine on IBM. In this chapter (o..." />
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image" content="https://docs.qurrium.org/_images/social_previews/summary_main_01_Basic_Usage_96387828.png" />
-<meta property="og:image:alt" content="In Qurry, we use the instance of Qurry to store quantum circuits, experiments, build experiment, and excute them on local simulator or pending to the real qu..." />
+<meta property="og:image" content="https://docs.qurrium.org/_images/social_previews/summary_deprecated_0.10.x_01_Basic_Usage_96387828.png" />
+<meta property="og:image:alt" content="In Qurry, we use the instance of Qurry to store quantum circuits, experiments, build experiment, and excute them on local simulator or pending to the real quantum machine on IBM. In this chapter (o..." />
 <meta name="description" content="In Qurry, we use the instance of Qurry to store quantum circuits, experiments, build experiment, and excute them on local simulator or pending to the real quantum machine on IBM. In this chapter (o..." />
 <meta name="twitter:card" content="summary_large_image" />
 <!-- HTML Meta Tags -->
@@ -49,41 +49,41 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-NH0TTCC2VZ"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -92,7 +92,7 @@
                 gtag('config', 'G-NH0TTCC2VZ');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -101,11 +101,11 @@
                 gtag('config', 'G-NH0TTCC2VZ');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'main/01_Basic_Usage';</script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'deprecated/0.10.x/01_Basic_Usage';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="02 - The True Power of Qurry" href="02_The_True_Power_of_Qurry.html" />
-    <link rel="prev" title="Qurry 🍛 - The python package for measuring quantum entanglement entropy and wave function overlap." href="../intro.html" />
+    <link rel="prev" title="Deprecated After 0.10.x" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -137,7 +137,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="../search.html"
+      action="../../search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -186,7 +186,7 @@
     
   
 
-<a class="navbar-brand logo" href="../intro.html">
+<a class="navbar-brand logo" href="../../intro.html">
   
   
   
@@ -212,42 +212,61 @@
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../intro.html">
+                <a class="reference internal" href="../../intro.html">
                     Qurry 🍛 - The python package for measuring quantum entanglement entropy and wave function overlap.
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">01 - Basic Usage of Qurry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_The_True_Power_of_Qurry.html">02 - The True Power of Qurry</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Basic Usage</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../main/basic_usage.html">Basic Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_1_HadamardTest/basic_usage.html">1.1 EntropyMeasure - Hadamard Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_2_RandomizedMeasure/basic_usage.html">1.2 EntropyMeasure - Randomized Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_4_ClassicalShadow/basic_usage.html">1.4 EntropyMeasure - Classical Shadow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrium_0_1_WavesExecuter/basic_usage.html">0.1 QurriumBasic - WavesExecuter</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Multi-Output</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../main/multi_output.html">Multi-Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_1_HadamardTest/multi_output.html">1.1 EntropyMeasure - Hadamard Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_2_RandomizedMeasure/multi_output.html">1.2 EntropyMeasure - Randomized Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_4_ClassicalShadow/multi_output.html">1.4 EntropyMeasure - Classical Shadow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrium_0_1_WavesExecuter/multi_output.html">0.1 QurriumBasic - WavesExecuter</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Post Processing</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../postprocessing/00_Just_Post_Processing.html">Just Post-Processing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../postprocessing/01_EntropyMeasure/1a_EntropyRandomizedMeasure.html">1.1a EntropyMeasure - Randomized Measurement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../postprocessing/01_EntropyMeasure/1b_EntropyRandomizedMeasure.html">1.1b EntropyMeasure - Randomized Measurement with Error Mitigation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../postprocessing/01_EntropyMeasure/2_EntropyHadamardTest.html">1.2 EntropyMeasure - Hadamard Test</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../postprocessing/01_EntropyMeasure/3a_EntropyRandomizedMeasureV1.html">1.3a EntropyMeasure - Randomized Measurement V1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../postprocessing/01_EntropyMeasure/3b_EntropyRandomizedMeasureV1.html">1.3b EntropyMeasure - Randomized Measurement V1 with Error Mitigation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../postprocessing/02_WaveFunctionOverlap/1_EchoListenRandomized.html">2.1 WaveFunctionOverlap - Randomized Measurement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../postprocessing/02_WaveFunctionOverlap/2_EchoListenHadamard.html">2.2 WaveFunctionOverlap - Hadamaed Test</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../postprocessing/02_WaveFunctionOverlap/3_EchoListenRandomizedV1.html">2.3 WaveFunctionOverlap - Randomized Measurement V1</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../postprocessing/00_Just_Post_Processing.html">Just Post-Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../postprocessing/01_EntropyMeasure/1a_EntropyRandomizedMeasure.html">1.1a EntropyMeasure - Randomized Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../postprocessing/01_EntropyMeasure/1b_EntropyRandomizedMeasure.html">1.1b EntropyMeasure - Randomized Measurement with Error Mitigation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../postprocessing/01_EntropyMeasure/2_EntropyHadamardTest.html">1.2 EntropyMeasure - Hadamard Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../postprocessing/01_EntropyMeasure/3a_EntropyRandomizedMeasureV1.html">1.3a EntropyMeasure - Randomized Measurement V1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../postprocessing/01_EntropyMeasure/3b_EntropyRandomizedMeasureV1.html">1.3b EntropyMeasure - Randomized Measurement V1 with Error Mitigation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../postprocessing/02_WaveFunctionOverlap/1_EchoListenRandomized.html">2.1 WaveFunctionOverlap - Randomized Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../postprocessing/02_WaveFunctionOverlap/2_EchoListenHadamard.html">2.2 WaveFunctionOverlap - Hadamaed Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../postprocessing/02_WaveFunctionOverlap/3_EchoListenRandomizedV1.html">2.3 WaveFunctionOverlap - Randomized Measurement V1</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Other Features</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../appendix/A01_BackendManager.html">Appendix 01 - Backend Wrapper and Backend Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/A01_BackendManager.html">Appendix 01 - Backend Wrapper</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Installation and Support</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../installation/01_Installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../installation/02_Platform_Support.html">Platform Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/01_Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/02_Platform_Support.html">Platform Support</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../about/01_About_Qurry.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/01_About_Qurry.html">About</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Deprecated</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Deprecated Documents</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Deprecated After 0.10.x</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">01 - Basic Usage of Qurry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_The_True_Power_of_Qurry.html">02 - The True Power of Qurry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="A01_BackendManager.html">Appendix 01 - Backend Wrapper and Backend Manager</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -302,7 +321,7 @@
       
       
       
-      <li><a href="../_sources/main/01_Basic_Usage.ipynb" target="_blank"
+      <li><a href="../../_sources/deprecated/0.10.x/01_Basic_Usage.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -433,11 +452,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Current Version: 0.10.2
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
-  from .autonotebook import tqdm as notebook_tqdm
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Current Version: 0.10.1.dev2
 </pre></div>
 </div>
 </div>
@@ -613,7 +628,7 @@ q_7: ─────
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;TrivialParamagnet&#39;: &lt;qurry.recipe.simple.paramagnet.TrivialParamagnet object at 0x7f2a85d22c30&gt;, &#39;GHZ&#39;: &lt;qurry.recipe.simple.cat.GHZ object at 0x7f2a85c09e20&gt;, 2: &lt;qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x7f2a85d21b50&gt;}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;TrivialParamagnet&#39;: &lt;qurry.recipe.simple.paramagnet.TrivialParamagnet object at 0x77ed4a2909e0&gt;, &#39;GHZ&#39;: &lt;qurry.recipe.simple.cat.GHZ object at 0x77ed49b6a1e0&gt;, 2: &lt;qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x77ed8c3770e0&gt;}
 </pre></div>
 </div>
 </div>
@@ -643,7 +658,7 @@ q_7: ─────
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;d1aeda27-dab9-4516-8fe8-5f88a36eda2e&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;a3a10311-22cb-4568-a5ed-86b4b9e78cd3&#39;
 </pre></div>
 </div>
 </div>
@@ -669,7 +684,7 @@ q_7: ─────
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;fd7f61a0-26e5-4f7e-b668-4bdec5314b2b&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;8afa4488-54ed-4fc1-82e2-ab44ba556fd9&#39;
 </pre></div>
 </div>
 </div>
@@ -684,7 +699,7 @@ q_7: ─────
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;d1aeda27-dab9-4516-8fe8-5f88a36eda2e&#39;: &lt;EntropyMeasureRandomizedExperiment(exp_id=d1aeda27-dab9-4516-8fe8-5f88a36eda2e, EntropyMeasureRandomizedArguments(exp_name=&#39;experiment.N_U_100.qurrent_randomized&#39;, times=100, qubits_measured=[0, 1, 2, 3, 4, 5, 6, 7], registers_mapping={0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}, actual_num_qubits=8, unitary_located=[0, 1, 2, 3, 4, 5, 6, 7], random_unitary_seeds=None), Commonparams(exp_id=&#39;d1aeda27-dab9-4516-8fe8-5f88a36eda2e&#39;, target_keys=[&#39;TrivialParamagnet&#39;], shots=1024, backend=&lt;qiskit.providers.basic_provider.basic_simulator.BasicSimulator object at 0x7f2aa4257890&gt;, run_args={}, transpile_args={}, tags=(), default_analysis=[], save_location=PosixPath(&#39;.&#39;), filename=&#39;&#39;, files={}, serial=None, summoner_id=None, summoner_name=None, datetimes=DatetimeDict({&#39;build&#39;: &#39;2025-03-21 14:55:07&#39;, &#39;run.001&#39;: &#39;2025-03-21 14:55:07&#39;})), unused_args_num=0, analysis_num=0)&gt;, &#39;fd7f61a0-26e5-4f7e-b668-4bdec5314b2b&#39;: &lt;EntropyMeasureRandomizedExperiment(exp_id=fd7f61a0-26e5-4f7e-b668-4bdec5314b2b, EntropyMeasureRandomizedArguments(exp_name=&#39;experiment.N_U_100.qurrent_randomized&#39;, times=100, qubits_measured=[0, 1, 2, 3, 4, 5, 6, 7], registers_mapping={0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}, actual_num_qubits=8, unitary_located=[0, 1, 2, 3, 4, 5, 6, 7], random_unitary_seeds=None), Commonparams(exp_id=&#39;fd7f61a0-26e5-4f7e-b668-4bdec5314b2b&#39;, target_keys=[&#39;TrivialParamagnet&#39;], shots=1024, backend=&lt;BasicSimulator(&#39;basic_simulator&#39;)&gt;, run_args={}, transpile_args={}, tags=(), default_analysis=[], save_location=PosixPath(&#39;.&#39;), filename=&#39;&#39;, files={}, serial=None, summoner_id=None, summoner_name=None, datetimes=DatetimeDict({&#39;build&#39;: &#39;2025-03-21 14:55:11&#39;, &#39;run.001&#39;: &#39;2025-03-21 14:55:11&#39;})), unused_args_num=0, analysis_num=0)&gt;}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;a3a10311-22cb-4568-a5ed-86b4b9e78cd3&#39;: &lt;EntropyMeasureRandomizedExperiment(exp_id=a3a10311-22cb-4568-a5ed-86b4b9e78cd3, EntropyMeasureRandomizedArguments(exp_name=&#39;experiment.N_U_100.qurrent_randomized&#39;, times=100, qubits_measured=[0, 1, 2, 3, 4, 5, 6, 7], registers_mapping={0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}, actual_num_qubits=8, unitary_located=[0, 1, 2, 3, 4, 5, 6, 7], random_unitary_seeds=None), Commonparams(exp_id=&#39;a3a10311-22cb-4568-a5ed-86b4b9e78cd3&#39;, target_keys=[&#39;TrivialParamagnet&#39;], shots=1024, backend=&lt;qiskit.providers.basic_provider.basic_simulator.BasicSimulator object at 0x77ed8c377da0&gt;, run_args={}, transpile_args={}, tags=(), default_analysis=[], save_location=PosixPath(&#39;.&#39;), filename=&#39;&#39;, files={}, serial=None, summoner_id=None, summoner_name=None, datetimes=DatetimeDict({&#39;build&#39;: &#39;2024-12-10 18:47:06&#39;, &#39;run.001&#39;: &#39;2024-12-10 18:47:06&#39;})), unused_args_num=0, analysis_num=0)&gt;, &#39;8afa4488-54ed-4fc1-82e2-ab44ba556fd9&#39;: &lt;EntropyMeasureRandomizedExperiment(exp_id=8afa4488-54ed-4fc1-82e2-ab44ba556fd9, EntropyMeasureRandomizedArguments(exp_name=&#39;experiment.N_U_100.qurrent_randomized&#39;, times=100, qubits_measured=[0, 1, 2, 3, 4, 5, 6, 7], registers_mapping={0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}, actual_num_qubits=8, unitary_located=[0, 1, 2, 3, 4, 5, 6, 7], random_unitary_seeds=None), Commonparams(exp_id=&#39;8afa4488-54ed-4fc1-82e2-ab44ba556fd9&#39;, target_keys=[&#39;TrivialParamagnet&#39;], shots=1024, backend=&lt;AerSimulator(&#39;aer_simulator&#39;)&gt;, run_args={}, transpile_args={}, tags=(), default_analysis=[], save_location=PosixPath(&#39;.&#39;), filename=&#39;&#39;, files={}, serial=None, summoner_id=None, summoner_name=None, datetimes=DatetimeDict({&#39;build&#39;: &#39;2024-12-10 18:47:08&#39;, &#39;run.001&#39;: &#39;2024-12-10 18:47:08&#39;})), unused_args_num=0, analysis_num=0)&gt;}
 </pre></div>
 </div>
 </div>
@@ -700,9 +715,9 @@ q_7: ─────
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WaveContainer({
-  &#39;TrivialParamagnet&#39;: &lt;qurry.recipe.simple.paramagnet.TrivialParamagnet object at 0x7f2a85d22c30&gt;,
-  &#39;GHZ&#39;: &lt;qurry.recipe.simple.cat.GHZ object at 0x7f2a85c09e20&gt;,
-  2: &lt;qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x7f2a85d21b50&gt;})
+  &#39;TrivialParamagnet&#39;: &lt;qurry.recipe.simple.paramagnet.TrivialParamagnet object at 0x77ed4a2909e0&gt;,
+  &#39;GHZ&#39;: &lt;qurry.recipe.simple.cat.GHZ object at 0x77ed49b6a1e0&gt;,
+  2: &lt;qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x77ed8c3770e0&gt;})
 </pre></div>
 </div>
 </div>
@@ -714,9 +729,9 @@ q_7: ─────
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;EntropyMeasureRandomizedExperiment(exp_id=d1aeda27-dab9-4516-8fe8-5f88a36eda2e, 
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;EntropyMeasureRandomizedExperiment(exp_id=a3a10311-22cb-4568-a5ed-86b4b9e78cd3, 
   EntropyMeasureRandomizedArguments(exp_name=&#39;experiment.N_U_100.qurrent_randomized&#39;, times=100, qubits_measured=[0, 1, 2, 3, 4, 5, 6, 7], registers_mapping={0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}, actual_num_qubits=8, unitary_located=[0, 1, 2, 3, 4, 5, 6, 7], random_unitary_seeds=None),
-  Commonparams(exp_id=&#39;d1aeda27-dab9-4516-8fe8-5f88a36eda2e&#39;, target_keys=[&#39;TrivialParamagnet&#39;], shots=1024, backend=&lt;qiskit.providers.basic_provider.basic_simulator.BasicSimulator object at 0x7f2aa4257890&gt;, run_args={}, transpile_args={}, tags=(), default_analysis=[], save_location=PosixPath(&#39;.&#39;), filename=&#39;&#39;, files={}, serial=None, summoner_id=None, summoner_name=None, datetimes=DatetimeDict({&#39;build&#39;: &#39;2025-03-21 14:55:07&#39;, &#39;run.001&#39;: &#39;2025-03-21 14:55:07&#39;})),
+  Commonparams(exp_id=&#39;a3a10311-22cb-4568-a5ed-86b4b9e78cd3&#39;, target_keys=[&#39;TrivialParamagnet&#39;], shots=1024, backend=&lt;qiskit.providers.basic_provider.basic_simulator.BasicSimulator object at 0x77ed8c377da0&gt;, run_args={}, transpile_args={}, tags=(), default_analysis=[], save_location=PosixPath(&#39;.&#39;), filename=&#39;&#39;, files={}, serial=None, summoner_id=None, summoner_name=None, datetimes=DatetimeDict({&#39;build&#39;: &#39;2024-12-10 18:47:06&#39;, &#39;run.001&#39;: &#39;2024-12-10 18:47:06&#39;})),
   unused_args_num=0,
   analysis_num=0))&gt;
 </pre></div>
@@ -730,7 +745,7 @@ q_7: ─────
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> # EntropyMeasureRandomizedExperiment with exp_id=d1aeda27-dab9-4516-8fe8-5f88a36eda2e
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> # EntropyMeasureRandomizedExperiment with exp_id=a3a10311-22cb-4568-a5ed-86b4b9e78cd3
  - arguments
    - exp_name --------------------- experiment.N_U_100.qurrent_randomized
    - times ------------------------ 100
@@ -740,10 +755,10 @@ q_7: ─────
    - unitary_located -------------- [0, 1, 2, 3, 4, 5, 6, 7]
    - random_unitary_seeds --------- None
  - commonparams
-   - exp_id ----------------------- d1aeda27-dab9-4516-8fe8-5f88a36eda2e   # This is ID is generated by Qurry which is different from &#39;job_id&#39; for pending.
+   - exp_id ----------------------- a3a10311-22cb-4568-a5ed-86b4b9e78cd3   # This is ID is generated by Qurry which is different from &#39;job_id&#39; for pending.
    - target_keys ------------------ [&#39;TrivialParamagnet&#39;]
    - shots ------------------------ 1024
-   - backend ---------------------- &lt;qiskit.providers.basic_provider.basic_simulator.BasicSimulator object at 0x7f2aa4257890&gt;
+   - backend ---------------------- &lt;qiskit.providers.basic_provider.basic_simulator.BasicSimulator object at 0x77ed8c377da0&gt;
    - run_args --------------------- {}
    - transpile_args --------------- {}
    - tags ------------------------- ()
@@ -754,7 +769,7 @@ q_7: ─────
    - serial ----------------------- None
    - summoner_id ------------------ None
    - summoner_name ---------------- None
-   - datetimes -------------------- {&#39;build&#39;: &#39;2025-03-21 14:55:07&#39;, &#39;run.001&#39;: &#39;2025-03-21 14:55:07&#39;}
+   - datetimes -------------------- {&#39;build&#39;: &#39;2024-12-10 18:47:06&#39;, &#39;run.001&#39;: &#39;2024-12-10 18:47:06&#39;}
  - outfields -------------------- 0 ........  # Number of unused arguments.
  - beforewards
    - target ----------------------- 1 ........  # Number of target
@@ -762,7 +777,7 @@ q_7: ─────
    - circuit ---------------------- 100 ......  # Number of circuit
    - circuit_qasm ----------------- 100 ......  # Number of circuit_qasm
    - fig_original ----------------- 0 ........  # Number of fig_original
-   - job_id ----------------------- 7f17fc34-afba-4bd6-bd30-71a055476560
+   - job_id ----------------------- 86914036-0571-4295-bb1b-a05a91c6a2c4
    - exp_name --------------------- experiment.N_U_100.qurrent_randomized
    - side_product ----------------- 2 ........  # Number of side_product
  - afterwards
@@ -801,6 +816,8 @@ q_7: ─────
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "82a9451f02c345dbb7231c1ca4644e83", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "435f12a5534b418ba7d2640432c6a4d5", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <ul class="simple">
 <li><p>The <code class="docutils literal notranslate"><span class="pre">analyze</span></code> will return the result of this analysis.</p></li>
@@ -812,238 +829,237 @@ q_7: ─────
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>({&#39;purity&#39;: np.float64(0.9604236793518066),
-  &#39;entropy&#39;: np.float64(0.05825712107508832),
-  &#39;puritySD&#39;: np.float64(0.44474075696771276),
-  &#39;entropySD&#39;: np.float64(0.6680648325867582),
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>({&#39;purity&#39;: np.float64(0.9987123489379883),
+  &#39;entropy&#39;: np.float64(0.0018588848560976375),
+  &#39;puritySD&#39;: np.float64(0.4431059443310547),
+  &#39;entropySD&#39;: np.float64(0.6400909622822005),
   &#39;num_classical_registers&#39;: 8,
   &#39;classical_registers&#39;: [0],
   &#39;classical_registers_actually&#39;: [0],
-  &#39;all_system_source&#39;: &quot;AnalysisHeader(serial=0, datetime=&#39;2025-03-21 14:55:11&#39;, summoner=None, log={})&quot;,
-  &#39;purityAllSys&#39;: np.float64(1.1528078079223634),
-  &#39;entropyAllSys&#39;: np.float64(-0.20515201197568533),
-  &#39;puritySDAllSys&#39;: np.float64(1.488920548498253),
-  &#39;entropySDAllSys&#39;: np.float64(1.8633273272735915),
+  &#39;all_system_source&#39;: &quot;AnalysisHeader(serial=0, datetime=&#39;2024-12-10 18:47:09&#39;, summoner=None, log={})&quot;,
+  &#39;purityAllSys&#39;: np.float64(1.1991012763977051),
+  &#39;entropyAllSys&#39;: np.float64(-0.2619535142869742),
+  &#39;puritySDAllSys&#39;: np.float64(1.8081965056331681),
+  &#39;entropySDAllSys&#39;: np.float64(2.1755261069078426),
   &#39;num_classical_registers_all_sys&#39;: 8,
   &#39;classical_registers_all_sys&#39;: None,
   &#39;classical_registers_actually_all_sys&#39;: [0, 1, 2, 3, 4, 5, 6, 7],
-  &#39;errorRate&#39;: np.float64(-0.07396790186110361),
-  &#39;mitigatedPurity&#39;: np.float64(0.8991857667803161),
-  &#39;mitigatedEntropy&#39;: np.float64(0.15330889558071514),
+  &#39;errorRate&#39;: np.float64(-0.09539128429840622),
+  &#39;mitigatedPurity&#39;: np.float64(0.915634472076233),
+  &#39;mitigatedEntropy&#39;: np.float64(0.1271563159635713),
   &#39;counts_num&#39;: 100,
-  &#39;taking_time&#39;: 0.00071214,
-  &#39;taking_time_all_sys&#39;: 0.016932959,
+  &#39;taking_time&#39;: 0.000847842,
+  &#39;taking_time_all_sys&#39;: 0.03056876,
   &#39;counts_used&#39;: None,
   &#39;input&#39;: {&#39;num_qubits&#39;: 8,
    &#39;selected_qubits&#39;: [0],
    &#39;registers_mapping&#39;: {0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7},
-   &#39;bitstring_mapping&#39;: {0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7},
    &#39;shots&#39;: 1024,
    &#39;unitary_located&#39;: [0, 1, 2, 3, 4, 5, 6, 7]},
   &#39;header&#39;: {&#39;serial&#39;: 1,
-   &#39;datetime&#39;: &#39;2025-03-21 14:55:11&#39;,
+   &#39;datetime&#39;: &#39;2024-12-10 18:47:09&#39;,
    &#39;summoner&#39;: None,
    &#39;log&#39;: {}}},
- {&#39;purityCells&#39;: {61: 1.8626708984375,
-   53: 1.100677490234375,
-   91: 0.5981960296630859,
-   73: 0.5070095062255859,
-   55: 1.6587142944335938,
-   92: 1.34375,
-   87: 1.674215316772461,
-   50: 0.7043972015380859,
-   57: 0.500091552734375,
-   4: 0.8268489837646484,
-   62: 1.8570919036865234,
-   46: 0.7694454193115234,
-   41: 1.633108139038086,
-   27: 0.8897914886474609,
-   31: 0.7744350433349609,
-   23: 0.5423202514648438,
-   22: 0.5003662109375,
-   26: 0.6073970794677734,
-   38: 0.5384750366210938,
-   33: 1.1383285522460938,
-   54: 1.1850204467773438,
-   64: 0.8547725677490234,
-   76: 0.5463485717773438,
-   82: 0.5173091888427734,
-   17: 1.0357894897460938,
-   43: 1.2833480834960938,
-   13: 0.540374755859375,
-   59: 0.5473842620849609,
-   78: 1.5190048217773438,
-   98: 0.5038681030273438,
-   93: 1.936239242553711,
-   14: 0.6042842864990234,
-   6: 0.5655117034912109,
-   7: 0.5453243255615234,
-   63: 0.961517333984375,
-   84: 1.504568099975586,
-   2: 0.818695068359375,
-   20: 1.622945785522461,
-   94: 0.5212917327880859,
-   16: 1.9650497436523438,
-   21: 0.5607051849365234,
-   96: 0.5179443359375,
-   36: 1.225189208984375,
-   49: 0.5005722045898438,
-   77: 0.935882568359375,
-   72: 0.5796737670898438,
-   47: 1.1498470306396484,
-   97: 1.100677490234375,
-   42: 0.9079189300537109,
-   81: 1.5190048217773438,
-   30: 0.53662109375,
-   11: 1.34375,
-   86: 0.8351058959960938,
-   74: 1.071380615234375,
-   10: 0.59375,
-   15: 1.014984130859375,
-   37: 1.5190048217773438,
-   9: 1.27490234375,
-   19: 1.291839599609375,
-   58: 1.9133968353271484,
-   66: 0.7620468139648438,
-   85: 0.6236476898193359,
-   32: 0.6874599456787109,
-   45: 0.5100936889648438,
-   51: 0.8000698089599609,
-   52: 0.7220668792724609,
-   1: 1.8738632202148438,
-   40: 0.6520290374755859,
-   65: 0.787109375,
-   8: 1.1850204467773438,
-   3: 1.157583236694336,
-   24: 1.4063949584960938,
-   39: 0.5054988861083984,
-   29: 0.5143051147460938,
-   35: 0.6576766967773438,
-   69: 1.5977401733398438,
-   0: 0.6012172698974609,
-   18: 0.8897914886474609,
-   60: 0.8957881927490234,
-   75: 0.7845516204833984,
-   80: 0.8214015960693359,
-   88: 0.5705013275146484,
-   34: 0.5143051147460938,
-   79: 1.840423583984375,
-   83: 0.5054988861083984,
-   99: 0.5192489624023438,
-   5: 0.5413417816162109,
-   89: 0.5463485717773438,
-   90: 0.7596035003662109,
-   67: 1.9020442962646484,
-   44: 1.0932846069335938,
-   70: 0.9845485687255859,
-   71: 0.961517333984375,
-   68: 1.8963851928710938,
-   95: 0.5280380249023438,
-   48: 0.757171630859375,
-   56: 1.134511947631836,
-   25: 0.5433101654052734,
-   12: 0.6270351409912109,
-   28: 1.3837642669677734},
-  &#39;purityCellsAllSys&#39;: {51: 1.9570751190185547,
-   14: 0.4940509796142578,
-   36: 1.4333362579345703,
-   85: 0.3507823944091797,
-   73: 0.5837841033935547,
-   89: 0.9015007019042969,
-   38: 0.43012428283691406,
-   31: 1.9898910522460938,
-   61: 0.40334510803222656,
-   75: 10.904220581054688,
-   76: 0.6797084808349609,
-   19: 1.0740375518798828,
-   18: 0.33603668212890625,
-   43: 0.9966583251953125,
-   69: 1.0566654205322266,
-   86: 0.561187744140625,
-   90: 0.5036869049072266,
-   70: 0.6349906921386719,
-   50: 0.3338623046875,
-   2: 0.9990386962890625,
-   12: 0.5032005310058594,
-   88: 1.0975780487060547,
-   84: 0.39483642578125,
-   6: 0.5632762908935547,
-   7: 0.5487537384033203,
-   91: 1.270355224609375,
-   97: 3.3115921020507812,
-   34: 0.574371337890625,
-   24: 0.4105205535888672,
-   46: 0.4152870178222656,
-   99: 1.4382171630859375,
-   54: 0.9190845489501953,
-   68: 1.4019508361816406,
-   52: 1.630706787109375,
-   23: 0.3022422790527344,
-   13: 0.5561981201171875,
-   32: 4.683052062988281,
-   59: 0.37805938720703125,
-   79: 0.9430656433105469,
-   28: 0.8520393371582031,
-   57: 0.24129676818847656,
-   47: 1.2025260925292969,
-   20: 0.9662284851074219,
-   10: 0.39757728576660156,
-   37: 3.9223403930664062,
-   44: 0.8389186859130859,
-   71: 0.49684906005859375,
-   8: 0.4133014678955078,
-   4: 1.7936592102050781,
-   49: 8.798439025878906,
-   60: 0.9120006561279297,
-   33: 1.23419189453125,
-   65: 0.9769515991210938,
-   96: 0.5807571411132812,
-   41: 1.3688945770263672,
-   35: 0.40207481384277344,
-   42: 0.31363487243652344,
-   3: 1.53759765625,
-   5: 1.0451698303222656,
-   63: 0.6823348999023438,
-   45: 0.3795814514160156,
-   67: 3.7070770263671875,
-   72: 1.122995376586914,
-   17: 1.3126640319824219,
-   29: 0.6183395385742188,
-   74: 0.8841743469238281,
-   80: 1.470987319946289,
-   81: 1.1582317352294922,
-   92: 1.0582447052001953,
-   30: 0.8449382781982422,
-   98: 0.6255779266357422,
-   11: 0.5326118469238281,
-   87: 0.3609619140625,
-   25: 0.24447250366210938,
-   66: 2.706125259399414,
-   83: 0.44587135314941406,
-   26: 0.20609474182128906,
-   78: 0.3357734680175781,
-   39: 1.0567970275878906,
-   93: 1.1838264465332031,
-   16: 0.9254703521728516,
-   82: 0.8341751098632812,
-   48: 0.5253505706787109,
-   95: 0.21112442016601562,
-   27: 0.30141258239746094,
-   64: 1.5065383911132812,
-   55: 0.23178672790527344,
-   1: 0.7641201019287109,
-   22: 0.6270084381103516,
-   53: 0.6862030029296875,
-   15: 0.4048786163330078,
-   62: 0.33275794982910156,
-   21: 2.4002647399902344,
-   58: 2.6508331298828125,
-   94: 0.9957256317138672,
-   56: 0.602569580078125,
-   0: 0.3045482635498047,
-   9: 0.40976524353027344,
-   77: 2.3860855102539062,
-   40: 0.9817008972167969}})
+ {&#39;purityCells&#39;: {40: 0.5642929077148438,
+   79: 1.433929443359375,
+   14: 1.6433162689208984,
+   97: 0.639251708984375,
+   31: 1.9941463470458984,
+   28: 0.9140529632568359,
+   55: 0.5837764739990234,
+   63: 0.8462753295898438,
+   95: 0.7243270874023438,
+   2: 0.59375,
+   57: 1.397308349609375,
+   35: 1.0605831146240234,
+   78: 0.8434658050537109,
+   66: 1.628021240234375,
+   90: 1.192962646484375,
+   93: 0.5048122406005859,
+   8: 1.3046627044677734,
+   21: 0.8691635131835938,
+   51: 0.6595821380615234,
+   81: 1.5238399505615234,
+   34: 0.5066146850585938,
+   20: 1.0896053314208984,
+   22: 1.8963851928710938,
+   69: 1.4063949584960938,
+   29: 0.738128662109375,
+   32: 1.2130184173583984,
+   64: 0.74755859375,
+   17: 1.4063949584960938,
+   36: 0.5256862640380859,
+   52: 0.7311763763427734,
+   70: 0.7820053100585938,
+   67: 1.3089599609375,
+   85: 0.5473842620849609,
+   25: 1.4950008392333984,
+   30: 0.910980224609375,
+   83: 0.7948513031005859,
+   98: 0.7922592163085938,
+   43: 1.4571895599365234,
+   45: 0.507415771484375,
+   16: 0.61865234375,
+   5: 1.3349838256835938,
+   86: 0.5179443359375,
+   76: 0.6895370483398438,
+   48: 0.6895370483398438,
+   12: 1.397308349609375,
+   68: 1.1850204467773438,
+   49: 1.9534912109375,
+   3: 0.8079833984375,
+   11: 1.4201107025146484,
+   50: 0.504486083984375,
+   44: 0.9140529632568359,
+   73: 0.5002803802490234,
+   89: 0.5160732269287109,
+   9: 0.5018539428710938,
+   7: 0.8988037109375,
+   71: 1.504568099975586,
+   94: 1.924795150756836,
+   74: 0.500823974609375,
+   0: 1.5238399505615234,
+   47: 1.365865707397461,
+   53: 0.5054988861083984,
+   82: 0.5070095062255859,
+   39: 1.7801876068115234,
+   96: 1.6587142944335938,
+   80: 0.587982177734375,
+   38: 1.633108139038086,
+   26: 1.208984375,
+   33: 0.5692367553710938,
+   56: 0.738128662109375,
+   42: 0.5384750366210938,
+   27: 0.5249252319335938,
+   1: 0.5304927825927734,
+   54: 1.365865707397461,
+   15: 1.5580062866210938,
+   6: 0.5105800628662109,
+   10: 1.27490234375,
+   37: 1.2049617767333984,
+   41: 1.5777816772460938,
+   4: 0.8519287109375,
+   24: 1.4478511810302734,
+   23: 1.1810665130615234,
+   19: 0.6937255859375,
+   58: 1.622945785522461,
+   46: 0.5313339233398438,
+   13: 0.5494899749755859,
+   59: 0.5121078491210938,
+   62: 1.34375,
+   72: 0.5212917327880859,
+   77: 0.7451839447021484,
+   61: 0.7220668792724609,
+   84: 0.5256862640380859,
+   87: 0.818695068359375,
+   91: 0.9018306732177734,
+   92: 0.5865688323974609,
+   65: 0.7547512054443359,
+   88: 1.8626708984375,
+   60: 0.961517333984375,
+   75: 1.7747802734375,
+   99: 0.5304927825927734,
+   18: 1.1081161499023438},
+  &#39;purityCellsAllSys&#39;: {9: 0.5015869140625,
+   55: 1.8210563659667969,
+   8: 0.45592498779296875,
+   30: 0.4346504211425781,
+   44: 0.2949066162109375,
+   48: 0.48480987548828125,
+   64: 1.1688461303710938,
+   83: 1.0022830963134766,
+   14: 1.9827728271484375,
+   74: 0.2658557891845703,
+   56: 0.25869178771972656,
+   80: 0.4380378723144531,
+   88: 0.5158405303955078,
+   89: 0.4319438934326172,
+   4: 1.3132133483886719,
+   54: 1.0835933685302734,
+   36: 0.9837493896484375,
+   96: 0.3741168975830078,
+   50: 0.6471157073974609,
+   46: 0.4304218292236328,
+   57: 1.1557483673095703,
+   41: 11.897796630859375,
+   34: 1.3467674255371094,
+   93: 0.6749362945556641,
+   69: 0.47066497802734375,
+   70: 1.5453739166259766,
+   97: 1.7998390197753906,
+   35: 3.2424468994140625,
+   39: 1.6913604736328125,
+   63: 0.4530353546142578,
+   66: 0.6228199005126953,
+   18: 0.3466682434082031,
+   85: 1.0640811920166016,
+   24: 0.8782749176025391,
+   62: 0.7085361480712891,
+   79: 0.4570751190185547,
+   28: 1.4733848571777344,
+   58: 2.089282989501953,
+   76: 0.5401420593261719,
+   67: 0.45238304138183594,
+   73: 0.3982810974121094,
+   25: 1.5118484497070312,
+   52: 0.220062255859375,
+   72: 0.7843303680419922,
+   23: 0.6792335510253906,
+   53: 0.5717792510986328,
+   1: 0.31281089782714844,
+   2: 0.30553245544433594,
+   45: 0.9720592498779297,
+   16: 0.6489582061767578,
+   75: 0.5529251098632812,
+   31: 0.3030261993408203,
+   98: 0.40665245056152344,
+   94: 7.182842254638672,
+   99: 0.7224349975585938,
+   17: 1.195791244506836,
+   77: 0.5078811645507812,
+   20: 0.43328285217285156,
+   47: 0.7893314361572266,
+   61: 0.7287693023681641,
+   95: 0.3158092498779297,
+   40: 0.23296546936035156,
+   60: 0.754364013671875,
+   43: 0.35345458984375,
+   32: 1.6320457458496094,
+   0: 1.6565589904785156,
+   51: 0.9141979217529297,
+   27: 0.37776756286621094,
+   11: 2.475566864013672,
+   5: 3.3891143798828125,
+   65: 0.2814826965332031,
+   10: 0.32830047607421875,
+   29: 1.7620964050292969,
+   12: 1.0688247680664062,
+   26: 0.6914100646972656,
+   6: 0.7026081085205078,
+   37: 11.737762451171875,
+   38: 0.40242958068847656,
+   59: 0.42724037170410156,
+   81: 2.4322738647460938,
+   87: 0.5375442504882812,
+   91: 1.7009963989257812,
+   3: 0.2790679931640625,
+   21: 2.0022850036621094,
+   13: 0.46693992614746094,
+   19: 0.5928363800048828,
+   22: 1.0964622497558594,
+   7: 0.4310569763183594,
+   42: 1.6267929077148438,
+   68: 0.49636268615722656,
+   71: 0.5072116851806641,
+   84: 0.4036827087402344,
+   86: 1.9796886444091797,
+   49: 0.7637882232666016,
+   15: 4.9591064453125,
+   78: 0.6581478118896484,
+   33: 0.29428863525390625,
+   90: 0.2992725372314453,
+   92: 1.4756851196289062,
+   82: 0.3747692108154297}})
 </pre></div>
 </div>
 </div>
@@ -1056,8 +1072,8 @@ q_7: ─────
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>EntropyMeasureRandomizedAnalysis with serial=0, AnalysisInput(num_qubits=8, selected_qubits=[3, 4], registers_mapping={0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}, bitstring_mapping={0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}, shots=1024, unitary_located=[0, 1, 2, 3, 4, 5, 6, 7]), AnalysisContent(purity=1.1578743362426758, entropy=-0.2114786865593834, and others), 0 unused arguments
-AnalysisHeader(serial=0, datetime=&#39;2025-03-21 14:55:11&#39;, summoner=None, log={})
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>EntropyMeasureRandomizedAnalysis with serial=0, AnalysisInput(num_qubits=8, selected_qubits=[3, 4], registers_mapping={0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}, shots=1024, unitary_located=[0, 1, 2, 3, 4, 5, 6, 7]), AnalysisContent(purity=1.0170664024353027, entropy=-0.02441387323355597, and others), 0 unused arguments
+AnalysisHeader(serial=0, datetime=&#39;2024-12-10 18:47:09&#39;, summoner=None, log={})
 </pre></div>
 </div>
 </div>
@@ -1075,8 +1091,8 @@ AnalysisHeader(serial=0, datetime=&#39;2025-03-21 14:55:11&#39;, summoner=None, 
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AnalysisContainer(length=2, {0{...}, 1{...}})
-EntropyMeasureRandomizedAnalysis with serial=0, AnalysisInput(num_qubits=8, selected_qubits=[3, 4], registers_mapping={0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}, bitstring_mapping={0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}, shots=1024, unitary_located=[0, 1, 2, 3, 4, 5, 6, 7]), AnalysisContent(purity=1.1578743362426758, entropy=-0.2114786865593834, and others), 0 unused arguments
-AnalysisHeader(serial=0, datetime=&#39;2025-03-21 14:55:11&#39;, summoner=None, log={})
+EntropyMeasureRandomizedAnalysis with serial=0, AnalysisInput(num_qubits=8, selected_qubits=[3, 4], registers_mapping={0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}, shots=1024, unitary_located=[0, 1, 2, 3, 4, 5, 6, 7]), AnalysisContent(purity=1.0170664024353027, entropy=-0.02441387323355597, and others), 0 unused arguments
+AnalysisHeader(serial=0, datetime=&#39;2024-12-10 18:47:09&#39;, summoner=None, log={})
 </pre></div>
 </div>
 </div>
@@ -1101,36 +1117,35 @@ AnalysisHeader(serial=0, datetime=&#39;2025-03-21 14:55:11&#39;, summoner=None, 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;purity&#39;: np.float64(1.1578743362426758),
- &#39;entropy&#39;: np.float64(-0.2114786865593834),
- &#39;puritySD&#39;: np.float64(0.7975232048470025),
- &#39;entropySD&#39;: np.float64(0.9937026295619491),
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;purity&#39;: np.float64(1.0170664024353027),
+ &#39;entropy&#39;: np.float64(-0.02441387323355597),
+ &#39;puritySD&#39;: np.float64(0.7149922703351819),
+ &#39;entropySD&#39;: np.float64(1.01420693891432),
  &#39;num_classical_registers&#39;: 8,
  &#39;classical_registers&#39;: [3, 4],
  &#39;classical_registers_actually&#39;: [3, 4],
  &#39;all_system_source&#39;: &#39;independent&#39;,
- &#39;purityAllSys&#39;: np.float64(1.1528078079223634),
- &#39;entropyAllSys&#39;: np.float64(-0.20515201197568533),
- &#39;puritySDAllSys&#39;: np.float64(1.488920548498253),
- &#39;entropySDAllSys&#39;: np.float64(1.8633273272735915),
+ &#39;purityAllSys&#39;: np.float64(1.1991012763977051),
+ &#39;entropyAllSys&#39;: np.float64(-0.2619535142869742),
+ &#39;puritySDAllSys&#39;: np.float64(1.8081965056331681),
+ &#39;entropySDAllSys&#39;: np.float64(2.1755261069078426),
  &#39;num_classical_registers_all_sys&#39;: 8,
  &#39;classical_registers_all_sys&#39;: None,
  &#39;classical_registers_actually_all_sys&#39;: [0, 1, 2, 3, 4, 5, 6, 7],
- &#39;errorRate&#39;: np.float64(-0.07396790186110361),
- &#39;mitigatedPurity&#39;: np.float64(1.0371239671326458),
- &#39;mitigatedEntropy&#39;: np.float64(-0.05258834938578064),
+ &#39;errorRate&#39;: np.float64(-0.09539128429840622),
+ &#39;mitigatedPurity&#39;: np.float64(0.8892848300278511),
+ &#39;mitigatedEntropy&#39;: np.float64(0.1692825194159182),
  &#39;counts_num&#39;: 100,
- &#39;taking_time&#39;: 0.001218706,
- &#39;taking_time_all_sys&#39;: 0.016932959,
+ &#39;taking_time&#39;: 0.001836907,
+ &#39;taking_time_all_sys&#39;: 0.03056876,
  &#39;counts_used&#39;: None,
  &#39;input&#39;: {&#39;num_qubits&#39;: 8,
   &#39;selected_qubits&#39;: [3, 4],
   &#39;registers_mapping&#39;: {0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7},
-  &#39;bitstring_mapping&#39;: {0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7},
   &#39;shots&#39;: 1024,
   &#39;unitary_located&#39;: [0, 1, 2, 3, 4, 5, 6, 7]},
  &#39;header&#39;: {&#39;serial&#39;: 0,
-  &#39;datetime&#39;: &#39;2025-03-21 14:55:11&#39;,
+  &#39;datetime&#39;: &#39;2024-12-10 18:47:09&#39;,
   &#39;summoner&#39;: None,
   &#39;log&#39;: {}}}
 </pre></div>
@@ -1147,206 +1162,206 @@ AnalysisHeader(serial=0, datetime=&#39;2025-03-21 14:55:11&#39;, summoner=None, 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;purityCells&#39;: {26: 0.43365478515625,
-  98: 1.4332046508789062,
-  92: 3.4094390869140625,
-  91: 1.0038280487060547,
-  22: 0.9753150939941406,
-  97: 0.9884471893310547,
-  35: 0.5754814147949219,
-  69: 1.4238662719726562,
-  62: 0.7509536743164062,
-  33: 1.6574115753173828,
-  40: 1.9422607421875,
-  1: 1.6786460876464844,
-  46: 0.4495506286621094,
-  48: 0.45490074157714844,
-  60: 0.9419441223144531,
-  30: 0.9279022216796875,
-  32: 1.6638259887695312,
-  27: 0.9148674011230469,
-  84: 0.9788398742675781,
-  13: 0.45741844177246094,
-  79: 0.8792304992675781,
-  7: 0.3895378112792969,
-  95: 0.43573760986328125,
-  9: 0.6163825988769531,
-  21: 1.2599067687988281,
-  56: 0.39746856689453125,
-  45: 0.7372493743896484,
-  0: 0.3893089294433594,
-  65: 0.5361137390136719,
-  70: 0.7424049377441406,
-  90: 0.9947242736816406,
-  76: 0.8239097595214844,
-  43: 0.3170909881591797,
-  78: 0.9261970520019531,
-  71: 0.39044189453125,
-  14: 0.7998771667480469,
-  38: 0.8443145751953125,
-  41: 0.3957977294921875,
-  85: 0.6700611114501953,
-  52: 1.6602039337158203,
-  19: 0.9570503234863281,
-  89: 0.8746986389160156,
-  51: 0.6763839721679688,
-  3: 1.0877304077148438,
-  11: 2.1118507385253906,
-  36: 3.5037612915039062,
-  42: 1.4101448059082031,
-  17: 2.2202377319335938,
-  59: 0.3317222595214844,
-  16: 0.8020858764648438,
-  31: 0.4824180603027344,
-  87: 0.6107063293457031,
-  5: 1.2605419158935547,
-  47: 1.173440933227539,
-  68: 1.0383834838867188,
-  83: 0.5206584930419922,
-  88: 2.619670867919922,
-  6: 1.0291709899902344,
-  4: 1.1774063110351562,
-  58: 1.6235713958740234,
-  81: 2.7255859375,
-  72: 1.6122245788574219,
-  12: 1.6113548278808594,
-  57: 0.9174079895019531,
-  82: 2.6674270629882812,
-  73: 0.7119522094726562,
-  39: 0.8713741302490234,
-  93: 2.1606369018554688,
-  94: 0.2945690155029297,
-  86: 1.3966522216796875,
-  28: 1.1843643188476562,
-  2: 0.9934539794921875,
-  25: 2.079143524169922,
-  44: 0.31921958923339844,
-  18: 0.7676105499267578,
-  66: 2.575725555419922,
-  10: 1.4046859741210938,
-  24: 0.3668212890625,
-  80: 0.8353195190429688,
-  29: 0.6702556610107422,
-  96: 0.9638481140136719,
-  99: 3.500448226928711,
-  53: 0.46907997131347656,
-  61: 0.5399417877197266,
-  23: 1.7228775024414062,
-  67: 0.8342266082763672,
-  74: 0.6654777526855469,
-  63: 0.4972724914550781,
-  50: 0.2791309356689453,
-  37: 1.9854907989501953,
-  8: 0.3888740539550781,
-  15: 0.5057353973388672,
-  64: 1.5394515991210938,
-  20: 1.705780029296875,
-  49: 3.4499969482421875,
-  34: 1.1165752410888672,
-  75: 3.435382843017578,
-  55: 0.2787647247314453,
-  77: 2.4295616149902344,
-  54: 0.5343799591064453},
- &#39;purityCellsAllSys&#39;: {51: 1.9570751190185547,
-  14: 0.4940509796142578,
-  36: 1.4333362579345703,
-  85: 0.3507823944091797,
-  73: 0.5837841033935547,
-  89: 0.9015007019042969,
-  38: 0.43012428283691406,
-  31: 1.9898910522460938,
-  61: 0.40334510803222656,
-  75: 10.904220581054688,
-  76: 0.6797084808349609,
-  19: 1.0740375518798828,
-  18: 0.33603668212890625,
-  43: 0.9966583251953125,
-  69: 1.0566654205322266,
-  86: 0.561187744140625,
-  90: 0.5036869049072266,
-  70: 0.6349906921386719,
-  50: 0.3338623046875,
-  2: 0.9990386962890625,
-  12: 0.5032005310058594,
-  88: 1.0975780487060547,
-  84: 0.39483642578125,
-  6: 0.5632762908935547,
-  7: 0.5487537384033203,
-  91: 1.270355224609375,
-  97: 3.3115921020507812,
-  34: 0.574371337890625,
-  24: 0.4105205535888672,
-  46: 0.4152870178222656,
-  99: 1.4382171630859375,
-  54: 0.9190845489501953,
-  68: 1.4019508361816406,
-  52: 1.630706787109375,
-  23: 0.3022422790527344,
-  13: 0.5561981201171875,
-  32: 4.683052062988281,
-  59: 0.37805938720703125,
-  79: 0.9430656433105469,
-  28: 0.8520393371582031,
-  57: 0.24129676818847656,
-  47: 1.2025260925292969,
-  20: 0.9662284851074219,
-  10: 0.39757728576660156,
-  37: 3.9223403930664062,
-  44: 0.8389186859130859,
-  71: 0.49684906005859375,
-  8: 0.4133014678955078,
-  4: 1.7936592102050781,
-  49: 8.798439025878906,
-  60: 0.9120006561279297,
-  33: 1.23419189453125,
-  65: 0.9769515991210938,
-  96: 0.5807571411132812,
-  41: 1.3688945770263672,
-  35: 0.40207481384277344,
-  42: 0.31363487243652344,
-  3: 1.53759765625,
-  5: 1.0451698303222656,
-  63: 0.6823348999023438,
-  45: 0.3795814514160156,
-  67: 3.7070770263671875,
-  72: 1.122995376586914,
-  17: 1.3126640319824219,
-  29: 0.6183395385742188,
-  74: 0.8841743469238281,
-  80: 1.470987319946289,
-  81: 1.1582317352294922,
-  92: 1.0582447052001953,
-  30: 0.8449382781982422,
-  98: 0.6255779266357422,
-  11: 0.5326118469238281,
-  87: 0.3609619140625,
-  25: 0.24447250366210938,
-  66: 2.706125259399414,
-  83: 0.44587135314941406,
-  26: 0.20609474182128906,
-  78: 0.3357734680175781,
-  39: 1.0567970275878906,
-  93: 1.1838264465332031,
-  16: 0.9254703521728516,
-  82: 0.8341751098632812,
-  48: 0.5253505706787109,
-  95: 0.21112442016601562,
-  27: 0.30141258239746094,
-  64: 1.5065383911132812,
-  55: 0.23178672790527344,
-  1: 0.7641201019287109,
-  22: 0.6270084381103516,
-  53: 0.6862030029296875,
-  15: 0.4048786163330078,
-  62: 0.33275794982910156,
-  21: 2.4002647399902344,
-  58: 2.6508331298828125,
-  94: 0.9957256317138672,
-  56: 0.602569580078125,
-  0: 0.3045482635498047,
-  9: 0.40976524353027344,
-  77: 2.3860855102539062,
-  40: 0.9817008972167969}}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;purityCells&#39;: {72: 1.01885986328125,
+  64: 0.47210121154785156,
+  29: 0.5712013244628906,
+  88: 0.7247982025146484,
+  43: 0.33567047119140625,
+  48: 0.7885761260986328,
+  2: 0.6254806518554688,
+  7: 0.2975730895996094,
+  63: 1.0704784393310547,
+  35: 2.2328662872314453,
+  68: 0.5042533874511719,
+  74: 0.3648185729980469,
+  14: 2.6865673065185547,
+  51: 1.7734661102294922,
+  21: 0.43605804443359375,
+  5: 0.9750347137451172,
+  66: 0.6367073059082031,
+  23: 0.3985443115234375,
+  82: 2.5035934448242188,
+  11: 1.4542160034179688,
+  1: 0.780731201171875,
+  58: 1.1535968780517578,
+  37: 3.1112632751464844,
+  55: 2.5993518829345703,
+  69: 0.6573581695556641,
+  60: 0.835113525390625,
+  36: 0.7298221588134766,
+  17: 0.386505126953125,
+  70: 0.5398387908935547,
+  40: 0.6218757629394531,
+  91: 0.9060096740722656,
+  81: 1.0071353912353516,
+  76: 1.9485435485839844,
+  93: 1.19097900390625,
+  61: 0.6706390380859375,
+  24: 0.90240478515625,
+  77: 0.8952980041503906,
+  89: 0.9688892364501953,
+  99: 0.7516517639160156,
+  67: 0.9931735992431641,
+  13: 2.702983856201172,
+  50: 2.1515159606933594,
+  52: 0.29815673828125,
+  46: 0.5084247589111328,
+  54: 0.8112754821777344,
+  12: 1.0045433044433594,
+  9: 0.8726043701171875,
+  15: 0.8160476684570312,
+  79: 0.32974815368652344,
+  30: 0.4343528747558594,
+  59: 0.41852569580078125,
+  75: 0.7816925048828125,
+  47: 0.2722358703613281,
+  44: 0.6489124298095703,
+  84: 0.6044578552246094,
+  34: 3.060199737548828,
+  78: 1.0569114685058594,
+  87: 0.5623321533203125,
+  25: 0.5657081604003906,
+  83: 0.7220916748046875,
+  95: 0.8460197448730469,
+  97: 0.9878520965576172,
+  19: 0.2616100311279297,
+  90: 0.3992881774902344,
+  98: 0.349517822265625,
+  92: 1.1594505310058594,
+  4: 0.6542625427246094,
+  27: 0.9265575408935547,
+  96: 0.38936614990234375,
+  53: 0.9366569519042969,
+  20: 1.4421653747558594,
+  16: 2.269023895263672,
+  22: 1.92303466796875,
+  0: 1.1150245666503906,
+  42: 1.4400711059570312,
+  26: 0.5087738037109375,
+  56: 0.26073455810546875,
+  86: 2.9126625061035156,
+  45: 2.200611114501953,
+  57: 1.3295097351074219,
+  18: 0.3021221160888672,
+  62: 0.26645660400390625,
+  65: 0.4944572448730469,
+  39: 0.791168212890625,
+  71: 1.2992515563964844,
+  85: 1.1178054809570312,
+  94: 1.4708499908447266,
+  28: 0.9182262420654297,
+  10: 0.8161506652832031,
+  31: 0.3749237060546875,
+  33: 0.7814064025878906,
+  38: 0.5502586364746094,
+  49: 0.3627586364746094,
+  6: 1.0212173461914062,
+  8: 0.4282245635986328,
+  41: 2.9864139556884766,
+  73: 0.4029731750488281,
+  80: 1.080709457397461,
+  32: 1.8940582275390625,
+  3: 1.8912487030029297},
+ &#39;purityCellsAllSys&#39;: {9: 0.5015869140625,
+  55: 1.8210563659667969,
+  8: 0.45592498779296875,
+  30: 0.4346504211425781,
+  44: 0.2949066162109375,
+  48: 0.48480987548828125,
+  64: 1.1688461303710938,
+  83: 1.0022830963134766,
+  14: 1.9827728271484375,
+  74: 0.2658557891845703,
+  56: 0.25869178771972656,
+  80: 0.4380378723144531,
+  88: 0.5158405303955078,
+  89: 0.4319438934326172,
+  4: 1.3132133483886719,
+  54: 1.0835933685302734,
+  36: 0.9837493896484375,
+  96: 0.3741168975830078,
+  50: 0.6471157073974609,
+  46: 0.4304218292236328,
+  57: 1.1557483673095703,
+  41: 11.897796630859375,
+  34: 1.3467674255371094,
+  93: 0.6749362945556641,
+  69: 0.47066497802734375,
+  70: 1.5453739166259766,
+  97: 1.7998390197753906,
+  35: 3.2424468994140625,
+  39: 1.6913604736328125,
+  63: 0.4530353546142578,
+  66: 0.6228199005126953,
+  18: 0.3466682434082031,
+  85: 1.0640811920166016,
+  24: 0.8782749176025391,
+  62: 0.7085361480712891,
+  79: 0.4570751190185547,
+  28: 1.4733848571777344,
+  58: 2.089282989501953,
+  76: 0.5401420593261719,
+  67: 0.45238304138183594,
+  73: 0.3982810974121094,
+  25: 1.5118484497070312,
+  52: 0.220062255859375,
+  72: 0.7843303680419922,
+  23: 0.6792335510253906,
+  53: 0.5717792510986328,
+  1: 0.31281089782714844,
+  2: 0.30553245544433594,
+  45: 0.9720592498779297,
+  16: 0.6489582061767578,
+  75: 0.5529251098632812,
+  31: 0.3030261993408203,
+  98: 0.40665245056152344,
+  94: 7.182842254638672,
+  99: 0.7224349975585938,
+  17: 1.195791244506836,
+  77: 0.5078811645507812,
+  20: 0.43328285217285156,
+  47: 0.7893314361572266,
+  61: 0.7287693023681641,
+  95: 0.3158092498779297,
+  40: 0.23296546936035156,
+  60: 0.754364013671875,
+  43: 0.35345458984375,
+  32: 1.6320457458496094,
+  0: 1.6565589904785156,
+  51: 0.9141979217529297,
+  27: 0.37776756286621094,
+  11: 2.475566864013672,
+  5: 3.3891143798828125,
+  65: 0.2814826965332031,
+  10: 0.32830047607421875,
+  29: 1.7620964050292969,
+  12: 1.0688247680664062,
+  26: 0.6914100646972656,
+  6: 0.7026081085205078,
+  37: 11.737762451171875,
+  38: 0.40242958068847656,
+  59: 0.42724037170410156,
+  81: 2.4322738647460938,
+  87: 0.5375442504882812,
+  91: 1.7009963989257812,
+  3: 0.2790679931640625,
+  21: 2.0022850036621094,
+  13: 0.46693992614746094,
+  19: 0.5928363800048828,
+  22: 1.0964622497558594,
+  7: 0.4310569763183594,
+  42: 1.6267929077148438,
+  68: 0.49636268615722656,
+  71: 0.5072116851806641,
+  84: 0.4036827087402344,
+  86: 1.9796886444091797,
+  49: 0.7637882232666016,
+  15: 4.9591064453125,
+  78: 0.6581478118896484,
+  33: 0.29428863525390625,
+  90: 0.2992725372314453,
+  92: 1.4756851196289062,
+  82: 0.3747692108154297}}
 </pre></div>
 </div>
 </div>
@@ -1361,41 +1376,40 @@ AnalysisHeader(serial=0, datetime=&#39;2025-03-21 14:55:11&#39;, summoner=None, 
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> # EntropyMeasureRandomizedAnalysis with serial=0
  - header
    - serial -------------------------------------- 0
-   - datetime ------------------------------------ 2025-03-21 14:55:11
+   - datetime ------------------------------------ 2024-12-10 18:47:09
    - summoner ------------------------------------ None
    - log ----------------------------------------- {}
  - input
    - num_qubits ---------------------------------- 8
    - selected_qubits ----------------------------- [3, 4]
    - registers_mapping --------------------------- {0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}
-   - bitstring_mapping --------------------------- {0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}
    - shots --------------------------------------- 1024
    - unitary_located ----------------------------- [0, 1, 2, 3, 4, 5, 6, 7]
  - outfields ----------------------------------- 0 ........  # Number of unused arguments.
  - content
-   - purity -------------------------------------- 1.1578743362426758
-   - entropy ------------------------------------- -0.2114786865593834
-   - puritySD ------------------------------------ 0.7975232048470025
-   - entropySD ----------------------------------- 0.9937026295619491
-   - purityCells --------------------------------- {26: 0.43365478515625, 98: 1.4332046508789062, 92: 3.4094390869140625, 91: 1.0038280487060547, 22: 0.9753150939941406, 97: 0.9884471893310547, 35: 0.5754814147949219, 69: 1.4238662719726562, 62: 0.7509536743164062, 33: 1.6574115753173828, 40: 1.9422607421875, 1: 1.6786460876464844, 46: 0.4495506286621094, 48: 0.45490074157714844, 60: 0.9419441223144531, 30: 0.9279022216796875, 32: 1.6638259887695312, 27: 0.9148674011230469, 84: 0.9788398742675781, 13: 0.45741844177246094, 79: 0.8792304992675781, 7: 0.3895378112792969, 95: 0.43573760986328125, 9: 0.6163825988769531, 21: 1.2599067687988281, 56: 0.39746856689453125, 45: 0.7372493743896484, 0: 0.3893089294433594, 65: 0.5361137390136719, 70: 0.7424049377441406, 90: 0.9947242736816406, 76: 0.8239097595214844, 43: 0.3170909881591797, 78: 0.9261970520019531, 71: 0.39044189453125, 14: 0.7998771667480469, 38: 0.8443145751953125, 41: 0.3957977294921875, 85: 0.6700611114501953, 52: 1.6602039337158203, 19: 0.9570503234863281, 89: 0.8746986389160156, 51: 0.6763839721679688, 3: 1.0877304077148438, 11: 2.1118507385253906, 36: 3.5037612915039062, 42: 1.4101448059082031, 17: 2.2202377319335938, 59: 0.3317222595214844, 16: 0.8020858764648438, 31: 0.4824180603027344, 87: 0.6107063293457031, 5: 1.2605419158935547, 47: 1.173440933227539, 68: 1.0383834838867188, 83: 0.5206584930419922, 88: 2.619670867919922, 6: 1.0291709899902344, 4: 1.1774063110351562, 58: 1.6235713958740234, 81: 2.7255859375, 72: 1.6122245788574219, 12: 1.6113548278808594, 57: 0.9174079895019531, 82: 2.6674270629882812, 73: 0.7119522094726562, 39: 0.8713741302490234, 93: 2.1606369018554688, 94: 0.2945690155029297, 86: 1.3966522216796875, 28: 1.1843643188476562, 2: 0.9934539794921875, 25: 2.079143524169922, 44: 0.31921958923339844, 18: 0.7676105499267578, 66: 2.575725555419922, 10: 1.4046859741210938, 24: 0.3668212890625, 80: 0.8353195190429688, 29: 0.6702556610107422, 96: 0.9638481140136719, 99: 3.500448226928711, 53: 0.46907997131347656, 61: 0.5399417877197266, 23: 1.7...
+   - purity -------------------------------------- 1.0170664024353027
+   - entropy ------------------------------------- -0.02441387323355597
+   - puritySD ------------------------------------ 0.7149922703351819
+   - entropySD ----------------------------------- 1.01420693891432
+   - purityCells --------------------------------- {72: 1.01885986328125, 64: 0.47210121154785156, 29: 0.5712013244628906, 88: 0.7247982025146484, 43: 0.33567047119140625, 48: 0.7885761260986328, 2: 0.6254806518554688, 7: 0.2975730895996094, 63: 1.0704784393310547, 35: 2.2328662872314453, 68: 0.5042533874511719, 74: 0.3648185729980469, 14: 2.6865673065185547, 51: 1.7734661102294922, 21: 0.43605804443359375, 5: 0.9750347137451172, 66: 0.6367073059082031, 23: 0.3985443115234375, 82: 2.5035934448242188, 11: 1.4542160034179688, 1: 0.780731201171875, 58: 1.1535968780517578, 37: 3.1112632751464844, 55: 2.5993518829345703, 69: 0.6573581695556641, 60: 0.835113525390625, 36: 0.7298221588134766, 17: 0.386505126953125, 70: 0.5398387908935547, 40: 0.6218757629394531, 91: 0.9060096740722656, 81: 1.0071353912353516, 76: 1.9485435485839844, 93: 1.19097900390625, 61: 0.6706390380859375, 24: 0.90240478515625, 77: 0.8952980041503906, 89: 0.9688892364501953, 99: 0.7516517639160156, 67: 0.9931735992431641, 13: 2.702983856201172, 50: 2.1515159606933594, 52: 0.29815673828125, 46: 0.5084247589111328, 54: 0.8112754821777344, 12: 1.0045433044433594, 9: 0.8726043701171875, 15: 0.8160476684570312, 79: 0.32974815368652344, 30: 0.4343528747558594, 59: 0.41852569580078125, 75: 0.7816925048828125, 47: 0.2722358703613281, 44: 0.6489124298095703, 84: 0.6044578552246094, 34: 3.060199737548828, 78: 1.0569114685058594, 87: 0.5623321533203125, 25: 0.5657081604003906, 83: 0.7220916748046875, 95: 0.8460197448730469, 97: 0.9878520965576172, 19: 0.2616100311279297, 90: 0.3992881774902344, 98: 0.349517822265625, 92: 1.1594505310058594, 4: 0.6542625427246094, 27: 0.9265575408935547, 96: 0.38936614990234375, 53: 0.9366569519042969, 20: 1.4421653747558594, 16: 2.269023895263672, 22: 1.92303466796875, 0: 1.1150245666503906, 42: 1.4400711059570312, 26: 0.5087738037109375, 56: 0.26073455810546875, 86: 2.9126625061035156, 45: 2.200611114501953, 57: 1.3295097351074219, 18: 0.3021221160888672, 62: 0.26645660400390625, 65: 0.4944572448730469, 39: 0.791168212890625, 7...
    - num_classical_registers --------------------- 8
    - classical_registers ------------------------- [3, 4]
    - classical_registers_actually ---------------- [3, 4]
    - all_system_source --------------------------- independent
-   - purityAllSys -------------------------------- 1.1528078079223634
-   - entropyAllSys ------------------------------- -0.20515201197568533
-   - puritySDAllSys ------------------------------ 1.488920548498253
-   - entropySDAllSys ----------------------------- 1.8633273272735915
-   - purityCellsAllSys --------------------------- {51: 1.9570751190185547, 14: 0.4940509796142578, 36: 1.4333362579345703, 85: 0.3507823944091797, 73: 0.5837841033935547, 89: 0.9015007019042969, 38: 0.43012428283691406, 31: 1.9898910522460938, 61: 0.40334510803222656, 75: 10.904220581054688, 76: 0.6797084808349609, 19: 1.0740375518798828, 18: 0.33603668212890625, 43: 0.9966583251953125, 69: 1.0566654205322266, 86: 0.561187744140625, 90: 0.5036869049072266, 70: 0.6349906921386719, 50: 0.3338623046875, 2: 0.9990386962890625, 12: 0.5032005310058594, 88: 1.0975780487060547, 84: 0.39483642578125, 6: 0.5632762908935547, 7: 0.5487537384033203, 91: 1.270355224609375, 97: 3.3115921020507812, 34: 0.574371337890625, 24: 0.4105205535888672, 46: 0.4152870178222656, 99: 1.4382171630859375, 54: 0.9190845489501953, 68: 1.4019508361816406, 52: 1.630706787109375, 23: 0.3022422790527344, 13: 0.5561981201171875, 32: 4.683052062988281, 59: 0.37805938720703125, 79: 0.9430656433105469, 28: 0.8520393371582031, 57: 0.24129676818847656, 47: 1.2025260925292969, 20: 0.9662284851074219, 10: 0.39757728576660156, 37: 3.9223403930664062, 44: 0.8389186859130859, 71: 0.49684906005859375, 8: 0.4133014678955078, 4: 1.7936592102050781, 49: 8.798439025878906, 60: 0.9120006561279297, 33: 1.23419189453125, 65: 0.9769515991210938, 96: 0.5807571411132812, 41: 1.3688945770263672, 35: 0.40207481384277344, 42: 0.31363487243652344, 3: 1.53759765625, 5: 1.0451698303222656, 63: 0.6823348999023438, 45: 0.3795814514160156, 67: 3.7070770263671875, 72: 1.122995376586914, 17: 1.3126640319824219, 29: 0.6183395385742188, 74: 0.8841743469238281, 80: 1.470987319946289, 81: 1.1582317352294922, 92: 1.0582447052001953, 30: 0.8449382781982422, 98: 0.6255779266357422, 11: 0.5326118469238281, 87: 0.3609619140625, 25: 0.24447250366210938, 66: 2.706125259399414, 83: 0.44587135314941406, 26: 0.20609474182128906, 78: 0.3357734680175781, 39: 1.0567970275878906, 93: 1.1838264465332031, 16: 0.9254703521728516, 82: 0.8341751098632812, 48: 0.5253505706787109, 95: 0.21112442016601562, 2...
+   - purityAllSys -------------------------------- 1.1991012763977051
+   - entropyAllSys ------------------------------- -0.2619535142869742
+   - puritySDAllSys ------------------------------ 1.8081965056331681
+   - entropySDAllSys ----------------------------- 2.1755261069078426
+   - purityCellsAllSys --------------------------- {9: 0.5015869140625, 55: 1.8210563659667969, 8: 0.45592498779296875, 30: 0.4346504211425781, 44: 0.2949066162109375, 48: 0.48480987548828125, 64: 1.1688461303710938, 83: 1.0022830963134766, 14: 1.9827728271484375, 74: 0.2658557891845703, 56: 0.25869178771972656, 80: 0.4380378723144531, 88: 0.5158405303955078, 89: 0.4319438934326172, 4: 1.3132133483886719, 54: 1.0835933685302734, 36: 0.9837493896484375, 96: 0.3741168975830078, 50: 0.6471157073974609, 46: 0.4304218292236328, 57: 1.1557483673095703, 41: 11.897796630859375, 34: 1.3467674255371094, 93: 0.6749362945556641, 69: 0.47066497802734375, 70: 1.5453739166259766, 97: 1.7998390197753906, 35: 3.2424468994140625, 39: 1.6913604736328125, 63: 0.4530353546142578, 66: 0.6228199005126953, 18: 0.3466682434082031, 85: 1.0640811920166016, 24: 0.8782749176025391, 62: 0.7085361480712891, 79: 0.4570751190185547, 28: 1.4733848571777344, 58: 2.089282989501953, 76: 0.5401420593261719, 67: 0.45238304138183594, 73: 0.3982810974121094, 25: 1.5118484497070312, 52: 0.220062255859375, 72: 0.7843303680419922, 23: 0.6792335510253906, 53: 0.5717792510986328, 1: 0.31281089782714844, 2: 0.30553245544433594, 45: 0.9720592498779297, 16: 0.6489582061767578, 75: 0.5529251098632812, 31: 0.3030261993408203, 98: 0.40665245056152344, 94: 7.182842254638672, 99: 0.7224349975585938, 17: 1.195791244506836, 77: 0.5078811645507812, 20: 0.43328285217285156, 47: 0.7893314361572266, 61: 0.7287693023681641, 95: 0.3158092498779297, 40: 0.23296546936035156, 60: 0.754364013671875, 43: 0.35345458984375, 32: 1.6320457458496094, 0: 1.6565589904785156, 51: 0.9141979217529297, 27: 0.37776756286621094, 11: 2.475566864013672, 5: 3.3891143798828125, 65: 0.2814826965332031, 10: 0.32830047607421875, 29: 1.7620964050292969, 12: 1.0688247680664062, 26: 0.6914100646972656, 6: 0.7026081085205078, 37: 11.737762451171875, 38: 0.40242958068847656, 59: 0.42724037170410156, 81: 2.4322738647460938, 87: 0.5375442504882812, 91: 1.7009963989257812, 3: 0.2790679931640625, 21: 2.0022850...
    - num_classical_registers_all_sys ------------- 8
    - classical_registers_all_sys ----------------- None
    - classical_registers_actually_all_sys -------- [0, 1, 2, 3, 4, 5, 6, 7]
-   - errorRate ----------------------------------- -0.07396790186110361
-   - mitigatedPurity ----------------------------- 1.0371239671326458
-   - mitigatedEntropy ---------------------------- -0.05258834938578064
+   - errorRate ----------------------------------- -0.09539128429840622
+   - mitigatedPurity ----------------------------- 0.8892848300278511
+   - mitigatedEntropy ---------------------------- 0.1692825194159182
    - counts_num ---------------------------------- 100
-   - taking_time --------------------------------- 0.001218706
-   - taking_time_all_sys ------------------------- 0.016932959
+   - taking_time --------------------------------- 0.001836907
+   - taking_time_all_sys ------------------------- 0.03056876
    - counts_used --------------------------------- None
 by &lt;QurryAnalysisSheet&gt;
 </pre></div>
@@ -1416,17 +1430,17 @@ Just use the method <code class="docutils literal notranslate"><span class="pre"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;d1aeda27-dab9-4516-8fe8-5f88a36eda2e&#39;,
- {&#39;folder&#39;: &#39;experiment.N_U_100.qurrent_randomized.001&#39;,
-  &#39;qurryinfo&#39;: &#39;experiment.N_U_100.qurrent_randomized.001/qurryinfo.json&#39;,
-  &#39;args&#39;: &#39;experiment.N_U_100.qurrent_randomized.001/args/experiment.N_U_100.qurrent_randomized.001.id=d1aeda27-dab9-4516-8fe8-5f88a36eda2e.args.json&#39;,
-  &#39;advent&#39;: &#39;experiment.N_U_100.qurrent_randomized.001/advent/experiment.N_U_100.qurrent_randomized.001.id=d1aeda27-dab9-4516-8fe8-5f88a36eda2e.advent.json&#39;,
-  &#39;legacy&#39;: &#39;experiment.N_U_100.qurrent_randomized.001/legacy/experiment.N_U_100.qurrent_randomized.001.id=d1aeda27-dab9-4516-8fe8-5f88a36eda2e.legacy.json&#39;,
-  &#39;tales.unitaryOP&#39;: &#39;experiment.N_U_100.qurrent_randomized.001/tales/experiment.N_U_100.qurrent_randomized.001.id=d1aeda27-dab9-4516-8fe8-5f88a36eda2e.unitaryOP.json&#39;,
-  &#39;tales.randomized&#39;: &#39;experiment.N_U_100.qurrent_randomized.001/tales/experiment.N_U_100.qurrent_randomized.001.id=d1aeda27-dab9-4516-8fe8-5f88a36eda2e.randomized.json&#39;,
-  &#39;reports&#39;: &#39;experiment.N_U_100.qurrent_randomized.001/reports/experiment.N_U_100.qurrent_randomized.001.id=d1aeda27-dab9-4516-8fe8-5f88a36eda2e.reports.json&#39;,
-  &#39;reports.tales.purityCells&#39;: &#39;experiment.N_U_100.qurrent_randomized.001/tales/experiment.N_U_100.qurrent_randomized.001.id=d1aeda27-dab9-4516-8fe8-5f88a36eda2e.purityCells.reports.json&#39;,
-  &#39;reports.tales.purityCellsAllSys&#39;: &#39;experiment.N_U_100.qurrent_randomized.001/tales/experiment.N_U_100.qurrent_randomized.001.id=d1aeda27-dab9-4516-8fe8-5f88a36eda2e.purityCellsAllSys.reports.json&#39;})
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;a3a10311-22cb-4568-a5ed-86b4b9e78cd3&#39;,
+ {&#39;folder&#39;: &#39;experiment.N_U_100.qurrent_randomized.003&#39;,
+  &#39;qurryinfo&#39;: &#39;experiment.N_U_100.qurrent_randomized.003/qurryinfo.json&#39;,
+  &#39;args&#39;: &#39;experiment.N_U_100.qurrent_randomized.003/args/experiment.N_U_100.qurrent_randomized.003.id=a3a10311-22cb-4568-a5ed-86b4b9e78cd3.args.json&#39;,
+  &#39;advent&#39;: &#39;experiment.N_U_100.qurrent_randomized.003/advent/experiment.N_U_100.qurrent_randomized.003.id=a3a10311-22cb-4568-a5ed-86b4b9e78cd3.advent.json&#39;,
+  &#39;legacy&#39;: &#39;experiment.N_U_100.qurrent_randomized.003/legacy/experiment.N_U_100.qurrent_randomized.003.id=a3a10311-22cb-4568-a5ed-86b4b9e78cd3.legacy.json&#39;,
+  &#39;tales.unitaryOP&#39;: &#39;experiment.N_U_100.qurrent_randomized.003/tales/experiment.N_U_100.qurrent_randomized.003.id=a3a10311-22cb-4568-a5ed-86b4b9e78cd3.unitaryOP.json&#39;,
+  &#39;tales.randomized&#39;: &#39;experiment.N_U_100.qurrent_randomized.003/tales/experiment.N_U_100.qurrent_randomized.003.id=a3a10311-22cb-4568-a5ed-86b4b9e78cd3.randomized.json&#39;,
+  &#39;reports&#39;: &#39;experiment.N_U_100.qurrent_randomized.003/reports/experiment.N_U_100.qurrent_randomized.003.id=a3a10311-22cb-4568-a5ed-86b4b9e78cd3.reports.json&#39;,
+  &#39;reports.tales.purityCells&#39;: &#39;experiment.N_U_100.qurrent_randomized.003/tales/experiment.N_U_100.qurrent_randomized.003.id=a3a10311-22cb-4568-a5ed-86b4b9e78cd3.purityCells.reports.json&#39;,
+  &#39;reports.tales.purityCellsAllSys&#39;: &#39;experiment.N_U_100.qurrent_randomized.003/tales/experiment.N_U_100.qurrent_randomized.003.id=a3a10311-22cb-4568-a5ed-86b4b9e78cd3.purityCellsAllSys.reports.json&#39;})
 </pre></div>
 </div>
 </div>
@@ -1445,7 +1459,7 @@ Just use the method <code class="docutils literal notranslate"><span class="pre"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> | Qurry version: 0.10.2
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> | Qurry version: 0.10.1.dev2
 --------------------------------------------------------
  ### Qurry Post-Processing
    - Backend Availability ................... Python Cython Rust  
@@ -1486,11 +1500,12 @@ Just use the method <code class="docutils literal notranslate"><span class="pre"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> | Qurry version: 0.10.2
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> | Qurry version: 0.10.1.dev2
 --------------------------------------------
  ### Qiskit version
  - main
-   - qiskit-ibm-runtime ...... 0.37.0
+   - qiskit-aer .............. 0.15.1
+   - qiskit-ibm-runtime ...... 0.34.0
  - deprecated
  - into-community
 --------------------------------------------
@@ -1514,7 +1529,7 @@ Just use the method <code class="docutils literal notranslate"><span class="pre"
         },
         kernelOptions: {
             name: "python3",
-            path: "./main"
+            path: "./deprecated/0.10.x"
         },
         predefinedOutput: true
     }
@@ -1532,12 +1547,12 @@ Just use the method <code class="docutils literal notranslate"><span class="pre"
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../intro.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Qurry 🍛 - The python package for measuring quantum entanglement entropy and wave function overlap.</p>
+        <p class="prev-next-title">Deprecated After 0.10.x</p>
       </div>
     </a>
     <a class="right-next"
@@ -1622,8 +1637,8 @@ By Huai-Chung Chang (harui2019)
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -6,7 +6,7 @@ It's basically following [the platform support of qiskit](https://docs.quantum.i
 
 ## Available Python Version
 
-![Available Python Version](https://img.shields.io/badge/Python-3.9_|_3.10_|_3.11_|_3.12-blue?logo=python&logoColor=white) [![Downloads](https://static.pepy.tech/badge/qurrium)](https://pepy.tech/project/qurrium)
+![Available Python Version](https://img.shields.io/badge/Python-3.9_|_3.10_|_3.11_|_3.12_|_3.13-blue?logo=python&logoColor=white) [![Downloads](https://static.pepy.tech/badge/qurrium)](https://pepy.tech/project/qurrium)
 
 Qurry is written in Python 3.9 type hint syntax.
 It can't and won't support Python 3.8 and below since they are too old.
@@ -20,17 +20,14 @@ We strongly recommend to use Linux based system, due to Python multiprocessing m
 
 ## Availability
 
-|                           | macos<br/>x86_64 | macos<br/>universal2 | macos<br/>ARM64 | windows<br/>amd64 | windows<br/>win32 | windows<br/>arm64 | linux<br/>x86_64 | linux<br/>i686  | linux<br/>aarch64 |
-| ------------------------- | ---------------- | -------------------- | --------------- | ----------------- | ----------------- | ----------------- | ---------------- | --------------- | ----------------- |
-| CPython 3.9 <sup>1</sup>  | ✅               | ✅                   | ✅              | ✅                | ✅                | ✅ <sup>2</sup>   | ✅ <sup>3</sup>  | ✅ <sup>3</sup> | ✅ <sup>3</sup>   |
-| CPython 3.10 <sup>1</sup> | ✅               | ✅                   | ✅              | ✅                | ✅                | ✅ <sup>2</sup>   | ✅ <sup>3</sup>  | ✅ <sup>3</sup> | ✅ <sup>3</sup>   |
-| CPython 3.11 <sup>1</sup> | ✅               | ✅                   | ✅              | ✅                | ✅                | ✅ <sup>2</sup>   | ✅ <sup>3</sup>  | ✅ <sup>3</sup> | ✅ <sup>3</sup>   |
-| CPython 3.12 <sup>1</sup> | ✅               | ✅                   | ✅              | ✅                | ✅                | ✅ <sup>2</sup>   | ✅ <sup>3</sup>  | ✅ <sup>3</sup> | ✅ <sup>3</sup>   |
-| CPython 3.13 <sup>1</sup> | ✅               | ✅                   | ✅              | ✅                | ✅                | ✅ <sup>2</sup>   | ✅ <sup>3</sup>  | ✅ <sup>3</sup> | ✅ <sup>3</sup>   |
+|                  | macos<br/>x86_64 | macos<br/>universal2 | macos<br/>ARM64 | windows<br/>amd64 | windows<br/>win32 | windows<br/>arm64 | linux<br/>x86_64 | linux<br/>i686  | linux<br/>aarch64 |
+| ---------------- | ---------------- | -------------------- | --------------- | ----------------- | ----------------- | ----------------- | ---------------- | --------------- | ----------------- |
+| CPython 3.9~3.13 | ℹ️ <sup>4</sup>  | ✅                   | ✅              | ✅                | ✅                | ℹ️ <sup>2</sup>   | ✅ <sup>3</sup>  | ✅ <sup>3</sup> | ✅ <sup>3</sup>   |
 
 1. All CPython builds are based on the 3.9+ CPython ABI.
 2. Although `windows_arm64` builds are provided, they have not been properly tested, as we do not have access to such a machine for testing.
 3. All Linux builds are based on `manylinux2014`, consistent with Qiskit's approach for their Linux builds.
+4. `macos_x86_64` builds will be deprecated in the future, as Apple has transitioned to ARM64 architecture.
 
 - **All ManyLinux 2014 compatible distro**
   Ubuntu 18.04+ LTS, Rocky Linux, ...
@@ -52,7 +49,7 @@ We strongly recommend to use Linux based system, due to Python multiprocessing m
   - on `x86_32`
   - on `ARM64` **(not tested yet)**
     - **Disclaimer**: Although we provide the distribution for Windows ARM, we cannot guarantee its functionality.
-    - Since this distribution was built using cross-compilation, and we do not have access to a Windows ARM device, full testing could not be performed.
+    - Since this distribution was built using cross-compilation, and we don't have a Windows ARM device for it's rare, full testing could not be performed.
 
 - **MacOS 11+**
 
@@ -63,12 +60,8 @@ We strongly recommend to use Linux based system, due to Python multiprocessing m
 ## Dependencies
 
 - with required modules:
-
   - `qiskit`, `qiskit-aer`, `tqdm`, `requests`
 
 - with optional modules:
   - `qiskit-aer-gpu`: The CUDA acceleration only on Linux.
     - `qiskit-aer-gpu-cu11`: Extra support for CUDA11.
-  - `qiskit-ibm-runtime`: Access IBM Quantum and `FackBackend`.
-  - `qiskit-ibm-provider`: Access IBM Quantum. It will deprecated soon.
-  - `qiskit-ibmq-provider`: Access IBM Quantum. It has been deprecated by Qiskit.

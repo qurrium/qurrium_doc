@@ -15,7 +15,7 @@
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
 <meta property="og:image" content="https://docs.qurrium.org/_images/social_previews/summary_postprocessing_01_EntropyMeasure_3b_EntropyRandomizedMeasureV1_b33865b8.png" />
-<meta property="og:image:alt" content="The EntropyMeasure instance provides three methods: EntropyRandomizedMeasure: Uses randomized measurements and serves as the default method. or or or, Entrop..." />
+<meta property="og:image:alt" content="The EntropyMeasure instance provides three methods: EntropyRandomizedMeasure: Uses randomized measurements and serves as the default method. or or or, EntropyHadamardTest: Employs the Hadamard test..." />
 <meta name="description" content="The EntropyMeasure instance provides three methods: EntropyRandomizedMeasure: Uses randomized measurements and serves as the default method. or or or, EntropyHadamardTest: Employs the Hadamard test..." />
 <meta name="twitter:card" content="summary_large_image" />
 <!-- HTML Meta Tags -->
@@ -63,7 +63,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -217,28 +217,37 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Basic Usage</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../main/01_Basic_Usage.html">01 - Basic Usage of Qurry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../main/02_The_True_Power_of_Qurry.html">02 - The True Power of Qurry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/basic_usage.html">Basic Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_1_HadamardTest/basic_usage.html">1.1 EntropyMeasure - Hadamard Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_2_RandomizedMeasure/basic_usage.html">1.2 EntropyMeasure - Randomized Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_4_ClassicalShadow/basic_usage.html">1.4 EntropyMeasure - Classical Shadow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrium_0_1_WavesExecuter/basic_usage.html">0.1 QurriumBasic - WavesExecuter</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Multi-Output</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../main/multi_output.html">Multi-Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_1_HadamardTest/multi_output.html">1.1 EntropyMeasure - Hadamard Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_2_RandomizedMeasure/multi_output.html">1.2 EntropyMeasure - Randomized Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrent_1_4_ClassicalShadow/multi_output.html">1.4 EntropyMeasure - Classical Shadow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main/qurrium_0_1_WavesExecuter/multi_output.html">0.1 QurriumBasic - WavesExecuter</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Post Processing</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../00_Just_Post_Processing.html">Just Post-Processing</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1a_EntropyRandomizedMeasure.html">1.1a EntropyMeasure - Randomized Measurement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1b_EntropyRandomizedMeasure.html">1.1b EntropyMeasure - Randomized Measurement with Error Mitigation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_EntropyHadamardTest.html">1.2 EntropyMeasure - Hadamard Test</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3a_EntropyRandomizedMeasureV1.html">1.3a EntropyMeasure - Randomized Measurement V1</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.3b EntropyMeasure - Randomized Measurement V1 with Error Mitigation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../02_WaveFunctionOverlap/1_EchoListenRandomized.html">2.1 WaveFunctionOverlap - Randomized Measurement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../02_WaveFunctionOverlap/2_EchoListenHadamard.html">2.2 WaveFunctionOverlap - Hadamaed Test</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../02_WaveFunctionOverlap/3_EchoListenRandomizedV1.html">2.3 WaveFunctionOverlap - Randomized Measurement V1</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../00_Just_Post_Processing.html">Just Post-Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1a_EntropyRandomizedMeasure.html">1.1a EntropyMeasure - Randomized Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1b_EntropyRandomizedMeasure.html">1.1b EntropyMeasure - Randomized Measurement with Error Mitigation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_EntropyHadamardTest.html">1.2 EntropyMeasure - Hadamard Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3a_EntropyRandomizedMeasureV1.html">1.3a EntropyMeasure - Randomized Measurement V1</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1.3b EntropyMeasure - Randomized Measurement V1 with Error Mitigation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_WaveFunctionOverlap/1_EchoListenRandomized.html">2.1 WaveFunctionOverlap - Randomized Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_WaveFunctionOverlap/2_EchoListenHadamard.html">2.2 WaveFunctionOverlap - Hadamaed Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_WaveFunctionOverlap/3_EchoListenRandomizedV1.html">2.3 WaveFunctionOverlap - Randomized Measurement V1</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Other Features</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../appendix/A01_BackendManager.html">Appendix 01 - Backend Wrapper and Backend Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/A01_BackendManager.html">Appendix 01 - Backend Wrapper</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Installation and Support</span></p>
 <ul class="nav bd-sidenav">
@@ -248,6 +257,16 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../about/01_About_Qurry.html">About</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Deprecated</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../deprecated/index.html">Deprecated Documents</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../deprecated/0.10.x/index.html">Deprecated After 0.10.x</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../deprecated/0.10.x/01_Basic_Usage.html">01 - Basic Usage of Qurry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../deprecated/0.10.x/02_The_True_Power_of_Qurry.html">02 - The True Power of Qurry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../deprecated/0.10.x/A01_BackendManager.html">Appendix 01 - Backend Wrapper and Backend Manager</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -624,7 +643,7 @@ The return <code class="docutils literal notranslate"><span class="pre">dict</sp
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
   from .autonotebook import tqdm as notebook_tqdm
 </pre></div>
 </div>
@@ -672,7 +691,7 @@ The return <code class="docutils literal notranslate"><span class="pre">dict</sp
  &#39;bitsStringRangeAllSys&#39;: (0, 8),
  &#39;countsNum&#39;: 100,
  &#39;degree&#39;: 6,
- &#39;entropy&#39;: np.float64(-0.0878606530863832),
+ &#39;entropy&#39;: np.float64(-0.08786065308638322),
  &#39;entropyAllSys&#39;: np.float64(0.9461940705953849),
  &#39;entropySD&#39;: np.float64(0.0),
  &#39;entropySDAllSys&#39;: np.float64(0.0),
@@ -687,8 +706,8 @@ The return <code class="docutils literal notranslate"><span class="pre">dict</sp
  &#39;purityAllSys&#39;: np.float64(0.5189998149871826),
  &#39;puritySD&#39;: np.float64(0.0),
  &#39;puritySDAllSys&#39;: np.float64(0.0),
- &#39;takingTime&#39;: 0.006418737,
- &#39;takingTimeAllSys&#39;: 0.032599436}
+ &#39;takingTime&#39;: 0.002476846,
+ &#39;takingTimeAllSys&#39;: 0.008251613}
 
 | result of randomized_entangled_entropy[purityCells]
 1.0627930164337158
@@ -750,7 +769,7 @@ The return <code class="docutils literal notranslate"><span class="pre">dict</sp
  &#39;bitsStringRangeAllSys&#39;: (2, 8),
  &#39;countsNum&#39;: 100,
  &#39;degree&#39;: 6,
- &#39;entropy&#39;: np.float64(-0.0878606530863832),
+ &#39;entropy&#39;: np.float64(-0.08786065308638322),
  &#39;entropyAllSys&#39;: np.float64(0.9461940705953849),
  &#39;entropySD&#39;: np.float64(0.0),
  &#39;entropySDAllSys&#39;: np.float64(0.0),
@@ -765,7 +784,7 @@ The return <code class="docutils literal notranslate"><span class="pre">dict</sp
  &#39;purityAllSys&#39;: np.float64(0.5189998149871826),
  &#39;puritySD&#39;: np.float64(0.0),
  &#39;puritySDAllSys&#39;: np.float64(0.0),
- &#39;takingTime&#39;: 0.00607234,
+ &#39;takingTime&#39;: 0.002030682,
  &#39;takingTimeAllSys&#39;: 0}
 
 | result of randomized_entangled_entropy[purityCells]
@@ -894,56 +913,53 @@ The return <code class="docutils literal notranslate"><span class="pre">dict</sp
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:00 &lt; ?
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:00 &lt; 00:00
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (-5, -1) by Rust. - 00:00 &lt; ?       
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (-5, -1) by Rust. - 00:00 &lt; 00:00       
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_1&#39; - 00:00 &lt; ?
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_1&#39; - 00:00 &lt; 00:00
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (3, 7) on None - 00:00 &lt; ?                           
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (3, 7) on None - 00:00 &lt; 00:00                           
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:00 &lt; ?
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:00 &lt; 00:00
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (3, -2) by Rust. - 00:00 &lt; ?        
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (3, -2) by Rust. - 00:00 &lt; 00:00        
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_1&#39; - 00:00 &lt; ?
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_1&#39; - 00:00 &lt; 00:00
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (3, 6) on None - 00:00 &lt; ?                           
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (3, 6) on None - 00:00 &lt; 00:00                           
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:00 &lt; 00:00
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:00 &lt; ?
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:00 &lt; 00:00
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| partition: 6
-| - takingTime: 0.006239472
-| - takingTimeAllSys: 0.034173236
+| - takingTime: 0.001991314
+| - takingTimeAllSys: 0.008647005
 | partition: (2, 8)
-| - takingTime: 0.006030731
+| - takingTime: 0.002033975
 | - takingTimeAllSys: 0
 | partition: 7
-| - takingTime: 0.013263579
+| - takingTime: 0.003857991
 | - takingTimeAllSys: 0
 | partition: (0, 7)
-| - takingTime: 0.011369662
+| - takingTime: 0.00355279
 | - takingTimeAllSys: 0
 | partition: (-2, 5)
-| - takingTime: 0.013357424
+| - takingTime: 0.003967972
 | - takingTimeAllSys: 0
 | partition: (-5, -1)
-| - takingTime: 0.002860672
+| - takingTime: 0.000909319
 | - takingTimeAllSys: 0
 | partition: (3, -2)
-| - takingTime: 0.00256523
+| - takingTime: 0.00082559
 | - takingTimeAllSys: 0
 </pre></div>
 </div>
@@ -1004,109 +1020,469 @@ The return <code class="docutils literal notranslate"><span class="pre">dict</sp
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree 6 by Python. - 00:00 &lt; ?
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate all system by Python. - 00:00 &lt; ?       
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate all system by Python. - 00:03 &lt; ?       
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (2, 8) on None - 00:08 &lt; ?
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (2, 8) on None - 00:09 &lt; ?
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Partition: (2, 8), Measure: (0, 8), backend: Python, 4 workers, 100 overlaps with mitigation. - 00:08 &lt; ?
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Partition: (2, 8), Measure: (0, 8), backend: Python, 16 workers, 100 overlaps with mitigation. - 00:09 &lt; ?
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Partition: (2, 8), Measure: (0, 8), backend: Python, 4 workers, 100 overlaps with mitigation. - 00:08 &lt; 00:52
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Partition: (2, 8), Measure: (0, 8), backend: Python, 16 workers, 100 overlaps with mitigation. - 00:09 &lt; 00:55
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (2, 8) by Python. - 00:08 &lt; 00:52                                                  
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (2, 8) by Python. - 00:09 &lt; 00:55                                                   
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_4&#39; - 00:09 &lt; 00:52
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_4&#39; - 00:12 &lt; 00:55
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (2, 8) on None - 00:09 &lt; 00:52                           
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (2, 8) on None - 00:12 &lt; 00:55                           
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:09 &lt; 00:52
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:12 &lt; 00:55
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:09 &lt; 00:20
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:12 &lt; 00:28
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree 7 by Python. - 00:09 &lt; 00:20            
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree 7 by Python. - 00:12 &lt; 00:28            
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_4&#39; - 00:12 &lt; 00:20
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_4&#39; - 00:16 &lt; 00:28
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (1, 8) on None - 00:12 &lt; 00:20                           
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (1, 8) on None - 00:16 &lt; 00:28                           
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:12 &lt; 00:20
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:16 &lt; 00:28
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:12 &lt; 00:14
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:16 &lt; 00:19
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (0, 7) by Python. - 00:12 &lt; 00:14       
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (0, 7) by Python. - 00:16 &lt; 00:19       
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_4&#39; - 00:15 &lt; 00:14
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_4&#39; - 00:20 &lt; 00:19
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (0, 7) on None - 00:15 &lt; 00:14                           
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (0, 7) on None - 00:20 &lt; 00:19                           
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:15 &lt; 00:14
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:20 &lt; 00:19
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:15 &lt; 00:09
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:20 &lt; 00:13
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (-2, 5) by Python. - 00:15 &lt; 00:09      
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (-2, 5) by Python. - 00:20 &lt; 00:13      
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_4&#39; - 00:17 &lt; 00:09
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_4&#39; - 00:24 &lt; 00:13
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (-2, 5) on None - 00:17 &lt; 00:09                          
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (-2, 5) on None - 00:24 &lt; 00:13                          
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:17 &lt; 00:09
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:24 &lt; 00:13
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:17 &lt; 00:06
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:24 &lt; 00:08
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (-5, -1) by Python. - 00:17 &lt; 00:06     
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (-5, -1) by Python. - 00:24 &lt; 00:08     
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_4&#39; - 00:17 &lt; 00:06
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_4&#39; - 00:27 &lt; 00:08
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (3, 7) on None - 00:17 &lt; 00:06                           
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (3, 7) on None - 00:27 &lt; 00:08                           
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:17 &lt; 00:06
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:27 &lt; 00:08
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:17 &lt; 00:02
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:27 &lt; 00:03
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (3, -2) by Python. - 00:17 &lt; 00:02      
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Calculate specific degree (3, -2) by Python. - 00:27 &lt; 00:03      
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Using existing all system from &#39;from_previous_result:test_result_1_2_4&#39; - 00:18 &lt; 00:02
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| Preparing error mitigation of (3, 6) on None - 00:18 &lt; 00:02                           
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:18 &lt; 00:02
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>| urce is not in existed_all_system with mitigation. - 00:18 &lt; 00:00
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Process SpawnPoolWorker-127:
+Process SpawnPoolWorker-122:
+Process SpawnPoolWorker-117:
+Process SpawnPoolWorker-119:
+Process SpawnPoolWorker-124:
+Process SpawnPoolWorker-120:
+Process SpawnPoolWorker-114:
+Process SpawnPoolWorker-115:
+Process SpawnPoolWorker-123:
+Process SpawnPoolWorker-121:
+Process SpawnPoolWorker-113:
+Process SpawnPoolWorker-126:
+Process SpawnPoolWorker-116:
+Traceback (most recent call last):
+Process SpawnPoolWorker-118:
+Traceback (most recent call last):
+Process SpawnPoolWorker-128:
+  File &quot;/usr/lib/python3.12/multiprocessing/process.py&quot;, line 314, in _bootstrap
+    self.run()
+  File &quot;/usr/lib/python3.12/multiprocessing/process.py&quot;, line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File &quot;/usr/lib/python3.12/multiprocessing/pool.py&quot;, line 114, in worker
+    task = get()
+           ^^^^^
+  File &quot;/usr/lib/python3.12/multiprocessing/queues.py&quot;, line 389, in get
+    return _ForkingPickler.loads(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/__init__.py&quot;, line 8, in &lt;module&gt;
+    from .qurrech import EchoListen, WaveFunctionOverlap
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrech/__init__.py&quot;, line 8, in &lt;module&gt;
+    from .hadamard_test import EchoListenHadamard
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrech/hadamard_test/__init__.py&quot;, line 6, in &lt;module&gt;
+    from .analysis import EchoListenHadamardAnalysis
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrech/hadamard_test/analysis.py&quot;, line 8, in &lt;module&gt;
+    from ...qurrium.analysis import AnalysisPrototype
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/__init__.py&quot;, line 3, in &lt;module&gt;
+    from .samplingqurry import SamplingExecuter
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/samplingqurry/__init__.py&quot;, line 6, in &lt;module&gt;
+    from .experiment import QurryExperiment
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/samplingqurry/experiment.py&quot;, line 12, in &lt;module&gt;
+    from .arguments import QurryArguments, SHORT_NAME
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/samplingqurry/arguments.py&quot;, line 12, in &lt;module&gt;
+    from ..experiment import ArgumentsPrototype
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/experiment/__init__.py&quot;, line 3, in &lt;module&gt;
+    from .experiment import ExperimentPrototype
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/experiment/experiment.py&quot;, line 19, in &lt;module&gt;
+    from .arguments import Commonparams, _A
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/experiment/arguments.py&quot;, line 12, in &lt;module&gt;
+    from ...tools.backend import backend_name_getter
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/__init__.py&quot;, line 4, in &lt;module&gt;
+    from .backend import (
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/backend/__init__.py&quot;, line 5, in &lt;module&gt;
+    from .backend_manager import BackendWrapper
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/backend/backend_manager.py&quot;, line 10, in &lt;module&gt;
+    from .import_fake import FAKE_BACKENDV2_SOURCES as fake_default_source, fack_backend_loader
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/backend/import_fake.py&quot;, line 42, in &lt;module&gt;
+    from qiskit_ibm_runtime import __version__ as qiskit_ibm_runtime_version  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/__init__.py&quot;, line 205, in &lt;module&gt;
+    from .qiskit_runtime_service import QiskitRuntimeService
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/qiskit_runtime_service.py&quot;, line 26, in &lt;module&gt;
+    from qiskit_ibm_runtime import ibm_backend
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/ibm_backend.py&quot;, line 36, in &lt;module&gt;
+    from .api.clients import RuntimeClient
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/api/clients/__init__.py&quot;, line 15, in &lt;module&gt;
+    from .auth import AuthClient
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/api/clients/auth.py&quot;, line 18, in &lt;module&gt;
+    from ..auth import QuantumAuth
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/api/auth.py&quot;, line 22, in &lt;module&gt;
+    from ..utils.utils import cname_from_crn
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/utils/__init__.py&quot;, line 38, in &lt;module&gt;
+    from .json import RuntimeEncoder, RuntimeDecoder, to_base64_string
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/utils/json.py&quot;, line 33, in &lt;module&gt;
+    import scipy.sparse
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/sparse/__init__.py&quot;, line 301, in &lt;module&gt;
+    from ._csr import *
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/sparse/_csr.py&quot;, line 15, in &lt;module&gt;
+    from ._compressed import _cs_matrix
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/sparse/_compressed.py&quot;, line 12, in &lt;module&gt;
+    from ._data import _data_matrix, _minmax_mixin
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1357, in _find_and_load
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 418, in __enter__
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 304, in acquire
+KeyboardInterrupt
+Process SpawnPoolWorker-125:
+  File &quot;/usr/lib/python3.12/multiprocessing/process.py&quot;, line 314, in _bootstrap
+    self.run()
+  File &quot;/usr/lib/python3.12/multiprocessing/process.py&quot;, line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File &quot;/usr/lib/python3.12/multiprocessing/pool.py&quot;, line 114, in worker
+    task = get()
+           ^^^^^
+  File &quot;/usr/lib/python3.12/multiprocessing/queues.py&quot;, line 389, in get
+    return _ForkingPickler.loads(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/__init__.py&quot;, line 8, in &lt;module&gt;
+    from .qurrech import EchoListen, WaveFunctionOverlap
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrech/__init__.py&quot;, line 8, in &lt;module&gt;
+    from .hadamard_test import EchoListenHadamard
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrech/hadamard_test/__init__.py&quot;, line 6, in &lt;module&gt;
+    from .analysis import EchoListenHadamardAnalysis
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrech/hadamard_test/analysis.py&quot;, line 8, in &lt;module&gt;
+    from ...qurrium.analysis import AnalysisPrototype
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/__init__.py&quot;, line 3, in &lt;module&gt;
+    from .samplingqurry import SamplingExecuter
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/samplingqurry/__init__.py&quot;, line 6, in &lt;module&gt;
+    from .experiment import QurryExperiment
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/samplingqurry/experiment.py&quot;, line 12, in &lt;module&gt;
+    from .arguments import QurryArguments, SHORT_NAME
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/samplingqurry/arguments.py&quot;, line 12, in &lt;module&gt;
+    from ..experiment import ArgumentsPrototype
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/experiment/__init__.py&quot;, line 3, in &lt;module&gt;
+    from .experiment import ExperimentPrototype
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/experiment/experiment.py&quot;, line 19, in &lt;module&gt;
+    from .arguments import Commonparams, _A
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/experiment/arguments.py&quot;, line 12, in &lt;module&gt;
+    from ...tools.backend import backend_name_getter
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/__init__.py&quot;, line 4, in &lt;module&gt;
+    from .backend import (
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/backend/__init__.py&quot;, line 5, in &lt;module&gt;
+    from .backend_manager import BackendWrapper
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/backend/backend_manager.py&quot;, line 10, in &lt;module&gt;
+    from .import_fake import FAKE_BACKENDV2_SOURCES as fake_default_source, fack_backend_loader
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/backend/import_fake.py&quot;, line 42, in &lt;module&gt;
+    from qiskit_ibm_runtime import __version__ as qiskit_ibm_runtime_version  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/__init__.py&quot;, line 205, in &lt;module&gt;
+    from .qiskit_runtime_service import QiskitRuntimeService
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/qiskit_runtime_service.py&quot;, line 26, in &lt;module&gt;
+    from qiskit_ibm_runtime import ibm_backend
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/ibm_backend.py&quot;, line 36, in &lt;module&gt;
+    from .api.clients import RuntimeClient
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/api/clients/__init__.py&quot;, line 15, in &lt;module&gt;
+    from .auth import AuthClient
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/api/clients/auth.py&quot;, line 18, in &lt;module&gt;
+    from ..auth import QuantumAuth
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/api/auth.py&quot;, line 22, in &lt;module&gt;
+    from ..utils.utils import cname_from_crn
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/utils/__init__.py&quot;, line 38, in &lt;module&gt;
+    from .json import RuntimeEncoder, RuntimeDecoder, to_base64_string
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/utils/json.py&quot;, line 33, in &lt;module&gt;
+    import scipy.sparse
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/sparse/__init__.py&quot;, line 300, in &lt;module&gt;
+    from ._base import *
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/sparse/_base.py&quot;, line 5, in &lt;module&gt;
+    from ._sputils import (asmatrix, check_reshape_kwargs, check_shape,
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/sparse/_sputils.py&quot;, line 10, in &lt;module&gt;
+    from scipy._lib._util import np_long, np_ulong
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/_lib/_util.py&quot;, line 13, in &lt;module&gt;
+    from scipy._lib._array_api import array_namespace, is_numpy, xp_size
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/_lib/_array_api.py&quot;, line 18, in &lt;module&gt;
+    from scipy._lib.array_api_compat import (
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/_lib/array_api_compat/numpy/__init__.py&quot;, line 1, in &lt;module&gt;
+    from numpy import * # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1410, in _handle_fromlist
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1412, in _handle_fromlist
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/numpy/__init__.py&quot;, line 361, in __getattr__
+    import numpy.f2py as f2py
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/numpy/f2py/__init__.py&quot;, line 18, in &lt;module&gt;
+    from . import f2py2e
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/numpy/f2py/f2py2e.py&quot;, line 20, in &lt;module&gt;
+    from . import rules
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/numpy/f2py/rules.py&quot;, line 80, in &lt;module&gt;
+    from . import common_rules
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1360, in _find_and_load
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1331, in _find_and_load_unlocked
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 935, in _load_unlocked
+  File &quot;&lt;frozen importlib._bootstrap_external&gt;&quot;, line 991, in exec_module
+  File &quot;&lt;frozen importlib._bootstrap_external&gt;&quot;, line 1124, in get_code
+  File &quot;&lt;frozen importlib._bootstrap_external&gt;&quot;, line 753, in _compile_bytecode
+KeyboardInterrupt
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3.12/multiprocessing/process.py&quot;, line 314, in _bootstrap
+    self.run()
+  File &quot;/usr/lib/python3.12/multiprocessing/process.py&quot;, line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File &quot;/usr/lib/python3.12/multiprocessing/pool.py&quot;, line 114, in worker
+    task = get()
+           ^^^^^
+  File &quot;/usr/lib/python3.12/multiprocessing/queues.py&quot;, line 389, in get
+    return _ForkingPickler.loads(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/__init__.py&quot;, line 8, in &lt;module&gt;
+    from .qurrech import EchoListen, WaveFunctionOverlap
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrech/__init__.py&quot;, line 8, in &lt;module&gt;
+    from .hadamard_test import EchoListenHadamard
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrech/hadamard_test/__init__.py&quot;, line 6, in &lt;module&gt;
+    from .analysis import EchoListenHadamardAnalysis
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrech/hadamard_test/analysis.py&quot;, line 8, in &lt;module&gt;
+    from ...qurrium.analysis import AnalysisPrototype
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/__init__.py&quot;, line 3, in &lt;module&gt;
+    from .samplingqurry import SamplingExecuter
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/samplingqurry/__init__.py&quot;, line 6, in &lt;module&gt;
+    from .experiment import QurryExperiment
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/samplingqurry/experiment.py&quot;, line 12, in &lt;module&gt;
+    from .arguments import QurryArguments, SHORT_NAME
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/samplingqurry/arguments.py&quot;, line 12, in &lt;module&gt;
+    from ..experiment import ArgumentsPrototype
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/experiment/__init__.py&quot;, line 3, in &lt;module&gt;
+    from .experiment import ExperimentPrototype
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/experiment/experiment.py&quot;, line 19, in &lt;module&gt;
+    from .arguments import Commonparams, _A
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/experiment/arguments.py&quot;, line 12, in &lt;module&gt;
+    from ...tools.backend import backend_name_getter
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/__init__.py&quot;, line 4, in &lt;module&gt;
+    from .backend import (
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/backend/__init__.py&quot;, line 5, in &lt;module&gt;
+    from .backend_manager import BackendWrapper
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/backend/backend_manager.py&quot;, line 10, in &lt;module&gt;
+    from .import_fake import FAKE_BACKENDV2_SOURCES as fake_default_source, fack_backend_loader
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/backend/import_fake.py&quot;, line 42, in &lt;module&gt;
+    from qiskit_ibm_runtime import __version__ as qiskit_ibm_runtime_version  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/__init__.py&quot;, line 205, in &lt;module&gt;
+    from .qiskit_runtime_service import QiskitRuntimeService
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/qiskit_runtime_service.py&quot;, line 26, in &lt;module&gt;
+    from qiskit_ibm_runtime import ibm_backend
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/ibm_backend.py&quot;, line 36, in &lt;module&gt;
+    from .api.clients import RuntimeClient
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/api/clients/__init__.py&quot;, line 15, in &lt;module&gt;
+    from .auth import AuthClient
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/api/clients/auth.py&quot;, line 18, in &lt;module&gt;
+    from ..auth import QuantumAuth
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/api/auth.py&quot;, line 22, in &lt;module&gt;
+    from ..utils.utils import cname_from_crn
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/utils/__init__.py&quot;, line 38, in &lt;module&gt;
+    from .json import RuntimeEncoder, RuntimeDecoder, to_base64_string
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qiskit_ibm_runtime/utils/json.py&quot;, line 33, in &lt;module&gt;
+    import scipy.sparse
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/sparse/__init__.py&quot;, line 300, in &lt;module&gt;
+    from ._base import *
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/sparse/_base.py&quot;, line 5, in &lt;module&gt;
+    from ._sputils import (asmatrix, check_reshape_kwargs, check_shape,
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/sparse/_sputils.py&quot;, line 10, in &lt;module&gt;
+    from scipy._lib._util import np_long, np_ulong
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/_lib/_util.py&quot;, line 13, in &lt;module&gt;
+    from scipy._lib._array_api import array_namespace, is_numpy, xp_size
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/_lib/_array_api.py&quot;, line 18, in &lt;module&gt;
+    from scipy._lib.array_api_compat import (
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/scipy/_lib/array_api_compat/numpy/__init__.py&quot;, line 1, in &lt;module&gt;
+    from numpy import * # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1410, in _handle_fromlist
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1412, in _handle_fromlist
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/numpy/__init__.py&quot;, line 355, in __getattr__
+    import numpy.testing as testing
+  File &quot;/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/numpy/testing/__init__.py&quot;, line 8, in &lt;module&gt;
+    from unittest import TestCase
+  File &quot;/usr/lib/python3.12/unittest/__init__.py&quot;, line 66, in &lt;module&gt;
+    from .main import TestProgram, main
+  File &quot;/usr/lib/python3.12/unittest/main.py&quot;, line 8, in &lt;module&gt;
+    from . import loader, runner
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1360, in _find_and_load
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1331, in _find_and_load_unlocked
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 935, in _load_unlocked
+  File &quot;&lt;frozen importlib._bootstrap_external&gt;&quot;, line 991, in exec_module
+  File &quot;&lt;frozen importlib._bootstrap_external&gt;&quot;, line 1124, in get_code
+  File &quot;&lt;frozen importlib._bootstrap_external&gt;&quot;, line 753, in _compile_bytecode
+KeyboardInterrupt
+
+| Calculate specific degree (3, -2) by Python. - 00:30 &lt; 00:05
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">18</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="n">test_result_1_2_4</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="k">for</span> <span class="n">tmp_shot</span><span class="p">,</span> <span class="n">tmp_counts</span><span class="p">,</span> <span class="n">tmp_partition</span> <span class="ow">in</span> <span class="n">all_counts_progress_02</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span>     <span class="n">test_result_1_2_4</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+<span class="ne">---&gt; </span><span class="mi">18</span>         <span class="n">randomized_entangled_entropy_mitigated_v1</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span>             <span class="n">tmp_shot</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span>             <span class="n">tmp_counts</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span>             <span class="n">tmp_partition</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span>             <span class="n">existed_all_system</span><span class="o">=</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">23</span>                 <span class="kc">None</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span>                 <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_result_1_2_4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span>                 <span class="k">else</span> <span class="p">{</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span>                     <span class="s2">&quot;purityCellsAllSys&quot;</span><span class="p">:</span> <span class="n">test_result_1_2_4</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;purityCellsAllSys&quot;</span><span class="p">],</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span>                     <span class="s2">&quot;bitStringRange&quot;</span><span class="p">:</span> <span class="n">test_result_1_2_4</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;bitStringRange&quot;</span><span class="p">],</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span>                     <span class="s2">&quot;measureActually&quot;</span><span class="p">:</span> <span class="n">test_result_1_2_4</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;measureActually&quot;</span><span class="p">],</span>
+<span class="g g-Whitespace">     </span><span class="mi">29</span>                     <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;from_previous_result:test_result_1_2_4&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span>                 <span class="p">}</span>
+<span class="g g-Whitespace">     </span><span class="mi">31</span>             <span class="p">),</span>
+<span class="g g-Whitespace">     </span><span class="mi">32</span>             <span class="n">pbar</span><span class="o">=</span><span class="n">all_counts_progress_02</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">33</span>             <span class="n">backend</span><span class="o">=</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">34</span>         <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">35</span>     <span class="p">)</span>
+
+<span class="nn">File ~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/process/randomized_measure/entangled_entropy_v1/entangled_entropy.py:376,</span> in <span class="ni">randomized_entangled_entropy_mitigated_v1</span><span class="nt">(shots, counts, degree, measure, backend, workers_num, existed_all_system, pbar)</span>
+<span class="g g-Whitespace">    </span><span class="mi">368</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">pbar</span><span class="p">,</span> <span class="n">tqdm</span><span class="o">.</span><span class="n">tqdm</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">369</span>     <span class="n">pbar</span><span class="o">.</span><span class="n">set_description_str</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Calculate specific degree </span><span class="si">{</span><span class="n">degree</span><span class="si">}</span><span class="s2"> by </span><span class="si">{</span><span class="n">backend</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">370</span> <span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">371</span>     <span class="n">purity_cell_dict</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">372</span>     <span class="n">bitstring_range</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">373</span>     <span class="n">measure_range</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">374</span>     <span class="n">msg</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">375</span>     <span class="n">taken</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">376</span> <span class="p">)</span> <span class="o">=</span> <span class="n">entangled_entropy_core</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">377</span>     <span class="n">shots</span><span class="o">=</span><span class="n">shots</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">378</span>     <span class="n">counts</span><span class="o">=</span><span class="n">counts</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">379</span>     <span class="n">degree</span><span class="o">=</span><span class="n">degree</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">380</span>     <span class="n">measure</span><span class="o">=</span><span class="n">measure</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">381</span>     <span class="n">backend</span><span class="o">=</span><span class="n">backend</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">382</span>     <span class="n">multiprocess_pool_size</span><span class="o">=</span><span class="n">workers_num</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">383</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">384</span> <span class="n">purity_cell_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">purity_cell_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="g g-Whitespace">    </span><span class="mi">386</span> <span class="k">if</span> <span class="n">existed_all_system</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">File ~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/process/randomized_measure/entangled_entropy_v1/entropy_core.py:256,</span> in <span class="ni">entangled_entropy_core</span><span class="nt">(shots, counts, degree, measure, backend, multiprocess_pool_size)</span>
+<span class="g g-Whitespace">    </span><span class="mi">249</span>     <span class="n">backend</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">250</span>     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">251</span>         <span class="sa">f</span><span class="s2">&quot;Rust is not available, using </span><span class="si">{</span><span class="n">backend</span><span class="si">}</span><span class="s2"> to calculate purity cell.&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">252</span>         <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot; Check the error: </span><span class="si">{</span><span class="n">FAILED_RUST_IMPORT</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">253</span>         <span class="n">PostProcessingRustUnavailableWarning</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">254</span>     <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">256</span> <span class="k">return</span> <span class="n">entangled_entropy_core_pycyrust</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">257</span>     <span class="n">shots</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span> <span class="n">degree</span><span class="p">,</span> <span class="n">measure</span><span class="p">,</span> <span class="n">multiprocess_pool_size</span><span class="p">,</span> <span class="n">backend</span>
+<span class="g g-Whitespace">    </span><span class="mi">258</span> <span class="p">)</span>
+
+<span class="nn">File ~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/process/randomized_measure/entangled_entropy_v1/entropy_core.py:152,</span> in <span class="ni">entangled_entropy_core_pycyrust</span><span class="nt">(shots, counts, degree, measure, multiprocess_pool_size, backend)</span>
+<span class="g g-Whitespace">    </span><span class="mi">149</span>     <span class="n">msg</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;, </span><span class="si">{</span><span class="n">launch_worker</span><span class="si">}</span><span class="s2"> workers, </span><span class="si">{</span><span class="n">times</span><span class="si">}</span><span class="s2"> overlaps.&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">151</span>     <span class="n">pool</span> <span class="o">=</span> <span class="n">ParallelManager</span><span class="p">(</span><span class="n">launch_worker</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">152</span>     <span class="n">purity_cell_items</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">starmap</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">153</span>         <span class="n">cell_calculation</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">154</span>         <span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">bitstring_range</span><span class="p">,</span> <span class="n">subsystem_size</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">counts</span><span class="p">)],</span>
+<span class="g g-Whitespace">    </span><span class="mi">155</span>     <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">157</span> <span class="n">taken</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">begin</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">158</span> <span class="n">purity_cell_dict</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">],</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">159</span>     <span class="n">purity_cell_items</span>
+<span class="g g-Whitespace">    </span><span class="mi">160</span> <span class="p">)</span>  <span class="c1"># type: ignore</span>
+
+<span class="nn">File ~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/tools/parallelmanager.py:130,</span> in <span class="ni">ParallelManager.starmap</span><span class="nt">(self, func, args_list, start_method)</span>
+<span class="g g-Whitespace">    </span><span class="mi">127</span> <span class="n">pool_instance</span> <span class="o">=</span> <span class="n">get_context</span><span class="p">(</span><span class="n">start_method</span><span class="p">)</span><span class="o">.</span><span class="n">Pool</span>
+<span class="g g-Whitespace">    </span><span class="mi">129</span> <span class="k">with</span> <span class="n">pool_instance</span><span class="p">(</span><span class="n">processes</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">workers_num</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">pool_kwargs</span><span class="p">)</span> <span class="k">as</span> <span class="n">pool</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">130</span>     <span class="k">return</span> <span class="n">pool</span><span class="o">.</span><span class="n">starmap</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">args_list</span><span class="p">)</span>
+
+<span class="nn">File /usr/lib/python3.12/multiprocessing/pool.py:375,</span> in <span class="ni">Pool.starmap</span><span class="nt">(self, func, iterable, chunksize)</span>
+<span class="g g-Whitespace">    </span><span class="mi">369</span> <span class="k">def</span><span class="w"> </span><span class="nf">starmap</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">iterable</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">370</span><span class="w">     </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="g g-Whitespace">    </span><span class="mi">371</span><span class="sd">     Like `map()` method but the elements of the `iterable` are expected to</span>
+<span class="g g-Whitespace">    </span><span class="mi">372</span><span class="sd">     be iterables as well and will be unpacked as arguments. Hence</span>
+<span class="g g-Whitespace">    </span><span class="mi">373</span><span class="sd">     `func` and (a, b) becomes func(a, b).</span>
+<span class="g g-Whitespace">    </span><span class="mi">374</span><span class="sd">     &#39;&#39;&#39;</span>
+<span class="ne">--&gt; </span><span class="mi">375</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_map_async</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">iterable</span><span class="p">,</span> <span class="n">starmapstar</span><span class="p">,</span> <span class="n">chunksize</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+
+<span class="nn">File /usr/lib/python3.12/multiprocessing/pool.py:768,</span> in <span class="ni">ApplyResult.get</span><span class="nt">(self, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">767</span> <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">768</span>     <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">769</span>     <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">ready</span><span class="p">():</span>
+<span class="g g-Whitespace">    </span><span class="mi">770</span>         <span class="k">raise</span> <span class="ne">TimeoutError</span>
+
+<span class="nn">File /usr/lib/python3.12/multiprocessing/pool.py:765,</span> in <span class="ni">ApplyResult.wait</span><span class="nt">(self, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">764</span> <span class="k">def</span><span class="w"> </span><span class="nf">wait</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">765</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_event</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
+
+<span class="nn">File /usr/lib/python3.12/threading.py:655,</span> in <span class="ni">Event.wait</span><span class="nt">(self, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">653</span> <span class="n">signaled</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_flag</span>
+<span class="g g-Whitespace">    </span><span class="mi">654</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">signaled</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">655</span>     <span class="n">signaled</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cond</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">656</span> <span class="k">return</span> <span class="n">signaled</span>
+
+<span class="nn">File /usr/lib/python3.12/threading.py:355,</span> in <span class="ni">Condition.wait</span><span class="nt">(self, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">353</span> <span class="k">try</span><span class="p">:</span>    <span class="c1"># restore state no matter what (e.g., KeyboardInterrupt)</span>
+<span class="g g-Whitespace">    </span><span class="mi">354</span>     <span class="k">if</span> <span class="n">timeout</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">355</span>         <span class="n">waiter</span><span class="o">.</span><span class="n">acquire</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">356</span>         <span class="n">gotit</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">357</span>     <span class="k">else</span><span class="p">:</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
 </div>
 </div>
@@ -1125,28 +1501,24 @@ The return <code class="docutils literal notranslate"><span class="pre">dict</sp
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> | Qurry version: 0.10.2
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> | Qurry version: 0.10.0
 --------------------------------------------------------
  ### Qurry Post-Processing
    - Backend Availability ................... Python Cython Rust  
  - randomized_measure
    - entangled_entropy.entropy_core_2 ....... Yes    Depr.  Yes   
    - entangle_entropy.purity_cell_2 ......... Yes    Depr.  Yes   
-   - entangled_entropy_v1.entropy_core ...... Yes    Depr.  Yes   
-   - entangle_entropy_v1.purity_cell ........ Yes    Depr.  Yes   
    - wavefunction_overlap.echo_core_2 ....... Yes    Depr.  Yes   
-   - wavefunction_overlap.echo_cell_2 ....... Yes    Depr.  Yes   
-   - wavefunction_overlap_v1.echo_core ...... Yes    Depr.  Yes   
-   - wavefunction_overlap_v1.echo_cell ...... Yes    Depr.  Yes   
- - hadamard_test
-   - purity_echo_core ....................... Yes    No     Yes   
- - magnet_square
-   - magnsq_core ............................ Yes    No     No    
+   - wavefunction_overlap.echo_cell_2 ....... Yes    Depr.  Error 
  - utils
    - randomized ............................. Yes    Depr.  Yes   
    - construct .............................. Yes    No     Yes   
    - dummy .................................. Yes    No     Yes   
    - test ................................... Yes    No     Yes   
+ - hadamard_test
+   - purity_echo_core ....................... Yes    No     Yes   
+ - magnet_square
+   - magnsq_core ............................ Yes    No     No    
 --------------------------------------------------------
    + Yes ...... Working normally.
    + Error .... Exception occurred.

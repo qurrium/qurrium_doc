@@ -1,0 +1,134 @@
+Traceback (most recent call last):
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/nccu/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+multi_exps1 = experiment_hadamard.multiOutput(
+    config_list,
+    summoner_name="qurrent.hadamard_test",  # you can name it whatever you want
+    multiprocess_build=True,
+    # Using multiprocessing to build the experiments,
+    # it will be faster but take all the CPU
+    skip_build_write=True,
+    # Skip the writing of the experiment as files during the build,
+    save_location=".",
+    # Save the experiment as files in the current directory
+    multiprocess_write=True,
+    # Writing the experiment as files using multiprocessing,
+)
+multi_exps1
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mKeyError[39m                                  Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[5][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m multi_exps1 = [43mexperiment_hadamard[49m[43m.[49m[43mmultiOutput[49m[43m([49m
+[32m      2[39m [43m    [49m[43mconfig_list[49m[43m,[49m
+[32m      3[39m [43m    [49m[43msummoner_name[49m[43m=[49m[33;43m"[39;49m[33;43mqurrent.hadamard_test[39;49m[33;43m"[39;49m[43m,[49m[43m  [49m[38;5;66;43;03m# you can name it whatever you want[39;49;00m
+[32m      4[39m [43m    [49m[43mmultiprocess_build[49m[43m=[49m[38;5;28;43;01mTrue[39;49;00m[43m,[49m
+[32m      5[39m [43m    [49m[38;5;66;43;03m# Using multiprocessing to build the experiments,[39;49;00m
+[32m      6[39m [43m    [49m[38;5;66;43;03m# it will be faster but take all the CPU[39;49;00m
+[32m      7[39m [43m    [49m[43mskip_build_write[49m[43m=[49m[38;5;28;43;01mTrue[39;49;00m[43m,[49m
+[32m      8[39m [43m    [49m[38;5;66;43;03m# Skip the writing of the experiment as files during the build,[39;49;00m
+[32m      9[39m [43m    [49m[43msave_location[49m[43m=[49m[33;43m"[39;49m[33;43m.[39;49m[33;43m"[39;49m[43m,[49m
+[32m     10[39m [43m    [49m[38;5;66;43;03m# Save the experiment as files in the current directory[39;49;00m
+[32m     11[39m [43m    [49m[43mmultiprocess_write[49m[43m=[49m[38;5;28;43;01mTrue[39;49;00m[43m,[49m
+[32m     12[39m [43m    [49m[38;5;66;43;03m# Writing the experiment as files using multiprocessing,[39;49;00m
+[32m     13[39m [43m)[49m
+[32m     14[39m multi_exps1
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrent/hadamard_test/qurry.py:283[39m, in [36mEntropyMeasureHadamard.multiOutput[39m[34m(self, config_list, summoner_name, summoner_id, shots, backend, tags, manager_run_args, save_location, skip_build_write, skip_output_write, multiprocess_build, multiprocess_write)[39m
+[32m    230[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mmultiOutput[39m(
+[32m    231[39m     [38;5;28mself[39m,
+[32m    232[39m     config_list: [38;5;28mlist[39m[Union[[38;5;28mdict[39m[[38;5;28mstr[39m, Any], EntropyMeasureHadamardMeasureArgs]],
+[32m   (...)[39m[32m    243[39m     multiprocess_write: [38;5;28mbool[39m = [38;5;28;01mFalse[39;00m,
+[32m    244[39m ) -> [38;5;28mstr[39m:
+[32m    245[39m [38;5;250m    [39m[33;03m"""Output the multiple experiments.[39;00m
+[32m    246[39m 
+[32m    247[39m [33;03m    Args:[39;00m
+[32m   (...)[39m[32m    280[39m [33;03m        str: The summoner_id of multimanager.[39;00m
+[32m    281[39m [33;03m    """[39;00m
+[32m--> [39m[32m283[39m     [38;5;28;01mreturn[39;00m [38;5;28;43msuper[39;49m[43m([49m[43m)[49m[43m.[49m[43mmultiOutput[49m[43m([49m
+[32m    284[39m [43m        [49m[43mconfig_list[49m[43m=[49m[43mconfig_list[49m[43m,[49m
+[32m    285[39m [43m        [49m[43msummoner_name[49m[43m=[49m[43msummoner_name[49m[43m,[49m
+[32m    286[39m [43m        [49m[43msummoner_id[49m[43m=[49m[43msummoner_id[49m[43m,[49m
+[32m    287[39m [43m        [49m[43mshots[49m[43m=[49m[43mshots[49m[43m,[49m
+[32m    288[39m [43m        [49m[43mbackend[49m[43m=[49m[43mbackend[49m[43m,[49m
+[32m    289[39m [43m        [49m[43mtags[49m[43m=[49m[43mtags[49m[43m,[49m
+[32m    290[39m [43m        [49m[43mmanager_run_args[49m[43m=[49m[43mmanager_run_args[49m[43m,[49m
+[32m    291[39m [43m        [49m[43msave_location[49m[43m=[49m[43msave_location[49m[43m,[49m
+[32m    292[39m [43m        [49m[43mskip_build_write[49m[43m=[49m[43mskip_build_write[49m[43m,[49m
+[32m    293[39m [43m        [49m[43mskip_output_write[49m[43m=[49m[43mskip_output_write[49m[43m,[49m
+[32m    294[39m [43m        [49m[43mmultiprocess_build[49m[43m=[49m[43mmultiprocess_build[49m[43m,[49m
+[32m    295[39m [43m        [49m[43mmultiprocess_write[49m[43m=[49m[43mmultiprocess_write[49m[43m,[49m
+[32m    296[39m [43m    [49m[43m)[49m
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/qurrium.py:509[39m, in [36mQurriumPrototype.multiOutput[39m[34m(self, config_list, summoner_name, summoner_id, shots, backend, tags, manager_run_args, save_location, skip_build_write, skip_output_write, multiprocess_build, multiprocess_write)[39m
+[32m    506[39m [38;5;28;01mif[39;00m tags [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m:
+[32m    507[39m     tags = ()
+[32m--> [39m[32m509[39m besummonned = [38;5;28;43mself[39;49m[43m.[49m[43mmultiBuild[49m[43m([49m
+[32m    510[39m [43m    [49m[43mconfig_list[49m[43m=[49m[43mconfig_list[49m[43m,[49m
+[32m    511[39m [43m    [49m[43mshots[49m[43m=[49m[43mshots[49m[43m,[49m
+[32m    512[39m [43m    [49m[43mbackend[49m[43m=[49m[43mbackend[49m[43m,[49m
+[32m    513[39m [43m    [49m[43mtags[49m[43m=[49m[43mtags[49m[43m,[49m
+[32m    514[39m [43m    [49m[43mmanager_run_args[49m[43m=[49m[43mmanager_run_args[49m[43m,[49m
+[32m    515[39m [43m    [49m[43msummoner_name[49m[43m=[49m[43msummoner_name[49m[43m,[49m
+[32m    516[39m [43m    [49m[43msummoner_id[49m[43m=[49m[43msummoner_id[49m[43m,[49m
+[32m    517[39m [43m    [49m[43msave_location[49m[43m=[49m[43msave_location[49m[43m,[49m
+[32m    518[39m [43m    [49m[43mjobstype[49m[43m=[49m[33;43m"[39;49m[33;43mlocal[39;49m[33;43m"[39;49m[43m,[49m
+[32m    519[39m [43m    [49m[43mpending_strategy[49m[43m=[49m[33;43m"[39;49m[33;43mtags[39;49m[33;43m"[39;49m[43m,[49m
+[32m    520[39m [43m    [49m[43mskip_build_write[49m[43m=[49m[43mskip_build_write[49m[43m,[49m
+[32m    521[39m [43m    [49m[43mmultiprocess_build[49m[43m=[49m[43mmultiprocess_build[49m[43m,[49m
+[32m    522[39m [43m    [49m[43mmultiprocess_write[49m[43m=[49m[43mmultiprocess_write[49m[43m,[49m
+[32m    523[39m [43m[49m[43m)[49m
+[32m    524[39m current_multimanager = [38;5;28mself[39m.multimanagers[besummonned]
+[32m    525[39m [38;5;28;01massert[39;00m current_multimanager.summoner_id == besummonned
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/qurrium.py:421[39m, in [36mQurriumPrototype.multiBuild[39m[34m(self, config_list, summoner_name, summoner_id, shots, backend, tags, manager_run_args, save_location, jobstype, pending_strategy, skip_build_write, multiprocess_build, multiprocess_write)[39m
+[32m    418[39m ready_config_list = []
+[32m    419[39m [38;5;28;01mfor[39;00m config [38;5;129;01min[39;00m output_allow_config_list:
+[32m    420[39m     config_targets = {
+[32m--> [39m[32m421[39m         [33m"[39m[33mtargets[39m[33m"[39m: [38;5;28;43mself[39;49m[43m.[49m[43mwaves[49m[43m.[49m[43mprocess[49m[43m([49m[43mconfig[49m[43m.[49m[43mpop[49m[43m([49m[33;43m"[39;49m[33;43mcircuits[39;49m[33;43m"[39;49m[43m)[49m[43m)[49m,  [38;5;66;03m# type: ignore[39;00m
+[32m    422[39m         [33m"[39m[33mpassmanager_pair[39m[33m"[39m: passmanager_processor(
+[32m    423[39m             passmanager=config.pop([33m"[39m[33mpassmanager[39m[33m"[39m), passmanager_container=[38;5;28mself[39m.passmanagers
+[32m    424[39m         ),
+[32m    425[39m     }
+[32m    426[39m     config_targets.update(config)
+[32m    427[39m     ready_config_list.append(config_targets)
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/container/waves_static.py:61[39m, in [36mWaveContainer.process[39m[34m(self, circuits)[39m
+[32m     49[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mprocess[39m(
+[32m     50[39m     [38;5;28mself[39m, circuits: [38;5;28mlist[39m[Union[QuantumCircuit, Hashable]]
+[32m     51[39m ) -> [38;5;28mlist[39m[[38;5;28mtuple[39m[Hashable, QuantumCircuit]]:
+[32m     52[39m [38;5;250m    [39m[33;03m"""Process the circuits in container.[39;00m
+[32m     53[39m 
+[32m     54[39m [33;03m    Args:[39;00m
+[32m   (...)[39m[32m     59[39m [33;03m        list[tuple[Hashable, QuantumCircuit]]: The processed circuits.[39;00m
+[32m     60[39m [33;03m    """[39;00m
+[32m---> [39m[32m61[39m     [38;5;28;01mreturn[39;00m [43m_process[49m[43m([49m[38;5;28;43mself[39;49m[43m,[49m[43m [49m[43mcircuits[49m[43m)[49m
+
+[36mFile [39m[32m~/Documents/.homejupyter/qurryplayground/qurrium_docs/lib/python3.12/site-packages/qurry/qurrium/container/waves_dynamic.py:421[39m, in [36m_process[39m[34m(_wave_container, circuits)[39m
+[32m    419[39m         circuits_items.append((_circuit, _wave_container[_circuit]))
+[32m    420[39m     [38;5;28;01melse[39;00m:
+[32m--> [39m[32m421[39m         [38;5;28;01mraise[39;00m [38;5;167;01mKeyError[39;00m([33mf[39m[33m"[39m[33mWave [39m[38;5;132;01m{[39;00m_circuit[38;5;132;01m}[39;00m[33m not found in [39m[38;5;132;01m{[39;00m_wave_container[38;5;132;01m}[39;00m[33m"[39m)
+[32m    422[39m [38;5;28;01melse[39;00m:
+[32m    423[39m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([33mf[39m[33m"[39m[33mInvalid type of circuit: [39m[38;5;132;01m{[39;00m_circuit[38;5;132;01m}[39;00m[33m, type: [39m[38;5;132;01m{[39;00m[38;5;28mtype[39m(_circuit)[38;5;132;01m}[39;00m[33m"[39m)
+
+[31mKeyError[39m: "Wave trivial_paramagnet_8 not found in {'trivial_paramagnet_2': <qurry.recipe.simple.paramagnet.TrivialParamagnet object at 0x7e9175e5f440>, 'ghz_2': <qurry.recipe.simple.cat.GHZ object at 0x7e9174f53830>, 'neel_2': <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x7e9175116ae0>, 'trivial_paramagnet_4': <qurry.recipe.simple.paramagnet.TrivialParamagnet object at 0x7e9174f8ecf0>, 'ghz_4': <qurry.recipe.simple.cat.GHZ object at 0x7e91750fd490>, 'neel_4': <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x7e917532a2a0>, 'trivial_paramagnet_6': <qurry.recipe.simple.paramagnet.TrivialParamagnet object at 0x7e9174f53380>, 'ghz_6': <qurry.recipe.simple.cat.GHZ object at 0x7e91e65b0bf0>, 'neel_6': <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x7e9175014c80>}"
+
