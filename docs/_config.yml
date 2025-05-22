@@ -10,6 +10,7 @@ exclude_patterns:
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
+  timeout: 600
   execute_notebooks: force
   only_build_toc_files: true
   exclude_patterns:
