@@ -38,6 +38,10 @@ jobs:
           python -m pip install -r requirements-test.txt
           python -m pip install -r requirements-book.txt
 
+      - name: Format Python files
+        run: |
+          black .
+
       - name: Build the book
         run: |
           jupyter-book build --all docs
