@@ -12,7 +12,7 @@ jobs:
   test_py_latest_and_oldest:
     if: ${{ !startsWith(github.event.pull_request.title, 'skip-test:') }}
     name: Test on Python Latest and Oldest
-    runs-on: ubuntu-latest, self-hosted
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
@@ -31,7 +31,7 @@ jobs:
   test_build:
     if: ${{ !startsWith(github.event.pull_request.title, 'skip-test:') }}
     name: Test Build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs:
       - test_py_latest_and_oldest
     steps:
