@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   build_book_and_deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest, self-hosted
 
     steps:
       - uses: actions/checkout@v3
