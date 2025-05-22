@@ -1,4 +1,5 @@
 pytest
 nbmake
 flake8
+jupyter
 matplotlib
