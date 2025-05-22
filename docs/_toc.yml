@@ -31,6 +31,7 @@ parts:
       - file: postprocessing/02_WaveFunctionOverlap/3_EchoListenRandomizedV1
   - caption: Other Features
     chapters:
+      - file: appendix/A01_BackendManager
   - caption: Installation and Support
     chapters:
       - file: installation/01_Installation
@@ -42,7 +43,7 @@ parts:
     chapters:
       - file: deprecated/index
       - file: deprecated/0.10.x/index
-      - sections:
+        sections:
           - file: deprecated/0.10.x/01_Basic_Usage
           - file: deprecated/0.10.x/02_The_True_Power_of_Qurry
           - file: deprecated/0.10.x/A01_BackendManager
