@@ -544,8 +544,8 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">qurry.process.hadamard_test</span><span class="w"> </span><span class="kn">import</span> <span class="n">hadamard_overlap_echo</span>
 
 <span class="n">test_result_2_1s</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">hadamard_overlap_echo</span><span class="p">(</span><span class="n">case</span><span class="p">[</span><span class="s2">&quot;shots&quot;</span><span class="p">],</span> <span class="n">case</span><span class="p">[</span><span class="s2">&quot;counts&quot;</span><span class="p">])</span>
-<span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">dummy_cases</span><span class="p">]</span>
+    <span class="n">hadamard_overlap_echo</span><span class="p">(</span><span class="n">case</span><span class="p">[</span><span class="s2">&quot;shots&quot;</span><span class="p">],</span> <span class="n">case</span><span class="p">[</span><span class="s2">&quot;counts&quot;</span><span class="p">])</span> <span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">dummy_cases</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -586,9 +586,7 @@ document.write(`
 
 <span class="n">test_result_2_2s</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">all_counts_progress_01</span><span class="p">:</span>
-    <span class="n">test_result_2_2s</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-        <span class="n">hadamard_overlap_echo</span><span class="p">(</span><span class="n">case</span><span class="p">[</span><span class="s2">&quot;shots&quot;</span><span class="p">],</span> <span class="n">case</span><span class="p">[</span><span class="s2">&quot;counts&quot;</span><span class="p">])</span>
-    <span class="p">)</span>
+    <span class="n">test_result_2_2s</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hadamard_overlap_echo</span><span class="p">(</span><span class="n">case</span><span class="p">[</span><span class="s2">&quot;shots&quot;</span><span class="p">],</span> <span class="n">case</span><span class="p">[</span><span class="s2">&quot;counts&quot;</span><span class="p">]))</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;| case </span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;| </span><span class="si">{</span><span class="n">test_result_2_2s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
@@ -627,7 +625,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> | Qurry version: 0.12.2.dev2
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> | Qurry version: 0.12.2.dev1
 ---------------------------------------------------------------------------
  ### Qurry Post-Processing
    - Backend Availability ................... Python Cython Rust   JAX   
@@ -645,7 +643,7 @@ document.write(`
  - magnet_square
    - magnsq_core ............................ Yes    No     No     No    
  - classical_shadow
-   - rho_m_core ............................. Yes    No     No     Error 
+   - rho_m_core ............................. Yes    No     No     Yes   
  - utils
    - randomized ............................. Yes    Depr.  Yes    No    
    - counts_process ......................... Yes    No     Yes    No    

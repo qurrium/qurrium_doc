@@ -471,7 +471,8 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">qurry.recipe</span><span class="w"> </span><span class="kn">import</span> <span class="n">TopologicalParamagnet</span>
-<span class="n">sample</span> <span class="o">=</span> <span class="n">TopologicalParamagnet</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;period&#39;</span><span class="p">)</span>
+
+<span class="n">sample</span> <span class="o">=</span> <span class="n">TopologicalParamagnet</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s2">&quot;period&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -536,6 +537,7 @@ q_7: ┤ H ├─■─────■─
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">TypedDict</span><span class="p">,</span> <span class="n">Hashable</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Optional</span>
 
+
 <span class="k">class</span><span class="w"> </span><span class="nc">randomizedConfig</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
     <span class="n">wave</span><span class="p">:</span> <span class="n">Hashable</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;The name or serial number of circuit in Qurry.&quot;&quot;&quot;</span>
@@ -543,18 +545,20 @@ q_7: ┤ H ├─■─────■─
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;You can metion tags to filter experiment.&quot;&quot;&quot;</span>
     <span class="n">times</span><span class="p">:</span> <span class="nb">int</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Default: 100 in :cls:`RandomizedMeasure`&quot;&quot;&quot;</span>
-    
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">config_list</span> <span class="o">=</span> <span class="p">[{</span>
-    <span class="s1">&#39;wave&#39;</span><span class="p">:</span> <span class="n">i</span><span class="p">,</span>
-    <span class="s1">&#39;tags&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;topParamagnet&#39;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">10</span><span class="p">)),</span>
-    <span class="s1">&#39;times&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-<span class="p">}</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">config_list</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;wave&quot;</span><span class="p">:</span> <span class="n">i</span><span class="p">,</span>
+        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;topParamagnet&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="mi">10</span><span class="p">)),</span>
+        <span class="s2">&quot;times&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -657,16 +661,15 @@ The post-processing calculation already boosts by multiprocesses, cython and Rus
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">qs</span> <span class="ow">in</span> <span class="n">subsytems</span><span class="p">:</span>
     <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;bits_&quot;</span> <span class="o">+</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">qi</span><span class="p">)</span> <span class="k">for</span> <span class="n">qi</span> <span class="ow">in</span> <span class="n">qs</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;| Name:&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-    
+
     <span class="c1"># please decomment this cell to run it.</span>
-    
+
     <span class="c1"># experiment_executor_02.multiAnalysis(</span>
     <span class="c1">#     summoner_id=hash_id,</span>
     <span class="c1">#     selected_qubits=qs,</span>
     <span class="c1">#     analysis_name=name,</span>
     <span class="c1">#     no_serialize=True,</span>
     <span class="c1"># )</span>
-    
 </pre></div>
 </div>
 </div>
@@ -712,8 +715,8 @@ The post-processing calculation already boosts by multiprocesses, cython and Rus
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hashID</span> <span class="o">=</span> <span class="n">experiment_executor_02</span><span class="o">.</span><span class="n">multiRead</span><span class="p">(</span>
-    <span class="n">save_location</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;./&#39;</span><span class="p">),</span>
-    <span class="n">summoner_name</span><span class="o">=</span><span class="s1">&#39;example.multiOutput.qurry.001&#39;</span><span class="p">,</span>
+    <span class="n">save_location</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;./&quot;</span><span class="p">),</span>
+    <span class="n">summoner_name</span><span class="o">=</span><span class="s2">&quot;example.multiOutput.qurry.001&quot;</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -734,6 +737,7 @@ The post-processing calculation already boosts by multiprocesses, cython and Rus
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">qurry</span><span class="w"> </span><span class="kn">import</span> <span class="n">__version__</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">qurry.process</span><span class="w"> </span><span class="kn">import</span> <span class="n">AVAIBILITY_STATESHEET</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;| Qurry version:&quot;</span><span class="p">,</span> <span class="n">__version__</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">AVAIBILITY_STATESHEET</span><span class="p">)</span>
 </pre></div>

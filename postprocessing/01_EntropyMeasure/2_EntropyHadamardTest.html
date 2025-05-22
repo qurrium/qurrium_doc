@@ -529,8 +529,8 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">qurry.process.hadamard_test</span><span class="w"> </span><span class="kn">import</span> <span class="n">hadamard_entangled_entropy</span>
 
 <span class="n">test_result_2_1s</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">hadamard_entangled_entropy</span><span class="p">(</span><span class="n">case</span><span class="p">[</span><span class="s2">&quot;shots&quot;</span><span class="p">],</span> <span class="n">case</span><span class="p">[</span><span class="s2">&quot;counts&quot;</span><span class="p">])</span>
-<span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">dummy_cases</span><span class="p">]</span>
+    <span class="n">hadamard_entangled_entropy</span><span class="p">(</span><span class="n">case</span><span class="p">[</span><span class="s2">&quot;shots&quot;</span><span class="p">],</span> <span class="n">case</span><span class="p">[</span><span class="s2">&quot;counts&quot;</span><span class="p">])</span> <span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">dummy_cases</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -611,7 +611,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> | Qurry version: 0.12.2.dev2
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> | Qurry version: 0.12.2.dev1
 ---------------------------------------------------------------------------
  ### Qurry Post-Processing
    - Backend Availability ................... Python Cython Rust   JAX   
@@ -629,7 +629,7 @@ document.write(`
  - magnet_square
    - magnsq_core ............................ Yes    No     No     No    
  - classical_shadow
-   - rho_m_core ............................. Yes    No     No     Error 
+   - rho_m_core ............................. Yes    No     No     Yes   
  - utils
    - randomized ............................. Yes    Depr.  Yes    No    
    - counts_process ......................... Yes    No     Yes    No    
