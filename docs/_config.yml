@@ -6,11 +6,20 @@ author: Huai-Chung Chang (harui2019)
 logo: ""
 
 exclude_patterns:
-  [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "experiment.**", "qurrent.**", "qurrium.**", "qurshady.**"]
+  [
+    _build,
+    Thumbs.db,
+    .DS_Store,
+    "**.ipynb_checkpoints",
+    "experiment.**",
+    "qurrent.**",
+    "qurrium.**",
+    "qurshady.**",
+  ]
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  timeout: 600
+  timeout: 1200 # For Python 3.9 requires at least 600 seconds
   execute_notebooks: force
   only_build_toc_files: true
   exclude_patterns:
