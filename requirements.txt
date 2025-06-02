@@ -9,3 +9,5 @@ numpy
 qiskit
 # qiskit_aer - not needed for runtime
 qurrium
+# theme
+pydata-sphinx-theme

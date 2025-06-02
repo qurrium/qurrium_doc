@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Qurry🍛/Qurrium Documentation
+title: Qurrium 📏 Documentation
 author: Huai-Chung Chang (harui2019)
 logo: ""
 
@@ -38,7 +38,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/harui2019/qurrium_doc # Online location of your book
+  url: https://github.com/qurrium/qurrium_doc # Online location of your book
   path_to_book: docs # Optional path to your book, relative to the repository root
   branch: main # Which branch of the repository should be used when creating links (optional)
 
@@ -67,18 +67,19 @@ sphinx:
   extra_extensions:
     - sphinxext.opengraph
   config:
+    html_theme: pydata_sphinx_theme
+    # OpenGraph settings
     ogp_site_url: "https://docs.qurrium.org"
-
     ogp_custom_meta_tags:
       [
         "<!-- HTML Meta Tags -->",
-        "<title>Qurrium-Qurry🍛 Documentation</title>",
+        "<title>Qurrium 📏 Documentation</title>",
         "<meta name='description' content='The python package that makes the randomized measurement easy.'>",
         "",
         "<!-- Facebook Meta Tags -->",
         "<meta property='og:url' content='https://docs.qurrium.org'>",
         "<meta property='og:type' content='website'>",
-        "<meta property='og:title' content='Qurrium-Qurry🍛 Documentation'>",
+        "<meta property='og:title' content='Qurrium 📏 Documentation'>",
         "<meta property='og:description' content='The python package that makes the randomized measurement easy.'>",
         "<meta property='og:image' content=''>",
         "",
@@ -87,7 +88,7 @@ sphinx:
         "<meta property='twitter:domain' content='docs.qurrium.org'>",
         "<meta property='twitter:url' content='https://docs.qurrium.org'>",
 
-        "<meta name='twitter:title' content='Qurrium-Qurry🍛 Documentation'>",
+        "<meta name='twitter:title' content='Qurrium 📏 Documentation'>",
         "<meta name='twitter:description' content='The python package that makes the randomized measurement easy.'>",
         "<meta name='twitter:image' content=''>",
         "",
