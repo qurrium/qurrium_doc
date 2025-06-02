@@ -7,38 +7,72 @@ parts:
   - caption: Basic Usage
     chapters:
       - file: main/basic_usage
-      - file: main/qurrent_1_1_HadamardTest/basic_usage
-      - file: main/qurrent_1_2_RandomizedMeasure/basic_usage
-      - file: main/qurrent_1_4_ClassicalShadow/basic_usage
-      - file: main/qurrium_0_1_WavesExecuter/basic_usage
+      - file: main/basic_entanglement_entropy
+        caption: 1. Entanglement Entropy
+        sections:
+          - file: main/qurrent_1_1_hadamard_test/basic_usage
+            caption: 1.1 By Hadamard Test
+          - file: main/qurrent_1_2_randomized_measure/basic_usage
+            caption: 1.2 By Randomized Measure
+          - file: main/qurrent_1_4_classical_shadow/basic_usage
+            caption: 1.3 By Classical Shadow
+      - file: main/qurrium_0_1_waves_executer/basic_usage
+        caption: Waves Executer
+
   - caption: Multi-Output
     chapters:
       - file: main/multi_output
-      - file: main/qurrent_1_1_HadamardTest/multi_output
-      - file: main/qurrent_1_2_RandomizedMeasure/multi_output
-      - file: main/qurrent_1_4_ClassicalShadow/multi_output
-      - file: main/qurrium_0_1_WavesExecuter/multi_output
+      - file: main/multi_entanglement_entropy
+        caption: 1. Entanglement Entropy
+        sections:
+          - file: main/qurrent_1_1_hadamard_test/multi_output
+            caption: 1.1 by Hadamard Test
+          - file: main/qurrent_1_2_randomized_measure/multi_output
+            caption: 1.2 by Randomized Measure
+          - file: main/qurrent_1_4_classical_shadow/multi_output
+            caption: 1.3 by Classical Shadow
+      - file: main/qurrium_0_1_waves_executer/multi_output
+        caption: Waves Executer
+
   - caption: Post Processing
     chapters:
-      - file: postprocessing/00_Just_Post_Processing
-      - file: postprocessing/01_EntropyMeasure/1a_EntropyRandomizedMeasure
-      - file: postprocessing/01_EntropyMeasure/1b_EntropyRandomizedMeasure
-      - file: postprocessing/01_EntropyMeasure/2_EntropyHadamardTest
-      - file: postprocessing/01_EntropyMeasure/3a_EntropyRandomizedMeasureV1
-      - file: postprocessing/01_EntropyMeasure/3b_EntropyRandomizedMeasureV1
-      - file: postprocessing/02_WaveFunctionOverlap/1_EchoListenRandomized
-      - file: postprocessing/02_WaveFunctionOverlap/2_EchoListenHadamard
-      - file: postprocessing/02_WaveFunctionOverlap/3_EchoListenRandomizedV1
+      - file: postprocessing/intro
+        caption: Introduction
+      - file: postprocessing/01_entropy_measure/intro
+        caption: 1. Entanglement Entropy
+        sections:
+          - file: postprocessing/01_entropy_measure/1_hadamard
+            caption: 1.1 By Hadamard Test
+          - file: postprocessing/01_entropy_measure/2a_randomized_measure
+            caption: 1.2a By Randomized Measure
+          - file: postprocessing/01_entropy_measure/2b_randomized_measure
+            caption: 1.2b By Randomized Measure with Error Mitigation
+          - file: postprocessing/01_entropy_measure/4a_randomized_measure_v1
+            caption: 1.4a By Randomized Measure V1 (Deprecated)
+          - file: postprocessing/01_entropy_measure/4b_randomized_measure_v1
+            caption: 1.4b By Randomized Measure V1 with Error Mitigation (Deprecated)
+      - file: postprocessing/02_wave_func_overlap/intro
+        caption: 2. Wave Function Overlap
+        sections:
+          - file: postprocessing/02_wave_func_overlap/1_hadamard
+            caption: 2.1 By Hadamard Test
+          - file: postprocessing/02_wave_func_overlap/2_randomized_measure
+            caption: 2.2 By Randomized Measure
+          - file: postprocessing/02_wave_func_overlap/3_randomized_measure_v1
+            caption: 2.3 By Randomized Measure V1 (Deprecated)
+
   - caption: Other Features
     chapters:
-      - file: appendix/A01_BackendManager
+      - file: appendix/a01_backend_wrapper
+
   - caption: Installation and Support
     chapters:
-      - file: installation/01_Installation
-      - file: installation/02_Platform_Support
+      - file: appendix/install
+      - file: appendix/platform_support
   - caption: About
     chapters:
-      - file: about/01_About_Qurry
+      - file: appendix/about
+
   - caption: Deprecated
     chapters:
       - file: deprecated/index
