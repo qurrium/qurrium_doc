@@ -1,4 +1,4 @@
-# Qurry 🍛 - The python package for measuring quantum entanglement entropy and wave function overlap.
+# Qurrium 📏 - The python package for measuring quantum entanglement entropy and wave function overlap.
 
 ## _The python package that makes the randomized measurement easy._
 
@@ -45,8 +45,118 @@ If you use this tool in your research, please cite the following paper in your p
   url        = {https://hdl.handle.net/11296/828e7d}
 }
 
-
 ```
+
+## Installation
+
+### By PyPI - Stable Release
+
+- The package can be found in `pip list` as `qurrium-x.y.z`
+- Pip downloads the most stable release, but not necessarily the latest version.
+
+```bash
+pip install qurrium
+```
+
+### By TestPyPI - Nightly Release
+
+- This package can be found in `pip list` as `qurry-x.y.z.devW`
+- This version includes new features and minor bug fixes, but may not be stable.
+
+```bash
+pip install qiskit tqdm requests
+# the installation from testPyPI can' t find these dependencies
+pip install -i https://test.pypi.org/simple/ qurry
+```
+
+### Maually by Git
+
+**Qurry can be installed from source**. Since this package relies on Cython and Rust, **it requires "C complier" and "Rust complier" which you need to install first.**
+
+To install rust, run the following command:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Then install `qurrium` by the following command:
+
+```bash
+git clone https://github.com/qurrium/qurrium.git --recursive
+cd qurrium
+pip install -e .
+```
+
+#### Test Installation
+
+`pytest` is used for testing. Simply run the following command after the installation:
+
+```bash
+pytest
+```
+
+---
+
+## Environment
+
+**Qurry currently <ins>SUPPORT qiskit 0.46.0+ and qiskit 1.0.0+</ins>, other lower versions are no longer available.
+The package has been tested on the following systems.**
+
+- **Ubuntu 18.04+ LTS (All ManyLinux 2014 compatible distro)**
+  - on `x86_64` **(recommended)**
+  - on `x86_64` Windows 10/11 WSL2 **(recommended)**
+  - on `aarch64`
+  - We strongly recommend to use Linux based systems because Python multiprocessing may exist issues on Windows and the NVIDIA CUDA acceleration of `Qiskit`, `qiskit-aer-gpu` are supported only on Linux.
+- **Windows 10/11**
+  - on `x86_64`
+- **MacOS 11+**
+
+  - on `aarch64 (Apple Silicon, M1/M2/M3/M4 chips)`
+  - on `x86_64 (Intel chips)`
+  - **The depedent modules are as follows.**
+
+- with required modules:
+  - [`qiskit`](https://pypi.org/project/qiskit/), [`tqdm`](https://pypi.org/project/tqdm/), [`requests`](https://pypi.org/project/requests/)
+- with optional modules:
+  - `qiskit-aer`: The complete simulator package of `qiskit`
+  - `qiskit-aer-gpu`: The gpu acceleration of `qiskit-aer` on Linux with Nvidia GPU
+    - `qiskit-aer-gpu-cu11`: A package for CUDA 11
+  - `qiskit-ibm-runtime`: The API to access IBM Quantum Device
+  - `qiskit-ibm-provider`: The API to access IBM Quantum Device, but will be deprecated soon.
+  - `qiskit-ibmq-provider`: The API to access IBM Quantum Device, which has been deprecated.
+
+---
+
+## Measurement -- made randomized measurement easy.
+
+### `qurrent` - The Quantum Renyi Entropy Measurement
+
+The major function of this module is to measure the quantum Renyi entropy to quantify entanglement.
+
+### `qurrech` - The Wave Function Overlap Measurement
+
+This module evaluates the overlap between any two given quantum states.
+
+In each of the modules, two methods are implemented to perform the measurements:
+
+- Hadamard Test
+
+  - Ref:
+    **Entanglement spectroscopy on a quantum computer** - Sonika Johri, Damian S. Steiger, and Matthias Troyer, [PhysRevB.96.195136](https://doi.org/10.1103/PhysRevB.96.195136)
+
+- Haar Randomized Measure
+  - Ref:
+    **Statistical correlations between locally randomized measurements: A toolbox for probing entanglement in many-body quantum states** - A. Elben, B. Vermersch, C. F. Roos, and P. Zoller, [PhysRevA.99.052323](https://doi.org/10.1103/PhysRevA.99.052323)
+
+<!-- ### `qurmagsq` - The Magnetization Squared
+
+- Magnetization Squared
+
+### `qurstrop` - The String Operators
+
+- String Operators
+  - Used in:
+    **Crossing a topological phase transition with a quantum computer** - Smith, Adam and Jobst, Bernhard and Green, Andrew G. and Pollmann, Frank, [PhysRevResearch.4.L022020](https://link.aps.org/doi/10.1103/PhysRevResearch.4.L022020) -->
 
 ---
 
